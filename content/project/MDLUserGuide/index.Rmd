@@ -1,0 +1,46 @@
+**MDL Development Team**
+
+![](../../images/image1.jpeg)
+
+**MDL Version 1.0**
+
+July 2016
+
+```{r child=Preface.md}
+```
+
+```{r child=Changelog.md}
+```
+
+```{r child=Introduction.md}
+```
+
+```{r child=DataObject.md}
+```
+
+```{r child=ParameterObject.md}
+```
+
+```{r child=ModelObject.md}
+```
+
+```{r child=TaskPropertiesObject.md}
+```
+
+```{r child=PriorObject.md}
+```
+
+```{r child=DesignObject.md}
+```
+
+```{r child=OnInteroperability.md}
+```
+
+```{r child=MDLReferenceGuide.md}
+```
+
+```{r child=Glossary.md}
+```
+
+```{r child=References.md}
+```

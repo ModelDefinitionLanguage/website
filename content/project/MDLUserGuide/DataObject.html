@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>The Data Object</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 13px;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 20px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 {
+   font-size:2.2em;
+}
+
+h2 {
+   font-size:1.8em;
+}
+
+h3 {
+   font-size:1.4em;
+}
+
+h4 {
+   font-size:1.0em;
+}
+
+h5 {
+   font-size:0.9em;
+}
+
+h6 {
+   font-size:0.8em;
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre, img {
+  max-width: 100%;
+}
+pre {
+  overflow-x: auto;
+}
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code {
+  font-size: 92%;
+  border: 1px solid #ccc;
+}
+
+code[class] {
+  background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * {
+      background: transparent !important;
+      color: black !important;
+      filter:none !important;
+      -ms-filter: none !important;
+   }
+
+   body {
+      font-size:12pt;
+      max-width:100%;
+   }
+
+   a, a:visited {
+      text-decoration: underline;
+   }
+
+   hr {
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote {
+      padding-right: 1em;
+      page-break-inside: avoid;
+   }
+
+   tr, img {
+      page-break-inside: avoid;
+   }
+
+   img {
+      max-width: 100% !important;
+   }
+
+   @page :left {
+      margin: 15mm 20mm 15mm 10mm;
+   }
+
+   @page :right {
+      margin: 15mm 10mm 15mm 20mm;
+   }
+
+   p, h2, h3 {
+      orphans: 3; widows: 3;
+   }
+
+   h2, h3 {
+      page-break-after: avoid;
+   }
+}
+</style>
+
+
+
+</head>
+
+<body>
+<h1>The Data Object</h1>
+
+<p>The Data Object defines the attributes of the source data file and
+defines how values in the data source are to be used in the context of a
+given Model Object. The Data Object is independent of other blocks,
+including the Model Object. It must ultimately provide appropriate
+information <em>to</em> the Model Object, but as with other Objects in MDL it
+must be self-contained, so variables from other Objects which are
+referenced must be declared in the <code>DECLARED_VARIABLES</code> block.</p>
+
+<p>The following blocks are defined within the Data Object:
+<code>DECLARED_VARIABLES</code>, <code>DATA_INPUT_VARIABLES</code>, <code>SOURCE</code>,
+<code>DATA_DERIVED_VARIABLES</code>, <code>FUNCTIONS</code>.</p>
+
+<h2>Subsetting data for analysis</h2>
+
+<p>For quality assurance and audit purposes it is imperative that there be
+a clear and traceable path between the original data source and data
+used in analysis. This is normally achieved in one of two ways: through
+having data manipulation steps performed in a scriptable language to
+create the dataset for use in analysis, or through having the original
+data as the input to the analysis and using filtering and subsetting
+commands in the target analysis software code to define what records are
+used in the task.</p>
+
+<p><strong>The “NONMEM” method for dealing with outliers and filtering data –
+commenting out data rows using a specific character as the first item on
+a data line or specifying conditions under which data is accepted or
+ignored – is not supported within MDL</strong>.</p>
+
+<p>We suggest that users use scriptable languages like R to subset, filter
+and manipulate data prior to analysis, write the data for analysis to
+file and then modify the MDL Data Object to reference the appropriate
+source file in the <code>SOURCE</code> block. This aids reproducibility since the
+data used in estimation will be equivalent across target software tools.
+If the “ignored” or “dropped” data is saved separately in a file or
+listing then it will also be possible to quickly and easily verify that
+the data used in analysis, when combined with the dropped data matches
+the original dataset.</p>
+
+<p>For legacy data and NMTRAN models, we recommend using the “ignored”
+function within the “metrumrg” R package
+(<a href="https://r-forge.r-project.org/projects/metrumrg/">https://r-forge.r-project.org/projects/metrumrg/</a>). This function
+reads a NONMEM control stream and creates a TRUE / FALSE logical flag
+for whether the records meet IGNORE and/or ACCEPT criteria specified in
+the NMTRAN code. This will allow the user to identify which data records
+have been dropped by NONMEM. Filtering on the original data based on
+this criteria will allow them to create a dataset ready for analysis
+with MDL.</p>
+
+<p>For example, if the NMTRAN control file had the following $DATA
+statement:</p>
+
+<pre><code>$DATA mx2007.csv IGNORE=@
+
+IGNORE ID.EQ.1
+
+ACCEPT VISI.EQ.3
+</code></pre>
+
+<p>This code means that any data rows which start with “@” are to be
+omitted, that the subject with ID == 1 should be omitted from analysis,
+and only VISI == 3 is to be included.</p>
+
+<p>Using the metrumrg function ignored, we have the following code which
+can be used within the R script. This assumes that the $DATA statements
+above are in a control file called “run1.ctl”:</p>
+
+<pre><code>library(metrumrg)
+
+mx2007 &lt;- read.csv(&quot;mx2007.csv&quot;, header=T)
+
+mx.dropped &lt;- mx2007[ignored(ctlfile=&quot;run1.ctl&quot;),]
+
+mx.kept &lt;- mx2007[!ignored(ctlfile=&quot;run1.ctl&quot;),]
+</code></pre>
+
+<p>This separates out the dropped records into the mx.dropped data frame,
+and the kept records into the data frame mx.kept. The user can then
+write mx.kept to a .csv file and use this as the file in the <code>SOURCE</code>
+block.</p>
+
+<h2><code>DATA_INPUT_VARIABLES</code> Block</h2>
+
+<p>This block defines the columns in the dataset described in <code>SOURCE</code>
+block and how these map to model variables.</p>
+
+<ul>
+<li><p>All columns of the data file defined in the <code>SOURCE</code> block must be
+defined in <code>DATA_INPUT_VARIABLES.</code> This aids clarity and
+readability.</p></li>
+<li><p><strong>In the current MDL , variables in the DATA_INPUT_VARIABLES block
+must be defined <em>in the column order they appear in the</em> SOURCE
+<em>block data file</em>.</strong></p></li>
+<li><p><strong>In the current MDL, variable names in the DATA_INPUT_VARIABLES
+block must <em>match the names in the header row of the data file</em>
+named in the SOURCE block. For interoperability with Monolix the
+case of the names in the header row must match the case of the data
+variable in the DATA_INPUT_VARIABLES block.</strong></p></li>
+<li><p><code>DATA_INPUT_VARIABLES</code> cannot have more than one <code>use</code>
+defined.</p></li>
+<li><p>All <code>DATA_INPUT_VARIABLES</code> must have a <code>use</code> defined.</p></li>
+<li><p>Columns in the data which are not required in the model should have
+“use is ignore”.</p></li>
+</ul>
+
+<p>The typical syntax for defining items in the <code>DATA_INPUT_VARIABLES</code>
+block is:</p>
+
+<pre><code>&lt;Variable name&gt; : { use is &lt;use type&gt; }
+</code></pre>
+
+<p>Define types for <code>use type</code> are:</p>
+
+<p>Use         <strong>Defines</strong></p>
+
+<hr/>
+
+<p>id          Individual identifier. Typically subject ID in clinical trials. Defines the indvidual level of parameter variability.
+  idv         Independent variable. Typically TIME. In the Model Object, the reserved variable T is used as the integrator variable in the specification of differential equations.
+  amt         Dose amount
+  dv          Dependent variable
+  varLevel    Defines a level of variability in the model. Not required for <code>DATA_INPUT_VARIABLES</code> with <code>use</code> is <code>id</code> or <code>use</code> is <code>dv</code> . Used to define all other variability levels such as interoccasion variability.
+  covariate   Covariate for use in definition of fixed effect variable
+  catCov      Categorical covariate for use in definition of fixed effect variables based on categories
+  variable    Defines any model input not covered by other types. Corresponds to the “regressor” variable type in Monolix.
+  dvid        Dependent variable identifier when there is more than one type of observation.
+  evid        Event identifier. This type is defined in MDL, but not yet implemented by converters in the current SEE.
+  mdv         Missing dependent variable
+  cmt         Compartment identifier
+  ss          Steady State indicator
+  ii          Inter-dose interval i.e. time between repeated doses
+  addl        Number of additional doses in repeated dose administration
+  rate        Zero-order input rate
+  ignore      Ignores a data variable</p>
+
+<p>The <code>use</code> types correspond to those used by NONMEM and Monolix.
+<code>varLevel</code> corresponds to OCC in Monolix, <code>catCov</code> corresponds to
+CAT in Monolix. (NMTRAN does not have equivalent reserved words for
+these types of variables – their use is implicit in the implementation
+of the model).</p>
+
+<p>Use “<code>use is</code> <code>covariate</code>” and “<code>use is catCov</code>” for data
+variables that are to be used in “linear” definition of
+<code>INDIVIDUAL_VARIABLES</code> (see section 4.9). Note that covariates and
+categorical covaraites used in “linear” definitions within the
+<code>INDIVIDUAL_VARIABLES</code> block should not vary with time, although they
+may vary by occasion.</p>
+
+<p>Use “<code>use</code> is <code>variable</code>” for data variables that are to be used
+directly in the calculations within the <code>MODEL_PREDICTION</code> block –
+for example, individualised PK parameter predictions for use in a PD
+model. These may be time-varying covariates or inputs to the
+<code>MODEL_PREDICTION</code> equations.</p>
+
+<p>“<code>use</code> is <code>variable</code>” corresponds to the “regressor” variable type
+in Monolix.</p>
+
+<p>MDL does not have “reserved” names for variables in the Model Object
+other than the default for the independent variable T. The intended use
+for variables is defined via the “<code>use</code> is …” attribute as described
+above. The choice of names for DATA_INPUT_VARIABLES should be
+meaningful to the user and clear for any third party reading the code.</p>
+
+<p><strong><del>However, within the current Standalone Execution Environment (SEE)
+interoperability framework, certain names for DATA_INPUT_VARIABLES are
+required to facilitate translation to NONMEM, Monolix and on to
+downstream R packages such as Xpose. It is expected that future versions
+will relax these constraints. The variables under constraint are AMT,
+DOSE, TIME and DV. See below for more information.</del></strong></p>
+
+<h3>Defining dose amount</h3>
+
+<p>The dosing amount is defined through <code>DATA_INPUT_VARIABLES</code> with
+“<code>use is amt</code>”. It is assumed that when the column has a non-zero /
+non-missing value, this amount is assigned to the relevant Model Object
+dosing variable.</p>
+
+<p>The Model Object variables to which dose is assigned should be declared
+in the <code>DECLARED_VARIABLES</code> block and should have type
+::dosingTarget. This applies equally when doses are assigned to
+differential equation variables (UseCase1), PK input compartments with
+“<code>type is depot</code>” or “<code>type is direct</code>” (UseCase4) or variables in
+analytical models (UseCase2).</p>
+
+<p>The syntax for defining the dose amount is:</p>
+
+<pre><code>&lt;Variable&gt; : { use is amt, variable = &lt;mdlObject variable&gt;}
+</code></pre>
+
+<p>For example:</p>
+
+<pre><code>&gt; AMT : { use is amt, variable = GUT }
+</code></pre>
+
+<p><strong><del>For the current version of the interoperability framework SEE, the
+name of this variable must be AMT or DOSE.</del></strong></p>
+
+<p>Within the Model Object, the dose amount is defined when AMT &gt; 0 if the
+<code>DATA_INPUT_VARIABLES</code> variable is defined as “<code>use is amt</code>”. It
+is not necessary to conditionally assign a Model Object variable to this
+value when AMT &gt; 0. This is taken care of in translation to PharmML
+behind the scenes. If, however, the user chooses to treat the dose
+amount column as “<code>use is covariate</code>” or “<code>use is variable</code>” then
+this <strong>will</strong> need conditional assignment within the model. Also, in
+that case the dosing amount variable should be declared in the
+<code>COVARIATES</code> block of the Model Object.</p>
+
+<p>For analytical models (such as UseCase2) the dosing amount may be
+defined with respect to a dosing variable in the Model Object, rather
+than as an initial amount in a differential equation or compartment. In
+that case it is necessary to declare the dosing variable within the
+<code>MODEL_PREDICTION</code> block:</p>
+
+<p>The declared dosing variable for analytical models should have type
+::dosingTarget. This maps into variables of type ::dosingVar and
+::dosingTarget in the Model Object. Examples of ::dosingTarget are
+COMPARTMENT variables with “type is depot”, “type is direct” and also
+variables defined by differential equations.</p>
+
+<p>For example:</p>
+
+<p>In the Data Object:</p>
+
+<pre><code>&gt; DECLARED_VARIABLES{ D::dosingTarget }
+&gt;
+&gt; DATA_INPUT_VARIABLES{
+&gt;
+&gt; AMT : { use is amt, variable=D }
+&gt;
+&gt; }
+</code></pre>
+
+<p>In the Model Object:</p>
+
+<pre><code>&gt; MODEL_PREDICTION {
+&gt;
+&gt; D :: dosingVar # dosing variable
+&gt;
+&gt; k = CL/V
+&gt;
+&gt; CC = if ( T &lt; TLAG) then 0
+&gt;
+&gt; else (D/V) * KA/(KA-k) * (exp(-k * (T - TLAG))- exp(-KA*(T-TLAG))
+&gt; )
+&gt;
+&gt; } # end MODEL_PREDICTION
+</code></pre>
+
+<p>MDL supports definition of multiple doses via <code>DATA_INPUT_VARIABLES</code>
+defined as “<code>use is ii</code>”, “<code>use is addl</code>”, “<code>use is ss</code>”.</p>
+
+<p>MDL supports infusion rate (zero-order input rate) specification via
+<code>DATA_INPUT_VARIABLES</code> with “<code>use is rate</code>”. <strong>The current version
+of MDL does not support negative values for “use is rate” in order to
+allow model defined rate or duration.</strong></p>
+
+<p>Please also read the section 2.2.7 and 2.2.8 on assignment using
+“<code>variable</code> = …” compared to using “<code>define</code> = …”.</p>
+
+<h3>Defining the independent variable</h3>
+
+<p>The independent variable is defined through a <code>DATA_INPUT_VARIABLES</code>
+with “<code>use is idv</code>”. The Model Object has an <code>IDV</code> block where the
+independent variable in the model is defined and the model variable
+defined in this block is automatically mapped to the Data Object
+variable defined as “<code>use is idv</code>”. This is used to link the model
+independent variable in the Model Object <code>IDV</code> block and the event
+(observation, dosing) times specified in the <code>DATA_INPUT_VARIABLES</code>.</p>
+
+<p>Syntax:</p>
+
+<pre><code>&lt;Variable&gt; : { use is idv }
+</code></pre>
+
+<p>Typically the independent variable will be time. UseCase11 shows a
+pharmacodynamic model with the plasma concentration as the independent
+variable.</p>
+
+<p><strong><del>For the current version of the SEE, the name of the independent
+variable must be TIME.</del></strong></p>
+
+<h3>Defining the dependent variable</h3>
+
+<p>The dependent variable is defined through a <code>DATA_INPUT_VARIABLES</code>
+with “<code>use is dv</code>”. This data variable is the observation and must
+be mapped to the Model Object <code>OBSERVATION</code> block prediction variable
+using the Data Object DECLARED_VARIABLES block</p>
+
+<p><strong><del>For the current version of the interoperability framework SEE, the
+name of the dependent variable must be DV.</del></strong></p>
+
+<h4>Continuous data, single Model Object OBSERVATION prediction</h4>
+
+<p>If there is only one observation type and it is continuous then the user
+should map the <code>DATA_INPUT_VARIABLES</code> “<code>use is dv</code>” variable to a
+prediction variable name in the Model Object <code>OBSERVATION</code> block. It
+is possible to map the dependent variable to a single, specified Model
+Object <code>OBSERVATION</code> prediction variable using “<code>variable = &lt;NAME&gt;</code>”</p>
+
+<p>The Model Object <code>OBSERVATION</code> block prediction variable name must be
+declared in the Data Object <code>DECLARED_VARIABLES</code> block.</p>
+
+<p>The observation variable in the <code>DECLARED_VARIABLES</code> block must have
+type ::observation.</p>
+
+<p>For example:</p>
+
+<p>In the Data Object:</p>
+
+<pre><code>&gt; DECLARED_VARIABLES{ Y::observation }
+&gt;
+&gt; DATA_INPUT_VARIABLES{
+&gt;
+&gt; …
+&gt;
+&gt; DV : { use is dv, variable = Y }
+&gt;
+&gt; …
+&gt;
+&gt; }
+</code></pre>
+
+<p>In the Model Object:</p>
+
+<pre><code>&gt; OBSERVATION{
+&gt; 
+&gt; Y : {type is additiveError, additive=SD_ADD, eps=EPS_Y, prediction= CONC}
+&gt; 
+&gt; }# end OBSERVATION
+</code></pre>
+
+<h4>Multiple Model Object OBSERVATION predictions</h4>
+
+<p>If mapping the single dataset dependent variable column (with “<code>use is
+dv</code>”) to multiple Model Object <code>OBSERVATION</code> prediction variables, it
+is necessary to also define a <code>DATA_INPUT_VARIABLE</code> with “<code>use is
+dvid</code>” that identifies which records of the dataset belong to each
+observation type. The user must also define how to map the Model Object
+<code>OBSERVATION</code> block variables to values in the
+<code>DATA_INPUT_VARIABLE</code> with “<code>use is dvid</code>”.</p>
+
+<p>The syntax is as follows <code>define = {&lt;value&gt; in &lt;data column name with 
+“use is dvid”&gt; as &lt;DECLARED_VARIABLE variable&gt;, etc.}</code>.</p>
+
+<p>For example (UseCase3):</p>
+
+<p>In the Data Object:</p>
+
+<pre><code>&gt; DECLARED_VARIABLES{ CP_obs::observation PCA_obs::observation }
+&gt;
+&gt; DVID : { use is dvid }
+&gt;
+&gt; DV : { use is dv, define={1 in DVID as CP_obs, 2 in DVID as PCA_obs} }
+</code></pre>
+
+<p>In the Model Object:</p>
+
+<pre><code>&gt; OBSERVATION{
+&gt; 
+&gt; CP_obs : {type is combinedError1,
+&gt; 
+&gt; additive = RUV_ADD, proportional = RUV_PROP,
+&gt; 
+&gt; eps = EPS_CP, prediction = CC }
+&gt; 
+&gt; PCA_obs : {type is additiveError, additive = RUV_FX, eps = EPS_PCA, prediction = PCA }
+&gt; 
+&gt; }\# end OBSERVATION
+</code></pre>
+
+<p>This means when the data variable with “<code>use is dvid</code>” has the
+value 1 then the observation in the data variable with “<code>use is dv</code>”
+<strong><em>within the same data record</em></strong> will be mapped to the Model Object
+<code>OBSERVATION</code> block variable CP_obs, and when this variable has the
+value 2 it will be mapped to PCA_obs.</p>
+
+<p>All continuous observation variables must be declared in the
+<code>DECLARED_VARIABLES</code> block as ::observation.</p>
+
+<p>When declaring an outcome variable that is binary (UseCase12) or
+categorical (UseCase13), it is necessary in the DECLARED_VARIABLES
+block to define the category name for the Model Object variables which
+define the prediction.</p>
+
+<p>For example (UseCase12):</p>
+
+<p>In Data Object:</p>
+
+<p><code>DECLARED_VARIABLES{ Y withCategories {none, event} }</code></p>
+
+<p>Using this convention, the type is implicit in the “withCategories”
+keyword.</p>
+
+<p>Note that when declaring an outcome variable with a Poisson count or
+Binomial number of successes outcome, Y is declared as the variable
+attribute of an anonymous OBSERVATION block list.</p>
+
+<p>For example (UseCase11):</p>
+
+<p>In the Data Object:</p>
+
+<pre><code>&gt; DECLARED_VARIABLES{ Y::observation }
+</code></pre>
+
+<p>In the Model Object:</p>
+
+<pre><code>&gt; RANDOM_VARIABLE_DEFINITION(level = DV){
+&gt; 
+&gt; Y ~ Poisson1(rate = LAMBDA)
+&gt; 
+&gt; }
+&gt; 
+&gt; OBSERVATION{
+&gt; 
+&gt; :: {type is count, variable = Y}
+&gt; 
+&gt; }# end ESTIMATION
+</code></pre>
+
+<h3>Mapping data variables to model variability levels</h3>
+
+<p>The hierarchy of model levels of variability is defined within the Model
+Object in the <code>VARIABILITY_LEVELS</code> block. Within the Data Object we
+match the levels in the model to DATA_INPUT_VARIABLES to identify the
+data variables where changing values signify new individuals, occasions
+or observations (and other levels of variability in the model). By
+default the lowest level of the hierarchy is the observation level with
+<code>DATA_INPUT_VARIABLES</code> defined as “<code>use is dv</code>”. The other
+variability level commonly used is the experimental unit, in clinical
+trials this is typically the subject with <code>DATA_INPUT_VARIABLES</code>
+defined as “<code>use is id</code>”.</p>
+
+<p>The level in the hierarchy is defined by a numerical level value in the
+Model Object VARIABILITY LEVELS block.</p>
+
+<p>For example (UseCase1):</p>
+
+<p>In Data Object:</p>
+
+<pre><code>&gt; DATA_INPUT_VARIABLES{
+&gt; 
+&gt; ID : { use is id }
+&gt; 
+&gt; …
+&gt; 
+&gt; DV : { use is dv, variable = Y }
+&gt; 
+&gt; …
+&gt; 
+&gt; }\# end DATA_INPUT_VARIABLES
+</code></pre>
+
+<p>In the Model Object:</p>
+
+<pre><code>&gt; VARIABILITY_LEVELS{
+&gt; 
+&gt; ID : { level =2, type is parameter }
+&gt; 
+&gt; DV : { level =1, type is observation }
+&gt; 
+&gt; }
+</code></pre>
+
+<p>Other variability levels may be defined in <code>DATA_INPUT_VARIABLES</code> as
+“<code>use is varLevel</code>”. This will be used to define variability levels
+such as occasion, study (if modelling across more than one study) etc.</p>
+
+<p>For example, when defining occasions for use in between occasion
+variability models:</p>
+
+<p><code>OCC : { use is varLevel }</code></p>
+
+<p>For example (UseCase8):</p>
+
+<p>In Data Object:</p>
+
+<pre><code>&gt; DATA_INPUT_VARIABLES{
+&gt; 
+&gt; ID : { use is id }
+&gt; 
+&gt; TIME : { use is idv }
+&gt; 
+&gt; WT : { use is covariate }
+&gt; 
+&gt; AGE : { use is covariate }
+&gt; 
+&gt; SEX : { use is catCov withCategories {female when 1, male when 0} }
+&gt; 
+&gt; AMT : { use is amt, variable = INPUT_KA}
+&gt; 
+&gt; OCC : { use is varLevel }
+&gt; 
+&gt; DV : { use is dv, variable = Y }
+&gt; 
+&gt; MDV : { use is mdv }
+&gt; 
+&gt; }# end DATA_INPUT_VARIABLES
+</code></pre>
+
+<p>In Model Object:</p>
+
+<pre><code>&gt; VARIABILITY_LEVELS{
+&gt; 
+&gt; ID : { level = 3, use is parameter }
+&gt; 
+&gt; OCC : { level = 2, use is parameter }
+&gt; 
+&gt; DV : { level = 1, use is observation }
+&gt; 
+&gt; }
+</code></pre>
+
+<p>MDL does not place any limits on the number of levels of variability
+within the Model Object. However some constraints may exist within the
+target software used for estimation.</p>
+
+<p>Note that occasionally, if modelling summary level data in a model-based
+meta-analysis, the experimental unit defined in the data may be
+different, for example, the treatment arm rather than an individual
+subject.</p>
+
+<p>For example:</p>
+
+<p>In Data Object:</p>
+
+<pre><code>&gt; DATA_INPUT_VARIABLES{
+&gt; 
+&gt; ARM : { use is id }
+&gt; 
+&gt; DV : { use is dv, variable = Y }
+&gt; 
+&gt; }# end DATA_INPUT_VARIABLES
+</code></pre>
+
+<p>In Model Object:</p>
+
+<pre><code>&gt; VARIABILITY_LEVELS{
+&gt; 
+&gt; ARM : { level=2, type is parameter }
+&gt; 
+&gt; DV : { level=1, type is observation }
+&gt; 
+&gt; }
+</code></pre>
+
+<p>See section 4.6 for discussion of identifying the reference level of
+variability when using a model with a Design Object.</p>
+
+<h3>span&gt;Defining covariates</h3>
+
+<h4>Defining continuous covariates</h4>
+
+<p>Continuous covariates (including time-varying covariates) are defined as
+“<code>use is covariate</code>”.</p>
+
+<p>Note the discussion in sections 4.3 and 4.9 about the requirements of
+covariates that are to be used in definition of
+<code>INDIVIDUAL_PARAMETERS</code>.</p>
+
+<p>Interpolation can be specified for continuous covariates through the
+argument “interp = &amp;constInterp | &amp;cubicInterp | &amp;lastValueInterp |
+&amp;linearInterp | &amp;nearestInterp | &amp;pchipInterp | &amp;splineInterp”.</p>
+
+<p>Note the “&amp;” in front of the interpolation type to signify that a
+function is being referenced.</p>
+
+<p>Interpolation functions take as arguments t0 (start of time interval),
+t1 (end of time interval), x (variable for interpolation), x0 (variable
+value at t0) and x1 (variable value at t1).</p>
+
+<h4>Defining categorical covariates</h4>
+
+<p>Categorical covariates are defined as “<code>use is catCov</code>” and must have
+a mapping between the values in the data column and categories to be
+used in the model. This serves a dual purpose: firstly, providing
+clarity on how numeric codes in the data map to named categories and
+secondly, transparency in model description by allowing us to use those
+named category labels in the model when referring to the categories.</p>
+
+<p>The mapping is performed by using the keyword “withCategories” and then
+specifying the mapping between categories and values using <category>
+when <value> in a comma separated list.</p>
+
+<pre><code>&gt; SEX : {use is catCov withCategories {female when 1, male when 0} }
+</code></pre>
+
+<p>The categories defined (female, male) must match those defined within
+the Model Object <code>COVARIATES</code> block. Note that the category labels
+(female, male) are not character strings. They are enumerated variables,
+and can be referred to in the model as SEX.female or SEX.male. For
+example to define an action dependent on the SEX being female in the
+Model Object we would use the Boolean comparison SEX == SEX.female. This
+evaluates to true when the value in the SEX column matches the value
+defined (in the <code>DATA_INPUT_VARIABLES</code> as above) that corresponds to
+the female category of the SEX variable.</p>
+
+<p>In the current version of MDL the categories defined must be unique i.e.
+it is not possible to assign more than one value to a category, nor is
+it possible to define several categories with the same name. This means
+that each category maps to only one data value. The following is code
+NOT valid:</p>
+
+<pre><code>&gt; food : {use is catCov withCategories {fed when 2, fasted when 1, fasted when -999}
+</code></pre>
+
+<p>Nor is:</p>
+
+<pre><code>&gt; food : {use is catCov withCategories {fed when 2, fasted when [-999,1] }
+</code></pre>
+
+<p>The user should identify all categories in the DATA_INPUT_VARIABLE
+block:</p>
+
+<pre><code>&gt; food : {**use is** catCov withCategories {fed when 2, fasted when 1,
+missing when -999}
+</code></pre>
+
+<h3>Defining model inputs or time-varying covariates</h3>
+
+<p>Often we will want to pass data variables to the <code>GROUP_VARIABLES</code> or
+<code>MODEL_PREDICTION</code> blocks in the Model Object which will not fit the
+definition of covariates as defined in section 2.2.5. This might be the
+case if we want to pass individualised predictions of PK parameters into
+a PD model, or a time-varying covariate such as plasma concentration or
+age for use in a maturation model. These variables are sometimes
+referred to as regressors or model input variables.</p>
+
+<p>These variables are defined in MDL as “<code>use is variable</code>”.</p>
+
+<p>Variables with “<code>use is variable</code>” should not be used with definition
+of INDIVIDUAL_PARAMETERS with “<code>type is linear</code>”.</p>
+
+<h3>Assignment to a single variable using “variable = <NAME>”</h3>
+
+<p>If the value of the variable within the data is to be mapped to a single
+model variable e.g. dosing amount D, then the variable attribute must be
+assigned, and the associated variable declared in
+<code>DECLARED_VARIABLES</code>:</p>
+
+<pre><code>&gt; DECLARED_VARIABLES{ D::dosingTarget Y::observation }
+&gt;
+&gt; DATA_INPUT_VARIABLES{
+&gt;
+&gt; …
+&gt;
+&gt; AMT : { use is amt, variable = D }
+&gt;
+&gt; DV : { use is dv, variable = Y }
+&gt;
+&gt; …
+&gt;
+&gt; }
+</code></pre>
+
+<h3>Assignment to multiple variables using “define = &lt; … &gt;”</h3>
+
+<p>In the case of mapping data values to <strong><em>multiple</em></strong> variables depending
+on the values of another variable, the syntax is as follows
+<code>define = {&lt;value&gt; in &lt;data variable name&gt; as &lt;declared_variable&gt;, etc.}</code>.</p>
+
+<p>The Model Object variables used in this
+definition must also be declared in the <code>DECLARED_VARIABLES</code> block.</p>
+
+<pre><code>&gt; DECLARED_VARIABLES{ CP_obs::observation PCA_obs::observation }
+&gt;
+&gt; DATA_INPUT_VARIABLES{
+&gt;
+&gt; …
+&gt;
+&gt; DVID : { use is dvid }
+&gt;
+&gt; DV : { use is dv, define={1 in DVID as CP_obs, 2 in DVID as
+&gt; PCA_obs} }
+&gt;
+&gt; …
+&gt;
+&gt; }
+</code></pre>
+
+<h2><code>SOURCE</code> Block</h2>
+
+<p>This block defines the source data file for use with the model. It
+defines the file name and file format.</p>
+
+<p><strong>In the current version of MDL it is assumed that the SOURCE data file
+will be present as an ASCII comma-delimited text file (.csv). We also
+assume that the dataset conforms to NONMEM data standards. The data file
+should have a header row with names matching those in the
+DATA_INPUT_VARIABLES block. Data values should be numeric. Missing
+values should be denoted by “.”.</strong></p>
+
+<p>The MDL syntax is as follows:</p>
+
+<p><source object name> : {file = <filename>, inputFormat is nonmemFormat }</p>
+
+<p>For example:</p>
+
+<pre><code>&gt; SOURCE {
+&gt;
+&gt; srcfile : {file = &quot;warfarin_conc.csv&quot;,
+&gt;
+&gt; inputFormat is nonmemFormat }
+&gt;
+&gt; } \ end SOURCE
+</code></pre>
+
+<p>*<em>For the current version of the interoperability framework SEE, data
+files must be in the same folder and workspace as the model file. *</em></p>
+
+<h2><code>DECLARED_VARIABLES</code> Block</h2>
+
+<p>This block links variables defined in the Model Object with variables
+defined within the Data Object - occasionally we need to refer to Model
+Object variables while describing the data constructs. For example: When
+defining the Pharmacokinetic model (UseCase1) we need to define which
+Model Object variable receives the dosing amount – in this case the
+differential equation specifying the amount in the GUT, and an
+observation variable Y.</p>
+
+<p>Since the MDL objects are independent of each other (i.e. the Data
+Object is not “aware” of Model Object variables) we must explicitly
+declare Model Object variables within the Data Object if we need to
+refer to them.</p>
+
+<p>When declaring the variable, the user must also define the variable
+type. A controlled vocabulary of types is provided through the MDL-IDE.
+Type is defined via the double colon:</p>
+
+<p><Variable name> :: <type></p>
+
+<p>For example: GUT :: dosingTarget Y :: observation.</p>
+
+<p>This improves validation of the MOG since we can check that Data Object
+<code>DATA_INPUT_VARIABLE</code> use is mapped to an appropriate type of
+variable and that this passes through to the appropriate type of
+variable in the Model Object. This change is also required to ensure
+that the Data Object and the Design Object handle definition and
+declaration of variables in an equivalent way.</p>
+
+<p>The following types will be typically of use in DECLARED_VARIABLES:</p>
+
+<p>dosingTarget, observation.</p>
+
+<p>As has been described above, when declaring an outcome variable that is
+binary (UseCase12) or categorical (UseCase13), it is necessary in the
+DECLARED_VARIABLES block to define the categories for the outcome
+variable.</p>
+
+<p>Note that when declaring an outcome variable with a Poisson count or
+Binomial number of successes outcome, Y is declared as observation.</p>
+
+<p>Note that no delimiter is required between variables defined in the
+<code>DECLARED_VARIABLES</code> block.</p>
+
+<p><strong>In the current MDL, variable names mapped across MDL Objects must
+match e.g. if we declare variable Y in the Data Object, then this will
+be linked to the Model Object OBSERVATION block variable Y</strong>.</p>
+
+<h2>DATA_DERIVED_VARIABLES Block</h2>
+
+<p>Occasionally, the user will need to define new variables that depend on
+existing information in the dataset for example the dose amount or dose
+time when this is to be used as a covariate in the model. The
+<code>DATA_DERIVED_VARIABLES</code> block allows the user to define new
+variables using data in the columns with “<code>use is amt</code>” and
+“<code>use is idv</code>”. The variables defined must have unique names,
+different from those specified in the <code>DATA_INPUT_VARIABLES</code>.</p>
+
+<p>Syntax is</p>
+
+<p><code>&lt;variable&gt; : {use is &lt;doseTime / covariate / variable / doseInterval&gt;, … }</code></p>
+
+<p>The subsequent arguments of the list depend on its use.</p>
+
+<pre><code>&lt;variable&gt; : {use is doseTime, 
+idvColumn = &lt;DATA_INPUT_VARIABLE variable with “use is idv”&gt;,
+dosingVar = &lt;dosing variable defined with type ::dosingTarget&gt;}
+</code></pre>
+
+<p><strong>In the current MDL, “<code>use is doseInterval”</code>below cannot currently
+be mapped to PharmML.</strong></p>
+
+<pre><code>&lt;variable&gt; : {use is doseInterval, idvColumn =
+&lt;DATA_INPUT_VARIABLE variable with “use is idv”&gt;,
+dosingVar = &lt;dosing variable defined with type ::dosingTarget&gt; }
+
+&lt;variable&gt; : {use is covariate, column =
+&lt;DATA_INPUT_VARIABLE variable&gt; }
+
+&lt;variable&gt; : {use is catCov, column = &lt;DATA_INPUT_VARIABLE
+variable&gt; }
+
+&lt;variable&gt; : {use is variable, column =
+&lt;DATA_INPUT_VARIABLE variable&gt; }
+</code></pre>
+
+<p>For example (UseCase2_1):</p>
+
+<pre><code>&gt; DATA_DERIVED_VARIABLES{
+&gt; 
+&gt; # Like &#39;use is *amt*&#39; we assume that the DT variable is only assigned
+&gt; when AMT &gt; 0.
+&gt; 
+&gt; # The typing ensured that the attributes reference a column with the
+&gt; correct &#39;use&#39;.
+&gt; 
+&gt; DT : { use is doseTime, idvColumn=TIME, amtColumn=AMT }
+&gt; 
+&gt; }
+</code></pre>
+
+</body>
+
+</html>

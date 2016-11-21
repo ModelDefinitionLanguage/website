@@ -1,0 +1,33 @@
+---
+output: 
+  html_document:
+   toc: TRUE
+---
+## Why MDL?
+### Why design a whole new language (MDL) to describe models?
+The MDL has been designed to allow users to specify models in the same language, regardless of the target tool they prefer to use for a given task (e.g. estimation), and regardless of whether they intend to use the model for estimation, simulation, or optimal design. This eliminates the transcoding needed today when using a model in a different tool or for a different purpose.
+
+### Will the new language (MDL) really be better than existing languages?
+The MDL is better than existing languages in the sense that it allows models to be specified in the same language, regardless of the target tool to be used for a given task (e.g. estimation), and regardless of whether the model is intended to be used for estimation, simulation, or optimal design, or all of the above. No existing language today allows this.
+
+### Why would modellers want to learn a new language (MDL)?
+Experienced modellers, who apply several different tools in their work, would want to learn MDL to get the benefit of not having to transcode models for use in different tools or for different purpose.
+
+Beginners or less experienced modellers would want to learn MDL because this will allow them to work with several different tools without having to learn several different languages.
+
+MDL is an Open Source language - it will be possible for the user community to contribute to MDL, to extend MDL, to evolve MDL. This is not possible with proprietary languages. They key thing is that changes within MDL map to [PharmML](http://pharmml.org) features, in order to facilitate down-stream conversion to target software like NONMEM, Monolix, etc.
+
+## How can I get started with MDL?
+
+### Are there any examples and descriptions of the new DDMoRe languages available?
+When installing the Interoperability Framework, it comes with a UseCases project folder pre-installed in the workspace. Within this folder are examples of models in MDL and associated R scripts showing how to use these models for typical modelling tasks. These models are also available via [SourceForge git repository](https://sourceforge.net/p/ddmore/use.cases/ci/master/tree/MDL/Product5.1/).
+
+### What tools are available for writing MDL?
+An MDL Integrated Development Environment (IDE) is included as part of the DDMoRe Interoperability Framework Standalone Execution Environment (SEE) demonstrator. This is a fully featured demonstrator where all the necessary software is included to run and work with examples. An installation guide is available on the [ddmore.eu](http://ddmore.eu/instructions/user-guides) website. There is also a [YouTube Playlist](https://www.youtube.com/playlist?list=PL_GGUkhbiP3t0Q7wTqkQdMAw7yuC8xWa-) with videos detailing how to get started with the SEE and MDL-IDE.
+
+A more lightweight MDL Editor will also be available very shortly which provides a means to write models with MDL, which can then be exported to PharmML and other languages. This MDL Editor is based on  Eclipse and will be available cross-platform (Windows, Mac, Linux).
+
+## Converting existing code
+
+### Can I translate code from NONMEM/other software into MDL without coding from scratch?
+For NONMEM, a tool is available for translating NMTRAN code into MDL. The tool is available at http://nmtran-to-mdl.mango-solutions.com/. Please, read the help documentation since some additional information, and certain NMTRAN structure is required to obtain a valid MDL. Alternatively, you can use the tool to generate a template that you can further modify within the Interoperability Framework.
