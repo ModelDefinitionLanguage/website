@@ -16,7 +16,9 @@ googleAnalytics = "UA-86793002-1"
 [Params]
     intro = true
     headline = "Model Description Language (MDL)"
-    description = "Providing a resource for encoding models with MDL, helping you understand MDL structure and features and providing a place for you to log bugs, issues, feature requests and suggestions."
+    description = "Providing a resource for encoding models with MDL, helping
+    you understand MDL structure and features and providing a place for you to
+    log bugs, issues, feature requests and suggestions."
     github = "https://github.com/ModelDefinitionLanguage/mdlSpecification"
     twitter = "https://twitter.com/DDMoRe_IMI"
     opengraph = true
@@ -35,6 +37,11 @@ googleAnalytics = "UA-86793002-1"
     weight = 2
 
 [[menu.main]]
+    name = "MDL User Guide"
+    url = "/page/MDL_UserGuide"
+    weight = 3
+
+[[menu.main]]
     name = "About"
     url = "/page/about/"
-    weight = 3
+    weight = 4
