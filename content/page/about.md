@@ -64,12 +64,13 @@ Mike K Smith [@MikeKSmith](https://github.com/MikeKSmith) is the lead user for M
 Stuart Moodie [@stumoodie](https://github.com/stumoodie) is the technical lead for MDL.
 
 ### Support or Contact
-Issues, bugs, feature requests, suggestions for the website can be logged via 
-the [website issues page](https://github.com/ModelDefinitionLanguage/website/issues).
-Email contact information will be added very soon.
+Issues, bugs, feature requests, suggestions can be logged via 
+the [Github Issues page](https://github.com/ModelDefinitionLanguage/website/issues).
+Please label your item with "Website", "MDL Language", or "MDL-Editor" and the type
+of issue ("bug","enhancement","help wanted","invalid","question") so that we can
+direct it to the right place for action.  
 
-Issues, bugs, feature requests, suggestions for the the MDL language can be 
-logged via [MDL Issues page](https://github.com/ModelDefinitionLanguage/mdllibdefn/issues)
+Email contact information will be added very soon.
 
 ### Acknowledgements
 The research leading to these results has received support from the Innovative Medicines Initiative Joint Undertaking under grant agreement n° 115156, resources of which are composed of financial contribution from the European Union's Seventh Framework Programme (FP7/2007-2013) and EFPIA companies’ in kind contribution. The DDMoRe project is also financially supported by contributions from Academic and SME partners.

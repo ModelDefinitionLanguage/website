@@ -2,6 +2,7 @@
 title: "MDL Editor now available"
 author: "Mike K Smith"
 date: 2016-11-24T16:40:00Z
+tags: ["Announce","MDL-Editor","Software"]
 output: html_document
 ---
 The [MDL-Editor](http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/) 

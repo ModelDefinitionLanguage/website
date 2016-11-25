@@ -106,8 +106,11 @@ a template that you can further modify within the Interoperability Framework.
 ## Contributing and extending MDL definition
 
 ### How can I report a problem with MDL?
-You can submit Issues, bugs, feature requests, comments about MDL on the [Github
-Issues page for the language](https://github.com/ModelDefinitionLanguage/mdllibdefn/issues).
+Issues, bugs, feature requests, suggestions can be logged via 
+the [Github Issues page](https://github.com/ModelDefinitionLanguage/website/issues).
+Please label your item with "Website", "MDL Language", or "MDL-Editor" and the type
+of issue ("bug","enhancement","help wanted","invalid","question") so that we can
+direct it to the right place for action.  
 
 ### How can I contribute to MDL development?
 MDL is an open language, which depends on community involvement to help refine 

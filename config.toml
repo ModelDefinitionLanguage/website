@@ -30,11 +30,16 @@ googleAnalytics = "UA-86793002-1"
     weight = 1
 
 [[menu.main]]
+    name = "Download"
+    url = "http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/"
+    weight = 2
+
+[[menu.main]]
     name = "MDL FAQ"
     url = "/project/FAQ"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     name = "About"
     url = "/page/about/"
-    weight = 3
+    weight = 4

@@ -3,8 +3,9 @@ license = "MIT"
 licenselink = "https://github.com/jbub/ghostwriter/blob/master/LICENSE.md"
 description = "A fork of simple AJAX driven theme for the Ghost blogging platform ported to Hugo."
 homepage = "https://github.com/jbub/ghostwriter"
-tags = ["blog", "technical", "personal"]
-features = ["blog", "technical", "personal"]
+tags = ["Announce","MDL Language","MDL-Editor","Interoperability","DDMoRe Foundation",
+        "OpenSource","Models","Website", "Software","Standards"]
+features = ["Blog", "Language", "Tools"]
 min_version = 0.15
 
 [author]
