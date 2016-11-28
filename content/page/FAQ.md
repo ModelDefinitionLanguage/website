@@ -1,8 +1,8 @@
----
-output: 
-  html_document:
-   toc: TRUE
----
++++
+title = "Frequently Asked Questions (FAQ)"
+date = 2016-11-28T10:55:00Z
+author = "Mike K Smith"
++++
 ## Why MDL?
 ### Why design a whole new language (MDL) to describe models?
 The MDL has been designed to allow users to specify models in the same language,
