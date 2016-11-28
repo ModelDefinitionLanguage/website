@@ -36,7 +36,7 @@ googleAnalytics = "UA-86793002-1"
 
 [[menu.main]]
     name = "MDL FAQ"
-    url = "/page/FAQ/"
+    url = "/page/faq/"
     weight = 3
 
 [[menu.main]]
