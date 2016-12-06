@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MDL Community website</title>
+    <link>/tags/announce/index.xml</link>
+    <description>Recent content on MDL Community website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Mike K Smith</copyright>
+    <atom:link href="/tags/announce/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MDL Editor now available</title>
+      <link>/2016/11/24/mdleditor_announcement/</link>
+      <pubDate>Thu, 24 Nov 2016 16:40:00 +0000</pubDate>
+      
+      <guid>/2016/11/24/mdleditor_announcement/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/&#34;&gt;MDL-Editor&lt;/a&gt; is now available for download. This is a cross-platform, Eclipse-based Integrated Development Environment (IDE) for writing MDL models incorporating syntax highlighting and grammar checks. It is available for Windows ( &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86.zip&#34;&gt;32bit&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86_64.zip&#34;&gt;64bit&lt;/a&gt;), &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-linux.gtk.x86_64.zip&#34;&gt;Linux&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-macosx.cocoa.x86_64.zip&#34;&gt;Mac OS&lt;/a&gt;. Simply download the zip file and unzip to an appropriate location. An update site has been configured within Eclipse so that future updates to the MDL-Editor can be retrieved from within Eclipse without having to download another zip file.&lt;/p&gt;
+&lt;p&gt;The MDL Editor can be used to develop models using MDL and to export these models to PharmML, ready for upload to the DDMoRe repository: &lt;a href=&#34;http://repository.ddmore.eu&#34; class=&#34;uri&#34;&gt;http://repository.ddmore.eu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Planned future enhancements to the MDL Editor include incorporation of Git version control and integration of R. To run models using MDL, the Interoperability Framework Standalone Execution Environment (SEE) is available from &lt;a href=&#34;https://sourceforge.net/projects/ddmore/files/install/SEE/Demonstrator-2.0.0/&#34;&gt;Sourceforge&lt;/a&gt;. This is a demonstration product which includes R, NONMEM, Monolix, BUGS, PFIM, PopED, simulx (from the &lt;code&gt;mlxR&lt;/code&gt; R package). The SEE is only available for Windows at present. Installation instructions and associated documentation is available &lt;a href=&#34;http://ddmore.eu/instructions/user-guides&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A zip file of examples (UseCases) and the MDL User Guide and Reference Manual will also be available for download at the same site. These examples should assist the user in writing models from scratch as they illustrate many of the more commonly used model features encoded with MDL.&lt;/p&gt;
+&lt;p&gt;You can submit bugs, issues, feature requests and comments on the &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdl-ide/issues&#34;&gt;MDL-IDE Github Issues&lt;/a&gt; tracker.&lt;/p&gt;
+&lt;p&gt;Source-code for the MDL Editor is available: &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdl-ide&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/mdl-ide&lt;/a&gt;&lt;br /&gt;
+and source-code for the MDL Eclipse plugin is also available separately: &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdleditorplugin&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/mdleditorplugin&lt;/a&gt;&lt;/p&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
