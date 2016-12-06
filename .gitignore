@@ -1,6 +1,2 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-/themes/
-MDLCommunity_website.Rproj
+*
+!/doc/
