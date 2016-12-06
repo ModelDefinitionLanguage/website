@@ -6,3 +6,4 @@ config_next.toml
 /public/
 /static/
 /themes/
+/docs/.gitignore
