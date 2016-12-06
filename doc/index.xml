@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MDL Community website</title>
+    <link>https://mikeksmith.github.io/website/index.xml</link>
+    <description>Recent content on MDL Community website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Mike K Smith</copyright>
+    <lastBuildDate>Mon, 28 Nov 2016 10:55:00 +0000</lastBuildDate>
+    <atom:link href="https://mikeksmith.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Frequently Asked Questions (FAQ)</title>
+      <link>https://mikeksmith.github.io/website/page/FAQ/</link>
+      <pubDate>Mon, 28 Nov 2016 10:55:00 +0000</pubDate>
+      
+      <guid>https://mikeksmith.github.io/website/page/FAQ/</guid>
+      <description>
+
+&lt;h2 id=&#34;why-mdl&#34;&gt;Why MDL?&lt;/h2&gt;
+
+&lt;h3 id=&#34;why-design-a-whole-new-language-mdl-to-describe-models&#34;&gt;Why design a whole new language (MDL) to describe models?&lt;/h3&gt;
+
+&lt;p&gt;The MDL has been designed to allow users to specify models in the same language,
+regardless of the target tool they prefer to use for a given task (e.g. estimation),
+and regardless of whether they intend to use the model for estimation, simulation,
+or optimal design. This eliminates the transcoding needed today when using a model
+in a different tool or for a different purpose.&lt;/p&gt;
+
+&lt;h3 id=&#34;will-the-new-language-mdl-really-be-better-than-existing-languages&#34;&gt;Will the new language (MDL) really be better than existing languages?&lt;/h3&gt;
+
+&lt;p&gt;The MDL is better than existing languages in the sense that it allows models to
+be specified in the same language, regardless of the target tool to be used for
+a given task (e.g. estimation), and regardless of whether the model is intended
+to be used for estimation, simulation, or optimal design, or all of the above.
+No existing language today allows this.&lt;/p&gt;
+
+&lt;h3 id=&#34;why-would-modellers-want-to-learn-a-new-language-mdl&#34;&gt;Why would modellers want to learn a new language (MDL)?&lt;/h3&gt;
+
+&lt;p&gt;Experienced modellers, who apply several different tools in their work, would
+want to learn MDL to get the benefit of not having to transcode models for use
+in different tools or for different purpose.&lt;/p&gt;
+
+&lt;p&gt;Beginners or less experienced modellers would want to learn MDL because this
+will allow them to work with several different tools without having to learn
+several different languages.&lt;/p&gt;
+
+&lt;p&gt;MDL is an Open Source language - it will be possible for the user community to
+contribute to MDL, to extend MDL, to evolve MDL. This is not possible with
+proprietary languages. They key thing is that changes within MDL map to
+&lt;a href=&#34;http://pharmml.org&#34;&gt;PharmML&lt;/a&gt; features, in order to facilitate down-stream
+conversion to target software like NONMEM, Monolix, etc.&lt;/p&gt;
+
+&lt;h3 id=&#34;but-i-only-use-nonmem&#34;&gt;But I only use NONMEM&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;You might only use NONMEM for estimation, but you might want to use other tools
+for simulation, like PKPDsim, RxODE, mlxR, mrgsolve&amp;hellip; At that point you will
+need to recode the model from NMTRAN to C++, or R ODE representation using
+the deSolve package.&lt;/p&gt;
+
+&lt;p&gt;You might also be interested in the open source tools for estimation, like
+saemix, nlmixr, Stan etc. These tools do not have the same level of use as
+NONMEM, but they represent a useful set of tools that are freely available for
+nonlinear mixed effect modelling. These might be useful to illustrate your models
+to anyone in the world, without assuming that they have licenses for proprietary
+tools.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-can-i-get-started-with-mdl&#34;&gt;How can I get started with MDL?&lt;/h2&gt;
+
+&lt;h3 id=&#34;are-there-any-examples-and-descriptions-of-the-new-ddmore-languages-available&#34;&gt;Are there any examples and descriptions of the new DDMoRe languages available?&lt;/h3&gt;
+
+&lt;p&gt;When installing the Interoperability Framework, it comes with a UseCases project
+folder pre-installed in the workspace. Within this folder are examples of models
+in MDL and associated R scripts showing how to use these models for typical
+modelling tasks. These models are also available via &lt;a href=&#34;https://sourceforge.net/p/ddmore/use.cases/ci/master/tree/MDL/Product5.1/&#34;&gt;SourceForge git repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-tools-are-available-for-writing-mdl&#34;&gt;What tools are available for writing MDL?&lt;/h3&gt;
+
+&lt;p&gt;An &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/&#34;&gt;MDL-Editor&lt;/a&gt;
+is available for download. This is a cross-platform, Eclipse-based Integrated
+Development Environment (IDE) for writing MDL models incorporating syntax
+highlighting and grammar checks. It is available for Windows (
+&lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86.zip&#34;&gt;32bit&lt;/a&gt; and
+&lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86_64.zip&#34;&gt;64bit&lt;/a&gt;),
+&lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-linux.gtk.x86_64.zip&#34;&gt;Linux&lt;/a&gt; and
+&lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-macosx.cocoa.x86_64.zip&#34;&gt;Mac OS&lt;/a&gt;. Simply download the zip file and unzip to an appropriate location.
+An update site has been configured within Eclipse so that future updates to the
+MDL-Editor can be retrieved from within Eclipse without having to download
+another zip file.&lt;/p&gt;
+
+&lt;p&gt;The MDL Editor can be used to develop models using MDL and to export these models
+to PharmML, ready for upload to the DDMoRe repository: &lt;a href=&#34;http://repository.ddmore.eu&#34;&gt;http://repository.ddmore.eu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;but-what-if-i-want-to-run-the-models&#34;&gt;But what if I want to run the models?&lt;/h3&gt;
+
+&lt;p&gt;At the &lt;a href=&#34;http://ddmore.eu/instructions/user-guides&#34;&gt;ddmore.eu&lt;/a&gt;
+website you&amp;rsquo;ll also find instructions for downloading and installing the DDMoRe
+Interoperability Framework Standalone Execution Environment (SEE) demonstrator.
+The SEE installers are available from &lt;a href=&#34;https://sourceforge.net/projects/ddmore/files/install/SEE/Demonstrator-2.0.0/&#34;&gt;Sourceforge&lt;/a&gt;.
+The SEE is a DDMoRe demonstration product which includes R, NONMEM, Monolix,
+BUGS, PFIM, PopED, simulx (from the &lt;code&gt;mlxR&lt;/code&gt; R package). The SEE is only available
+for Windows at present.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-resources-are-there-to-help-me-learn-mdl-and-use-the-editor-see&#34;&gt;What resources are there to help me learn MDL and use the editor / SEE?&lt;/h3&gt;
+
+&lt;p&gt;A &lt;a href=&#34;https://www.youtube.com/playlist?list=PL_GGUkhbiP3t0Q7wTqkQdMAw7yuC8xWa-&#34;&gt;YouTube playlist&lt;/a&gt;
+is available for videos detailing how to get started with the software.&lt;/p&gt;
+
+&lt;p&gt;A set of Use Case examples is provided with the SEE, which are also available on
+&lt;a href=&#34;https://sourceforge.net/p/ddmore/use.cases/ci/master/tree/MDL/Product5.1/&#34;&gt;SourceForge&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;but-won-t-it-take-ages-for-me-to-learn-mdl&#34;&gt;But won&amp;rsquo;t it take ages for me to learn MDL&amp;hellip;?&lt;/h3&gt;
+
+&lt;p&gt;DDMoRe training courses devoted two days to learning about MDL, and language
+basics. Following these two days, the majority of learners were able to encode
+models and with support from the example Use Cases, documentation and the user
+community were able to encode the majority of MDL models that you see in the
+&lt;a href=&#34;http://repository.ddmore.eu&#34;&gt;DDMoRe repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;converting-existing-code&#34;&gt;Converting existing code&lt;/h2&gt;
+
+&lt;h3 id=&#34;can-i-translate-code-from-nonmem-other-software-into-mdl-without-coding-from&#34;&gt;Can I translate code from NONMEM/other software into MDL without coding from&lt;/h3&gt;
+
+&lt;p&gt;scratch?
+For NONMEM, a tool is available for translating NMTRAN code into MDL. The tool
+is available at &lt;a href=&#34;http://nmtran-to-mdl.mango-solutions.com/&#34;&gt;http://nmtran-to-mdl.mango-solutions.com/&lt;/a&gt;. Please, read the help
+documentation since some additional information, and certain NMTRAN structure is
+required to obtain a valid MDL. Alternatively, you can use the tool to generate
+a template that you can further modify within the Interoperability Framework.&lt;/p&gt;
+
+&lt;h2 id=&#34;contributing-and-extending-mdl-definition&#34;&gt;Contributing and extending MDL definition&lt;/h2&gt;
+
+&lt;h3 id=&#34;how-can-i-report-a-problem-with-mdl&#34;&gt;How can I report a problem with MDL?&lt;/h3&gt;
+
+&lt;p&gt;Issues, bugs, feature requests, suggestions can be logged via
+the &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/website/issues&#34;&gt;Github Issues page&lt;/a&gt;.
+Please label your item with &amp;ldquo;Website&amp;rdquo;, &amp;ldquo;MDL Language&amp;rdquo;, or &amp;ldquo;MDL-Editor&amp;rdquo; and the type
+of issue (&amp;ldquo;bug&amp;rdquo;,&amp;ldquo;enhancement&amp;rdquo;,&amp;ldquo;help wanted&amp;rdquo;,&amp;ldquo;invalid&amp;rdquo;,&amp;ldquo;question&amp;rdquo;) so that we can
+direct it to the right place for action.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-can-i-contribute-to-mdl-development&#34;&gt;How can I contribute to MDL development?&lt;/h3&gt;
+
+&lt;p&gt;MDL is an open language, which depends on community involvement to help refine
+it, extend it and to ensure that it is useful to the community in expressing
+the models that you use. We&amp;rsquo;re very happy for you to help us contribute to the
+MDL community, website, language. This can be through:&lt;br /&gt;
+  * submitting bugs and issues, feature requests&lt;br /&gt;
+  * by refining the MDL documentation; or by adding new example Use Cases to
+illustrate features&lt;br /&gt;
+  * suggesting grammar and syntax features and changes. The way to do this is to
+contribute to the Github repositories.Github maintains a useful &lt;a href=&#34;https://guides.github.com/activities/hello-world/&#34;&gt;&amp;ldquo;Getting Started&amp;rdquo;&lt;/a&gt;
+guide if you need help on how to contribute to the repositories.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MDL Editor now available</title>
+      <link>https://mikeksmith.github.io/website/2016/11/24/mdleditor_announcement/</link>
+      <pubDate>Thu, 24 Nov 2016 16:40:00 +0000</pubDate>
+      
+      <guid>https://mikeksmith.github.io/website/2016/11/24/mdleditor_announcement/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/&#34;&gt;MDL-Editor&lt;/a&gt; is now available for download. This is a cross-platform, Eclipse-based Integrated Development Environment (IDE) for writing MDL models incorporating syntax highlighting and grammar checks. It is available for Windows ( &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86.zip&#34;&gt;32bit&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86_64.zip&#34;&gt;64bit&lt;/a&gt;), &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-linux.gtk.x86_64.zip&#34;&gt;Linux&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-macosx.cocoa.x86_64.zip&#34;&gt;Mac OS&lt;/a&gt;. Simply download the zip file and unzip to an appropriate location. An update site has been configured within Eclipse so that future updates to the MDL-Editor can be retrieved from within Eclipse without having to download another zip file.&lt;/p&gt;
+&lt;p&gt;The MDL Editor can be used to develop models using MDL and to export these models to PharmML, ready for upload to the DDMoRe repository: &lt;a href=&#34;http://repository.ddmore.eu&#34; class=&#34;uri&#34;&gt;http://repository.ddmore.eu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Planned future enhancements to the MDL Editor include incorporation of Git version control and integration of R. To run models using MDL, the Interoperability Framework Standalone Execution Environment (SEE) is available from &lt;a href=&#34;https://sourceforge.net/projects/ddmore/files/install/SEE/Demonstrator-2.0.0/&#34;&gt;Sourceforge&lt;/a&gt;. This is a demonstration product which includes R, NONMEM, Monolix, BUGS, PFIM, PopED, simulx (from the &lt;code&gt;mlxR&lt;/code&gt; R package). The SEE is only available for Windows at present. Installation instructions and associated documentation is available &lt;a href=&#34;http://ddmore.eu/instructions/user-guides&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A zip file of examples (UseCases) and the MDL User Guide and Reference Manual will also be available for download at the same site. These examples should assist the user in writing models from scratch as they illustrate many of the more commonly used model features encoded with MDL.&lt;/p&gt;
+&lt;p&gt;You can submit bugs, issues, feature requests and comments on the &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdl-ide/issues&#34;&gt;MDL-IDE Github Issues&lt;/a&gt; tracker.&lt;/p&gt;
+&lt;p&gt;Source-code for the MDL Editor is available: &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdl-ide&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/mdl-ide&lt;/a&gt;&lt;br /&gt;and source-code for the MDL Eclipse plugin is also available separately: &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdleditorplugin&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/mdleditorplugin&lt;/a&gt;&lt;/p&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About MDL</title>
+      <link>https://mikeksmith.github.io/website/page/about/</link>
+      <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
+      
+      <guid>https://mikeksmith.github.io/website/page/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;welcome-to-the-ddmore-model-description-language-mdl-community-page&#34;&gt;Welcome to the DDMoRe Model Description Language (MDL) Community page.&lt;/h2&gt;
+
+&lt;p&gt;This website will provide a resource for anyone wishing to encode models with MDL,
+will help you understand MDL structure and features and provides a place for you
+to log bugs, issues, feature requests and suggestions.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-is-mdl&#34;&gt;What is MDL?&lt;/h3&gt;
+
+&lt;p&gt;MDL is a human writeable and human readable language designed to describe
+pharmacometric models. It is intended to be largely agnostic about the choice of
+target tool. MDL should facilitate clear and unambiguous definition of models,
+with information conveyed in a consistent manner to the PharmML representation
+and onwards to the target software specific code.&lt;/p&gt;
+
+&lt;h3 id=&#34;where-can-i-find-details-about-writing-models-using-mdl-language-and-grammar&#34;&gt;Where can I find details about writing models using MDL language and grammar?&lt;/h3&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://www.ddmore.eu/sites/ddmore/files/instructions/pdf/MDLUserGuide_1.1_PublicRelease_August2016_0.pdf&#34;&gt;MDL User Guide and Reference Manual&lt;/a&gt;
+is available online in PDF format.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-tools-are-available-for-writing-and-editing-mdl&#34;&gt;What tools are available for writing and editing MDL?&lt;/h3&gt;
+
+&lt;p&gt;An &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/&#34;&gt;MDL-Editor&lt;/a&gt;
+is available for download. This is a cross-platform, Eclipse-based Integrated
+Development Environment (IDE) for writing MDL models incorporating syntax
+highlighting and grammar checks. It is available for Windows (
+&lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86.zip&#34;&gt;32bit&lt;/a&gt; and
+&lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86_64.zip&#34;&gt;64bit&lt;/a&gt;),
+&lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-linux.gtk.x86_64.zip&#34;&gt;Linux&lt;/a&gt; and
+&lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-macosx.cocoa.x86_64.zip&#34;&gt;Mac OS&lt;/a&gt;. Simply download the zip file and unzip to an appropriate location.
+An update site has been configured within Eclipse so that future updates to the
+MDL-Editor can be retrieved from within Eclipse without having to download
+another zip file.&lt;/p&gt;
+
+&lt;p&gt;The MDL Editor can be used to develop models using MDL and to export these models
+to PharmML, ready for upload to the DDMoRe repository: &lt;a href=&#34;http://repository.ddmore.eu&#34;&gt;http://repository.ddmore.eu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;but-what-if-i-want-to-run-the-models&#34;&gt;But what if I want to run the models?&lt;/h3&gt;
+
+&lt;p&gt;At the &lt;a href=&#34;http://ddmore.eu/instructions/user-guides&#34;&gt;ddmore.eu&lt;/a&gt;
+website you&amp;rsquo;ll also find instructions for downloading and installing the DDMoRe
+Interoperability Framework Standalone Execution Environment (SEE) demonstrator.
+The SEE installers are available from &lt;a href=&#34;https://sourceforge.net/projects/ddmore/files/install/SEE/Demonstrator-2.0.0/&#34;&gt;Sourceforge&lt;/a&gt;.
+The SEE is a DDMoRe demonstration product which includes R, NONMEM, Monolix,
+BUGS, PFIM, PopED, simulx (from the &lt;code&gt;mlxR&lt;/code&gt; R package). The SEE is only available
+for Windows at present.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-resources-are-there-to-help-me-learn-mdl-and-use-the-editor-see&#34;&gt;What resources are there to help me learn MDL and use the editor / SEE?&lt;/h3&gt;
+
+&lt;p&gt;A &lt;a href=&#34;https://www.youtube.com/playlist?list=PL_GGUkhbiP3t0Q7wTqkQdMAw7yuC8xWa-&#34;&gt;YouTube playlist&lt;/a&gt;
+is available for videos detailing how to get started with the software.&lt;/p&gt;
+
+&lt;p&gt;A set of Use Case examples is provided with the SEE, which are also available on
+&lt;a href=&#34;https://sourceforge.net/p/ddmore/use.cases/ci/master/tree/MDL/Product5.1/&#34;&gt;SourceForge&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-is-coming-on-this-website&#34;&gt;What is coming on this website?&lt;/h3&gt;
+
+&lt;p&gt;In the near future we hope to provide:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An online wiki format of the MDL User Guide and Reference Manual&lt;/li&gt;
+&lt;li&gt;Answers to Frequently Asked Questions (FAQ)&lt;/li&gt;
+&lt;li&gt;An issues log for capturing bugs, feature requests and suggestions for MDL&lt;/li&gt;
+&lt;li&gt;A walkthrough of the MDL Use Case examples explaining and annotating the code.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;authors-and-contributors&#34;&gt;Authors and Contributors&lt;/h3&gt;
+
+&lt;p&gt;Mike K Smith &lt;a href=&#34;https://github.com/MikeKSmith&#34;&gt;@MikeKSmith&lt;/a&gt; is the lead user for MDL.
+Stuart Moodie &lt;a href=&#34;https://github.com/stumoodie&#34;&gt;@stumoodie&lt;/a&gt; is the technical lead for MDL.&lt;/p&gt;
+
+&lt;h3 id=&#34;support-or-contact&#34;&gt;Support or Contact&lt;/h3&gt;
+
+&lt;p&gt;Issues, bugs, feature requests, suggestions can be logged via
+the &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/website/issues&#34;&gt;Github Issues page&lt;/a&gt;.
+Please label your item with &amp;ldquo;Website&amp;rdquo;, &amp;ldquo;MDL Language&amp;rdquo;, or &amp;ldquo;MDL-Editor&amp;rdquo; and the type
+of issue (&amp;ldquo;bug&amp;rdquo;,&amp;ldquo;enhancement&amp;rdquo;,&amp;ldquo;help wanted&amp;rdquo;,&amp;ldquo;invalid&amp;rdquo;,&amp;ldquo;question&amp;rdquo;) so that we can
+direct it to the right place for action.&lt;/p&gt;
+
+&lt;p&gt;Email contact information will be added very soon.&lt;/p&gt;
+
+&lt;h3 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h3&gt;
+
+&lt;p&gt;The research leading to these results has received support from the Innovative Medicines Initiative Joint Undertaking under grant agreement n° 115156, resources of which are composed of financial contribution from the European Union&amp;rsquo;s Seventh Framework Programme (FP7/2007-2013) and EFPIA companies’ in kind contribution. The DDMoRe project is also financially supported by contributions from Academic and SME partners.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About MDL and this website</title>
+      <link>https://mikeksmith.github.io/website/2016/11/22/about_mdl_and_this_website/</link>
+      <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
+      
+      <guid>https://mikeksmith.github.io/website/2016/11/22/about_mdl_and_this_website/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;div id=&#34;welcome-to-the-ddmore-model-description-language-mdl-community-page.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Welcome to the DDMoRe Model Description Language (MDL) Community page.&lt;/h2&gt;
+&lt;p&gt;This website will provide a resource for anyone wishing to encode models with MDL, will help you understand MDL structure and features and provides a place for you to log bugs, issues, feature requests and suggestions.&lt;/p&gt;
+&lt;div id=&#34;what-is-mdl&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What is MDL?&lt;/h3&gt;
+&lt;p&gt;MDL is a human writeable and human readable language designed to describe pharmacometric models. It is intended to be largely agnostic about the choice of target tool. MDL should facilitate clear and unambiguous definition of models, with information conveyed in a consistent manner to the PharmML representation and onwards to the target software specific code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;where-can-i-find-out-more-about-mdl&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Where can I find out more about MDL?&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;http://www.ddmore.eu/sites/ddmore/files/instructions/pdf/MDLUserGuide_1.1_PublicRelease_August2016_0.pdf&#34;&gt;MDL User Guide and Reference Manual&lt;/a&gt; is available online in PDF format.&lt;/p&gt;
+&lt;p&gt;At the &lt;a href=&#34;http://ddmore.eu/instructions/user-guides&#34;&gt;ddmore.eu&lt;/a&gt; website you’ll also find instructions for downloading and installing the DDMoRe Interoperability Framework Standalone Execution Environment (SEE) demonstrator.&lt;/p&gt;
+&lt;p&gt;An &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/&#34;&gt;MDL-Editor&lt;/a&gt; is available for download. This is a cross-platform, Eclipse-based Integrated Development Environment (IDE) for writing MDL models incorporating syntax highlighting and grammar checks. It is available for Windows ( &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86.zip&#34;&gt;32bit&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86_64.zip&#34;&gt;64bit&lt;/a&gt;), &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-linux.gtk.x86_64.zip&#34;&gt;Linux&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-macosx.cocoa.x86_64.zip&#34;&gt;Mac OS&lt;/a&gt;. Simply download the zip file and unzip to an appropriate location. An update site has been configured within Eclipse so that future updates to the MDL-Editor can be retrieved from within Eclipse without having to download another zip file.&lt;/p&gt;
+&lt;p&gt;The MDL Editor can be used to develop models using MDL and to export these models to PharmML, ready for upload to the DDMoRe repository: &lt;a href=&#34;http://repository.ddmore.eu&#34; class=&#34;uri&#34;&gt;http://repository.ddmore.eu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://www.youtube.com/playlist?list=PL_GGUkhbiP3t0Q7wTqkQdMAw7yuC8xWa-&#34;&gt;YouTube playlist&lt;/a&gt; is available for videos detailing how to get started with the software.&lt;/p&gt;
+&lt;p&gt;A set of Use Case examples is provided with the SEE, which are also available on &lt;a href=&#34;https://sourceforge.net/p/ddmore/use.cases/ci/master/tree/MDL/Product5.1/&#34;&gt;SourceForge&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;what-is-coming-on-this-website&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What is coming on this website?&lt;/h3&gt;
+&lt;p&gt;In the near future we hope to provide:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An online wiki format of the MDL User Guide and Reference Manual&lt;/li&gt;
+&lt;li&gt;Answers to Frequently Asked Questions (FAQ)&lt;/li&gt;
+&lt;li&gt;An issues log for capturing bugs, feature requests and suggestions for MDL&lt;/li&gt;
+&lt;li&gt;A walkthrough of the MDL Use Case examples explaining and annotating the code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;authors-and-contributors&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Authors and Contributors&lt;/h3&gt;
+&lt;p&gt;Mike K Smith &lt;span class=&#34;citation&#34;&gt;[@MikeKSmith]&lt;/span&gt;(&lt;a href=&#34;https://github.com/MikeKSmith&#34; class=&#34;uri&#34;&gt;https://github.com/MikeKSmith&lt;/a&gt;) is the lead user for MDL. Stuart Moodie &lt;span class=&#34;citation&#34;&gt;[@stumoodie]&lt;/span&gt;(&lt;a href=&#34;https://github.com/stumoodie&#34; class=&#34;uri&#34;&gt;https://github.com/stumoodie&lt;/a&gt;) is the technical lead for MDL.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;support-or-contact&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Support or Contact&lt;/h3&gt;
+&lt;p&gt;Issues, bugs, feature requests, suggestions can be logged via the &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/website/issues&#34;&gt;Github Issues page&lt;/a&gt;. Please label your item with “Website”, “MDL Language”, or “MDL-Editor” and the type of issue (“bug”,“enhancement”,“help wanted”,“invalid”,“question”) so that we can direct it to the right place for action.&lt;/p&gt;
+&lt;p&gt;Email contact information will be added very soon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;acknowledgements&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Acknowledgements&lt;/h3&gt;
+&lt;p&gt;The research leading to these results has received support from the Innovative Medicines Initiative Joint Undertaking under grant agreement n° 115156, resources of which are composed of financial contribution from the European Union’s Seventh Framework Programme (FP7/2007-2013) and EFPIA companies’ in kind contribution. The DDMoRe project is also financially supported by contributions from Academic and SME partners.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

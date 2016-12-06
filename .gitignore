@@ -1,2 +1,8 @@
-*
-!/doc/
+.Rhistory
+*.Rproj
+config.toml
+config_next.toml
+/content/
+/public/
+/static/
+/themes/
