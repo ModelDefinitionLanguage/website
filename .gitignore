@@ -3,4 +3,6 @@
 .RData
 .Ruserdata
 /themes/
-MDLCommunity_website.Rproj
+*
+!/doc/
+mdlSpecification.Rproj
