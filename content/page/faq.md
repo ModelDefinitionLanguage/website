@@ -5,11 +5,17 @@ author = "Mike K Smith"
 +++
 ## Why MDL?
 ### Why design a whole new language (MDL) to describe models?
-The MDL has been designed to allow users to specify models in the same language,
+The MDL has been designed to allow users to specify models in a consistent language,
 regardless of the target tool they prefer to use for a given task (e.g. estimation),
 and regardless of whether they intend to use the model for estimation, simulation,
 or optimal design. This eliminates the transcoding needed today when using a model
 in a different tool or for a different purpose.
+
+MDL is also designed to be clear and explicit about model features, concentrating
+on WHAT the model is saying rather than mechanics of HOW values are calculated.
+This should mean that MDL is easier to share across disciplines, for example
+between pharmacologists and statisticians or vice versa. Neither discipline should
+have to learn tools used by the other in order to share models.
 
 ### Will the new language (MDL) really be better than existing languages?
 The MDL is better than existing languages in the sense that it allows models to 
