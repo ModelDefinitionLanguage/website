@@ -6,4 +6,10 @@ config_next.toml
 /public/
 /static/
 /themes/
+<<<<<<< HEAD
 /docs/.gitignore
+=======
+*
+!/docs/
+mdlSpecification.Rproj
+>>>>>>> blogdown
