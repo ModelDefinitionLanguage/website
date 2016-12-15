@@ -1,0 +1,46 @@
+baseurl = "https://mikeksmith.github.io/website/"
+title = "MDL Community website"
+theme = "ghostwriter"
+languageCode = "en-us"
+copyright = "Mike K Smith"
+disqusShortname = "XXX"
+googleAnalytics = "UA-86793002-1"
+publishdir = "docs"
+
+[Author]
+    name = "Mike K Smith"
+    profile = "https://www.linkedin.com/in/mike-k-smith-b200245"
+
+[Taxonomies]
+    tag = "tags"
+
+[Params]
+    intro = true
+    headline = "Model Description Language (MDL)"
+    description = "Providing a resource for encoding models with MDL, helping you understand MDL structure and features and providing a place for you to log bugs, issues, feature requests and suggestions."
+    github = "https://github.com/ModelDefinitionLanguage/mdlSpecification"
+    twitter = "https://twitter.com/DDMoRe_IMI"
+    opengraph = true
+
+[Permalinks]
+    post = "/:year/:month/:day/:filename/"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Download"
+    url = "http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/"
+    weight = 2
+
+[[menu.main]]
+    name = "MDL FAQ"
+    url = "/page/faq/"
+    weight = 3
+
+[[menu.main]]
+    name = "About"
+    url = "/page/about/"
+    weight = 4
