@@ -3,7 +3,6 @@ title = "MDL Community website"
 theme = "ghostwriter"
 languageCode = "en-us"
 copyright = "Mike K Smith"
-disqusShortname = "XXX"
 googleAnalytics = "UA-86793002-1"
 publishdir = "docs"
 
