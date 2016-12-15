@@ -1,4 +1,4 @@
-baseurl = "https://www.mdl.community/"
+baseurl = "http://www.mdl.community/"
 title = "MDL Community website"
 theme = "ghostwriter"
 languageCode = "en-us"

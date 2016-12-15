@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Page-rsses on MDL Community website</title>
-    <link>https://www.mdl.community/page/index.xml</link>
+    <link>http://www.mdl.community/page/index.xml</link>
     <description>Recent content in Page-rsses on MDL Community website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mike K Smith</copyright>
     <lastBuildDate>Mon, 28 Nov 2016 10:55:00 +0000</lastBuildDate>
-    <atom:link href="https://www.mdl.community/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.mdl.community/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Frequently Asked Questions (FAQ)</title>
-      <link>https://www.mdl.community/page/faq/</link>
+      <link>http://www.mdl.community/page/faq/</link>
       <pubDate>Mon, 28 Nov 2016 10:55:00 +0000</pubDate>
       
-      <guid>https://www.mdl.community/page/faq/</guid>
+      <guid>http://www.mdl.community/page/faq/</guid>
       <description>
 
 &lt;h2 id=&#34;why-mdl&#34;&gt;Why MDL?&lt;/h2&gt;
@@ -162,10 +162,10 @@ guide if you need help on how to contribute to the repositories.&lt;/p&gt;
     
     <item>
       <title>About MDL</title>
-      <link>https://www.mdl.community/page/about/</link>
+      <link>http://www.mdl.community/page/about/</link>
       <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
       
-      <guid>https://www.mdl.community/page/about/</guid>
+      <guid>http://www.mdl.community/page/about/</guid>
       <description>
 
 &lt;h2 id=&#34;welcome-to-the-ddmore-model-description-language-mdl-community-page&#34;&gt;Welcome to the DDMoRe Model Description Language (MDL) Community page.&lt;/h2&gt;
