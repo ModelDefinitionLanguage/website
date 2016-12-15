@@ -1,0 +1,6 @@
+{
+  "name": "Model Description Language",
+  "tagline": "",
+  "body": "### Welcome to the DDMoRe Model Description Language (MDL) Community page.\r\nThis website will provide a resource for anyone wishing to encode models with MDL, will help you understand MDL structure and features and provides a place for you to log bugs, issues, feature requests and suggestions.\r\n\r\n### What is MDL?\r\nMDL is a human writeable and human readable language designed to describe pharmacometric models. It is intended to be largely agnostic about the choice of target tool. MDL should facilitate clear and unambiguous definition of models, with information conveyed in a consistent manner to the PharmML representation and onwards to the target software specific code.\r\n\r\n### Authors and Contributors\r\nMike K Smith (@MikeKSmith) is the lead user for MDL.\r\nStuart Moodie (@stumoodie) is the technical lead for MDL.\r\n\r\n### Support or Contact\r\nIssues, bugs, feature requests, suggestions for MDL can be logged via the Issues page of this site. Email contact information will be added very soon.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
