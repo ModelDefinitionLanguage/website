@@ -13,3 +13,4 @@ config_next.toml
 !/docs/
 mdlSpecification.Rproj
 >>>>>>> blogdown
+.Rproj.user

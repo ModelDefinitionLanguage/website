@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MDL Community website</title>
-    <link>https://mikeksmith.github.io/website/tags/interoperability/index.xml</link>
+    <link>https://www.mdl.community/tags/interoperability/index.xml</link>
     <description>Recent content on MDL Community website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mike K Smith</copyright>
-    <atom:link href="https://mikeksmith.github.io/website/tags/interoperability/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.mdl.community/tags/interoperability/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About MDL and this website</title>
-      <link>https://mikeksmith.github.io/website/2016/11/22/about_mdl_and_this_website/</link>
+      <link>https://www.mdl.community/2016/11/22/about_mdl_and_this_website/</link>
       <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
       
-      <guid>https://mikeksmith.github.io/website/2016/11/22/about_mdl_and_this_website/</guid>
+      <guid>https://www.mdl.community/2016/11/22/about_mdl_and_this_website/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;

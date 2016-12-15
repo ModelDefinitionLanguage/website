@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MDL Community website</title>
-    <link>https://mikeksmith.github.io/website/tags/software/index.xml</link>
+    <link>https://www.mdl.community/tags/software/index.xml</link>
     <description>Recent content on MDL Community website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mike K Smith</copyright>
-    <atom:link href="https://mikeksmith.github.io/website/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.mdl.community/tags/software/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>MDL Editor now available</title>
-      <link>https://mikeksmith.github.io/website/2016/11/24/mdleditor_announcement/</link>
+      <link>https://www.mdl.community/2016/11/24/mdleditor_announcement/</link>
       <pubDate>Thu, 24 Nov 2016 16:40:00 +0000</pubDate>
       
-      <guid>https://mikeksmith.github.io/website/2016/11/24/mdleditor_announcement/</guid>
+      <guid>https://www.mdl.community/2016/11/24/mdleditor_announcement/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -24,7 +24,8 @@
 &lt;p&gt;Planned future enhancements to the MDL Editor include incorporation of Git version control and integration of R. To run models using MDL, the Interoperability Framework Standalone Execution Environment (SEE) is available from &lt;a href=&#34;https://sourceforge.net/projects/ddmore/files/install/SEE/Demonstrator-2.0.0/&#34;&gt;Sourceforge&lt;/a&gt;. This is a demonstration product which includes R, NONMEM, Monolix, BUGS, PFIM, PopED, simulx (from the &lt;code&gt;mlxR&lt;/code&gt; R package). The SEE is only available for Windows at present. Installation instructions and associated documentation is available &lt;a href=&#34;http://ddmore.eu/instructions/user-guides&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A zip file of examples (UseCases) and the MDL User Guide and Reference Manual will also be available for download at the same site. These examples should assist the user in writing models from scratch as they illustrate many of the more commonly used model features encoded with MDL.&lt;/p&gt;
 &lt;p&gt;You can submit bugs, issues, feature requests and comments on the &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdl-ide/issues&#34;&gt;MDL-IDE Github Issues&lt;/a&gt; tracker.&lt;/p&gt;
-&lt;p&gt;Source-code for the MDL Editor is available: &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdl-ide&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/mdl-ide&lt;/a&gt;&lt;br /&gt;and source-code for the MDL Eclipse plugin is also available separately: &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdleditorplugin&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/mdleditorplugin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Source-code for the MDL Editor is available: &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdl-ide&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/mdl-ide&lt;/a&gt;&lt;br /&gt;
+and source-code for the MDL Eclipse plugin is also available separately: &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdleditorplugin&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/mdleditorplugin&lt;/a&gt;&lt;/p&gt;
 
 
 
@@ -41,10 +42,10 @@
     
     <item>
       <title>About MDL and this website</title>
-      <link>https://mikeksmith.github.io/website/2016/11/22/about_mdl_and_this_website/</link>
+      <link>https://www.mdl.community/2016/11/22/about_mdl_and_this_website/</link>
       <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
       
-      <guid>https://mikeksmith.github.io/website/2016/11/22/about_mdl_and_this_website/</guid>
+      <guid>https://www.mdl.community/2016/11/22/about_mdl_and_this_website/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
