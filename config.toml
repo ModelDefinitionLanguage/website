@@ -25,7 +25,7 @@ publishdir = "docs"
     post = "/:year/:month/:day/:filename/"
 
 [[menu.main]]
-    name = "Blog"
+    name = "Home"
     url = "/"
     weight = 1
 
@@ -35,11 +35,16 @@ publishdir = "docs"
     weight = 2
 
 [[menu.main]]
+    name = "MDL UserGuide"
+    url = "https://modeldefinitionlanguage.github.io/MDLUserGuide/"
+    weight = 3
+
+[[menu.main]]
     name = "MDL FAQ"
     url = "/page/faq/"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "About"
     url = "/page/about/"
-    weight = 4
+    weight = 5
