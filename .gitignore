@@ -1,16 +1,7 @@
 .Rhistory
 *.Rproj
-config.toml
-config_next.toml
-/content/
-/public/
 /static/
 /themes/
-<<<<<<< HEAD
 /docs/.gitignore
-=======
-*
-!/docs/
 mdlSpecification.Rproj
->>>>>>> blogdown
 .Rproj.user

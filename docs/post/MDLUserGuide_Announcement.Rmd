@@ -1,0 +1,28 @@
+---
+title: "MDL User Guide and Reference Manual now available"
+author: "Mike K Smith"
+date: 2017-01-06T09:40:00Z
+tags: ["Announce"]
+output: html_document
+---
+The MDL User Guide and Reference Manual are now available online: 
+https://modeldefinitionlanguage.github.io/MDLUserGuide/.  
+
+There is a toolbar at the top of the manual that allows you to see the section
+browser, search within the manual, change text attributes while reading, edit
+a page (via Github) and download the manual as PDF or ePub (coming soon!).
+
+The User Guide will
+be maintained and updated on Github at 
+https://github.com/ModelDefinitionLanguage/MDLUserGuide. We encourage the 
+community to contribute to and update the manual either by editing .Rmd files
+directly on Github or by making a copy of the repository, making changes 
+and submitting a pull request, according to the 
+[Github workflow](https://guides.github.com/introduction/flow/). 
+
+The User Guide is compiled using 
+[RStudio's bookdown package](https://github.com/rstudio/bookdown). 
+[Yihui Xie](https://yihui.name/) has provided 
+[a comprehensive guide to bookdown](https://bookdown.org/yihui/bookdown/). 
+By downloading bookdown and dependent packages, it is possible for anybody to
+recompile the manual using R.
