@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MDL Community website</title>
-    <link>http://www.mdl.community/tags/announce/index.xml</link>
+    <link>/tags/announce/index.xml</link>
     <description>Recent content on MDL Community website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mike K Smith</copyright>
-    <atom:link href="http://www.mdl.community/tags/announce/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/announce/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>MDL User Guide and Reference Manual now available</title>
-      <link>http://www.mdl.community/2017/01/06/mdluserguide_announcement/</link>
+      <link>/2017/01/06/mdluserguide_announcement/</link>
       <pubDate>Fri, 06 Jan 2017 09:40:00 +0000</pubDate>
       
-      <guid>http://www.mdl.community/2017/01/06/mdluserguide_announcement/</guid>
+      <guid>/2017/01/06/mdluserguide_announcement/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>MDL Editor now available</title>
-      <link>http://www.mdl.community/2016/11/24/mdleditor_announcement/</link>
+      <link>/2016/11/24/mdleditor_announcement/</link>
       <pubDate>Thu, 24 Nov 2016 16:40:00 +0000</pubDate>
       
-      <guid>http://www.mdl.community/2016/11/24/mdleditor_announcement/</guid>
+      <guid>/2016/11/24/mdleditor_announcement/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
