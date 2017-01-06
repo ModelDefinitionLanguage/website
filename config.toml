@@ -17,7 +17,7 @@ publishdir = "docs"
     intro = true
     headline = "Model Description Language (MDL)"
     description = "Providing a resource for encoding models with MDL, helping you understand MDL structure and features and providing a place for you to log bugs, issues, feature requests and suggestions."
-    github = "https://github.com/ModelDefinitionLanguage/mdlSpecification"
+    github = "https://github.com/ModelDefinitionLanguage/"
     twitter = "https://twitter.com/DDMoRe_IMI"
     opengraph = true
 

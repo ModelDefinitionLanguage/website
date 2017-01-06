@@ -2,27 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/</loc>
+    <loc>http://www.mdl.community/</loc>
+    <lastmod>2017-01-06T09:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.mdl.community/2017/01/06/mdluserguide_announcement/</loc>
+    <lastmod>2017-01-06T09:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.mdl.community/page/faq/</loc>
     <lastmod>2016-11-28T10:55:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/page/faq/</loc>
-    <lastmod>2016-11-28T10:55:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2016/11/24/mdleditor_announcement/</loc>
+    <loc>http://www.mdl.community/2016/11/24/mdleditor_announcement/</loc>
     <lastmod>2016-11-24T16:40:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/page/about/</loc>
+    <loc>http://www.mdl.community/page/about/</loc>
     <lastmod>2016-11-22T10:21:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2016/11/22/about_mdl_and_this_website/</loc>
+    <loc>http://www.mdl.community/2016/11/22/about_mdl_and_this_website/</loc>
     <lastmod>2016-11-22T10:21:00+00:00</lastmod>
   </url>
   
