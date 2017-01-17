@@ -2,6 +2,5 @@
 *.Rproj
 /static/
 /themes/
-/docs/.gitignore
 mdlSpecification.Rproj
 .Rproj.user

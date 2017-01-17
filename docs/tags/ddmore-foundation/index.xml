@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MDL Community website</title>
-    <link>/tags/ddmore-foundation/index.xml</link>
-    <description>Recent content on MDL Community website</description>
+    <title>Ddmore Foundation on MDL Community website</title>
+    <link>http://www.mdl.community/tags/ddmore-foundation/index.xml</link>
+    <description>Recent content in Ddmore Foundation on MDL Community website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mike K Smith</copyright>
-    <atom:link href="/tags/ddmore-foundation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.mdl.community/tags/ddmore-foundation/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About MDL and this website</title>
-      <link>/2016/11/22/about_mdl_and_this_website/</link>
+      <link>http://www.mdl.community/2016/11/22/about_mdl_and_this_website/</link>
       <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
       
-      <guid>/2016/11/22/about_mdl_and_this_website/</guid>
+      <guid>http://www.mdl.community/2016/11/22/about_mdl_and_this_website/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
