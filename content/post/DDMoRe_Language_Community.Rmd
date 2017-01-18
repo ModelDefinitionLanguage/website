@@ -78,7 +78,7 @@ resolution can be discussed and tracked via Github.
 
 ### Tool development
 If you wish to develop new tools or contribute to development of existing tools
-usign the DDMoRe language standards, then we can point you in the direction of
+using the DDMoRe language standards, then we can point you in the direction of
 the appropriate technology and associated subject matter experts to help you
 get started. If you don't need that assistance, please go right ahead and 
 develop away! All we ask is that you respect the license agreements from the 
