@@ -65,8 +65,10 @@ format - you edit R markdown pages which are then rendered into the online book
 and PDF version.
 
 If you want to contribute to the MDL Community website, to contribute blog posts
-"How to..." or "Getting started..." guides, then please send an R markdown file
-containing your post to Mike K Smith (Mike.K.Smith at Pfizer.com).
+"How to..." or "Getting started..." guides, then please pull the "draft" branch of
+the website repository, add .Rmd files to the /content/post/ and create a pull 
+request for review. Alternatively, send an R markdown file containing your post to 
+Mike K Smith (Mike.K.Smith at Pfizer.com).
 
 If you want to raise a bug report, ask a question, make a feature request then
 you can raise a [Github Issue on the website repository]
