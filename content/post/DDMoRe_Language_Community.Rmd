@@ -26,8 +26,8 @@ being used in integrating tools into a unified workflow through conversion
 from and to PharmML, use of the Standard Output object and so on.
 
 The DDMoRe Foundation will continue to have the overview and strategic vision
-for the integration of the standards into existing products 
-- the Interoperability Framework, DDMoRe Model Repository. But the community can
+for the integration of the standards into existing products: 
+the Interoperability Framework, DDMoRe Model Repository. But the community can
 assist the Foundation in specifying, reviewing, refining new language features
 or assisting with existing or new converter tools for the different target 
 software that we might want to use within the community.
