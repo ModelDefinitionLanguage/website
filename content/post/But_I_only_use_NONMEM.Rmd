@@ -3,7 +3,6 @@ title: "'...but I only use NONMEM'"
 author: "Mike K Smith"
 date: 2017-01-20T14:36:00Z
 tags: ["Standards"]
-draft : "true"
 output: html_document
 ---
 
@@ -92,7 +91,7 @@ therapeutic drug models in their work or for predicting outcomes for patients.
 
 About 10 years ago, it would have been hard to imagine the case that S-Plus
 would be thoroughly supplanted by R, to the point where it ceased to be a 
-supported product by the company that bought it from Insightful. And yet, here
+supported product by the company (Tibco) that bought it from Insightful. And yet, here
 we are. [R is rising in popularity as an analytical engine (often coupled with 
 other technologies)](http://blog.revolutionanalytics.com/popularity/). So to 
 dismiss open-source solutions as "irrelevant" may be regarded as a 
