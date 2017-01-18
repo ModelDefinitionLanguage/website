@@ -126,7 +126,7 @@ the user to activities outside of the workflow. This would greatly improve
 reproducibility and portability of workflow from one analyst to another and 
 also across quantitative disciplines.
 
-MDL, along with the DDMoRe model exchange standards, [has shown to achieve 
+MDL, along with the DDMoRe model exchange standards, [has  achieved 
 this aim using the Interoperability Framework](https://drive.google.com/file/d/0B6l15jR-cIWdMTlKUlY4LTJ2ajA/view?usp=sharing).
 In this example we show end-to-end workflow using a variety of tools to perform
 exploratory analysis, estimation, model diagnostics & qualification, prediction,
