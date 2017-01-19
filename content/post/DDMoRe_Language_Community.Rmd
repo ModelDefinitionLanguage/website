@@ -107,3 +107,6 @@ In the meantime, please do let us know what you think, how you'd like to get
 engaged, what kinds of things you might want to do with the standards.
 
 The future is out there!
+
+## Acknowledgement:
+Thanks to Chris Shilling for his comments and additions to this blog post.
