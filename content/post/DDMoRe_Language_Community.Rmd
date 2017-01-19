@@ -6,7 +6,7 @@ tags: ["Community"]
 output: html_document
 ---
 
-**Yesterday (17th January 2017) we announced the start of the DDMoRe Language 
+**On 17th January 2017 we announced the start of the DDMoRe Language 
 Community.**
 
 ## What is the DDMoRe Language Community for?
@@ -35,14 +35,15 @@ software that we might want to use within the community.
 ## How can I contribute to the DDMoRe Language Community?
 There are many ways that you can contribute, with a variety of levels of
 engagement and commitment. We encourage ***everyone*** to contribute, with 
-big **or** small contributions. The ultimate success of these standards depends 
-on YOU being engaged, contributing to the community, sharing what you're doing 
-with the standards or helping to refine them to meet your needs.
+big **and** small contributions. The ultimate success of these standards depends 
+on building a community where everyone is engaged and contributing to the community,
+sharing what you're doing with the standards or helping to refine them to meet your needs.
+We want **YOU** - we **NEED YOU** - to be part of building this exciting new community.
 
 ### Language development
 The DDMoRe Language standards are integrated through the language converters
 employed within the DDMoRe Interoperability Framework. Going forward, the 
-the DDMoRe Foundation will aim to incrementally release the languages into 
+DDMoRe Foundation will aim to incrementally release the languages into 
 "production", so that the languages are well aligned and that converters, 
 technology and the DDMoRe repository are set up to use this latest version.
 
@@ -54,7 +55,7 @@ The MDL language standards and associated tools are hosted on Github at
 https://github.com/ModelDefinitionLanguage. We encourage the community 
 members to join Github, fork the repositories, make changes and then submit a
 "pull request" for discussion of the changes. There is a [good primer available 
-on Github process](https://guides.github.com/activities/hello-world/).
+on Github process](https://guides.github.com/activities/hello-world/)
 if you're not familiar with it.
 
 If you want to contribute to documentation of the language standards
