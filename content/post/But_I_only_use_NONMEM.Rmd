@@ -1,0 +1,158 @@
+---
+title: "'...but I only use NONMEM'"
+author: "Mike K Smith"
+date: 2017-01-20T14:36:00Z
+tags: ["Standards"]
+output: html_document
+---
+
+## Do you want others to use your models?
+
+Well, you ***SAY*** you only use NONMEM (although I don't believe that - see 
+below) but ultimately I'm sure that you'd like other people to use your model 
+and/or the inferences based on it.
+
+The use of modelling and simulation has expanded into quantitative pharmacology,
+pharmacology (Pop PK and PKPD), disease modelling, model-based meta-analysis 
+(MBMA), cost-effectiveness and many more. Many different quantitative 
+disciplines are now involved in building models, evaluating models,
+using models and modelling outputs to interpret data, plan studies or make 
+decisions. For a given model to be useful (and used!) across all of these groups
+we need to find a way that we can express the model such that anybody else that
+wants to use it can do so for their own purposes, whatever those are.
+
+## How do you share models?
+
+### I share via (NMTRAN / other) code
+[A recent survey by the International Society of Pharmacometrics](http://discuss.go-isop.org/t/isop-global-survey-how-do-you-share/657) 
+found that ~75% of respondents primarily use NONMEM as their main tool for 
+analysis. This would support the strategy for sharing NMTRAN models ***within***
+the pharmacometrics community, but what about outside of it?
+
+Within the statistics community there is a growing use of R as a tool for 
+analytical work, sometimes calling other tools e.g. C++, Java, etc. but still,
+within industry, SAS is primarily used as the clinical trial reporting tool of
+choice. 
+
+So if you're interested in getting statisticians to use your model, then
+what language should you choose for sharing? Do you expect them to learn and 
+understand the NMTRAN code? Do you both try to translate to R? What about SAS?
+Is it worthwhile recoding in SAS? Will you learn R or SAS sufficient to be able 
+to share your model?
+
+`<DIGRESSION>`
+*I have been involved in discussions in the past within the statistics community
+about "validation" of R and analysis done with R. The misconception was that 
+analysis performed with R had to be replicated using SAS in order for it to be 
+"validated" and accepted by regulatory agencies. See 
+[here](http://www.slideshare.net/MikeKSmith/r-eliminating-fear-uncertainty-and-doubt)
+for more discussion on this topic. But if we follow that argument through,
+why aren't people insisting that we re-run NONMEM analyses using PROC NLMIXED?*
+`</end DIGRESSION>`
+
+### I share via publications
+Writing down the maths of a model is a great way to share the model between
+quantitative disciplines. It's a universal language and brings with it rigour
+and a lack of ambiguity. ***BUT*** while two modellers can agree on the maths 
+of a problem, the implementation may vary between two software tools such that
+it may be easy to implement in one tool, but very difficult (impossible?) in 
+another.
+
+## NONMEM doesn't do ***EVERYTHING***
+NONMEM and associated tools e.g. PsN have some limitations in available 
+functionality, for example optimal trial design. And while NONMEM ***can*** be
+used for prediction and simulation of new designs, regimens and scenarios there 
+are a growing number of freely available, open-source tools that can also do 
+this and arguably more easily ***given that the model is encoded in the 
+appropriate input format for that tool***.
+
+Now, either we have to write a load of NMTRAN to <tool X> translators (some 
+exist e.g. Pirana) or we have to use or develop a master language that can 
+easily translate to NMTRAN, but also to other tools e.g. Certara / Pharsight's 
+PML or DDMoRe's MDL.
+
+## Open-source tools are growing in use
+There is a rising number of free, open-source software for nonlinear mixed 
+effects modelling and simulation (e.g. 
+[saemix](http://www.saemix.biostat.fr/), 
+[nlmixr](https://github.com/nlmixrdevelopment/nlmixr), 
+[mlxR / simulx](http://simulx.webpopix.org/), 
+[mrgsolve](http://metrumrg.com/opensourcetools.html), 
+[RxODE](https://github.com/hallowkm/RxODE), 
+[PKPDsim](https://github.com/ronkeizer/PKPDsim), 
+[PFIM](http://www.pfim.biostat.fr/), 
+[PopED](http://poped.sourceforge.net/)
+) and while use of these tools may be limited today, 
+they provide a means for performing the majority of modelling and simulation 
+tasks with no cost to the analyst. More integration of these tools into 
+pharmacometrics toolset and workflow would benefit many, especially those who 
+cannot get access to NONMEM licenses, yet still may wish to use disease and 
+therapeutic drug models in their work or for predicting outcomes for patients.
+
+About 10 years ago, it would have been hard to imagine the case that S-Plus
+would be thoroughly supplanted by R, to the point where it ceased to be a 
+supported product by the company (Tibco) that bought it from Insightful. And yet, here
+we are. [R is rising in popularity as an analytical engine (often coupled with 
+other technologies)](http://blog.revolutionanalytics.com/popularity/). So to 
+dismiss open-source solutions as "irrelevant" may be regarded as a 
+short-sighted view.
+
+## (Open-source) Standards can shape the discipline
+The advent and growth of [SBML]
+(http://authors.library.caltech.edu/2099/1/HUCieesb04.pdf) has had a 
+profound effect on the systems biology modelling world - impacting model sharing
+and tool development.With SBML as a basis for import and export of models to and
+from software tools, the community now has a means to quickly and easily share 
+models, regardless of the preferred tools for individuals, laboratories or 
+companies. This sparked development of many open-source tools, but also forced
+integration of SBML into existing and novel commercial tools. 
+
+For a moment, just compare the growth our community in pharmacometrics made in
+comparison to other fields such as computational biology, genetics, ecology to 
+name a few. The experts in these fields are scientists, similar to us, and 
+not software engineers. Yet, they made massive strides in science mainly due to 
+their adoption of open source methods and tools. Experts working in the industry 
+put their developed tools and materials out in the open, a culture that 
+pharmacometrics experts in the industry have yet to embrace after all these years.
+
+The fundamental requirement is a change in culture and thinking in our community. 
+To facilitate getting over the initial hurdles of this culture change, tools that 
+allow this transition are required.
+
+The DDMoRe model exchange standards could be revolutionary for model sharing and 
+interoperability within the pharmacometrics discipline but also beyond into other 
+quantitative disciplines e.g. statistics.
+
+## Unified workflow agnostic to software tool choice is a good aim
+At present, any time the modeller (or anyone using a given model) needs to
+transcode the model from one software tool to another, we should ensure that 
+the transcoded model is equivalent to the original ***before*** making any 
+new inferences from it. This adds an overhead of time and resource into the 
+modelling and simulation process and brings with it the possibility of errors
+introduced while translating from one implementation to another.
+
+The ideal workflow would be agnostic to the tool used for a given task. It 
+would be ideal to be able to substitute one tool for another in the workflow
+and carry on with subsequent down-stream activities, with no intervention from
+the user to activities outside of the workflow. This would greatly improve
+reproducibility and portability of workflow from one analyst to another and 
+also across quantitative disciplines.
+
+MDL, along with the DDMoRe model exchange standards, [has  achieved 
+this aim using the Interoperability Framework](https://drive.google.com/file/d/0B6l15jR-cIWdMTlKUlY4LTJ2ajA/view?usp=sharing).
+In this example we show end-to-end workflow using a variety of tools to perform
+exploratory analysis, estimation, model diagnostics & qualification, prediction,
+simulation and optimal design all without having to recode the model in any
+way.
+
+## The future with MDL and the DDMoRe model exchange standards
+There has never been a better time to get engaged with the DDMoRe model exchange
+standards through the DDMoRe Language Community. We have shown that the concepts
+of interoperability are achievable, we have >100 models on the [DDMoRe Model
+Repository](http://repository.ddmore.eu/) and we have made these languages 
+open-source so that the community can capitalise on work already done and 
+contribute to the future state of these standards. 
+
+## Acknowledgement:
+Thanks to [Vijay Ivaturi](https://github.com/vjd)
+for comments and additions to this blog post.
