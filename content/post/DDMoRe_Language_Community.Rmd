@@ -1,8 +1,8 @@
 ---
 title: "DDMoRe Language Community"
 author: "Mike K Smith"
-date: 2017-01-18T11:34:00Z
-tags: ["Community"]
+date: 2017-01-19T13:42:00Z
+tags: ["Community", "Announce"]
 output: html_document
 ---
 
@@ -109,4 +109,5 @@ engaged, what kinds of things you might want to do with the standards.
 The future is out there!
 
 ## Acknowledgement:
-Thanks to Chris Shilling for his comments and additions to this blog post.
+Thanks to Chris Shilling (Chris.Shilling at florinpartnership.com)
+for his comments and additions to this blog post.
