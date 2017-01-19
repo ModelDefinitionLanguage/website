@@ -108,14 +108,6 @@ models, regardless of the preferred tools for individuals, laboratories or
 companies. This sparked development of many open-source tools, but also forced
 integration of SBML into existing and novel commercial tools. 
 
-For a moment, just compare the growth our community in pharmacometrics made in
-comparison to other fields such as computational biology, genetics, ecology to 
-name a few. The experts in these fields are scientists, similar to us, and 
-not software engineers. Yet, they made massive strides in science mainly due to 
-their adoption of open source methods and tools. Experts working in the industry 
-put their developed tools and materials out in the open, a culture that 
-pharmacometrics experts in the industry have yet to embrace after all these years.
-
 The fundamental requirement is a change in culture and thinking in our community. 
 To facilitate getting over the initial hurdles of this culture change, tools that 
 allow this transition are required.
@@ -156,4 +148,5 @@ contribute to the future state of these standards.
 
 ## Acknowledgement:
 Thanks to [Vijay Ivaturi](https://github.com/vjd)
+and [Kyle Baron](https://github.com/kylebmetrum)
 for comments and additions to this blog post.
