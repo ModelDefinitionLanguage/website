@@ -61,7 +61,7 @@ another.
 ## NONMEM doesn't do ***EVERYTHING***
 NONMEM and associated tools e.g. PsN have some limitations in available 
 functionality, for example optimal trial design. And while NONMEM ***can*** be
-used for prediction and simulation of new designs, regimens, scenarios there 
+used for prediction and simulation of new designs, regimens and scenarios there 
 are a growing number of freely available, open-source tools that can also do 
 this and arguably more easily ***given that the model is encoded in the 
 appropriate input format for that tool***.
@@ -107,9 +107,21 @@ models, regardless of the preferred tools for individuals, laboratories or
 companies. This sparked development of many open-source tools, but also forced
 integration of SBML into existing and novel commercial tools. 
 
-In a similar way, the DDMoRe model exchange standards could be revolutionary
-for model sharing and interoperability within the pharmacometrics discipline
-but also beyond into other quantitative disciplines e.g. statistics.
+For a moment, just compare the growth our community in pharmacometrics made in
+comparison to other fields such as computational biology, genetics, ecology to 
+name a few. The experts in these fields are scientists, similar to us, and 
+not software engineers. Yet, they made massive strides in science mainly due to 
+their adoption of open source methods and tools. Experts working in the industry 
+put their developed tools and materials out in the open, a culture that 
+pharmacometrics experts in the industry have yet to embrace after all these years.
+
+The fundamental requirement is a change in culture and thinking in our community. 
+To facilitate getting over the initial hurdles of this culture change, tools that 
+allow this transition are required.
+
+The DDMoRe model exchange standards could be revolutionary for model sharing and 
+interoperability within the pharmacometrics discipline but also beyond into other 
+quantitative disciplines e.g. statistics.
 
 ## Unified workflow agnostic to software tool choice is a good aim
 At present, any time the modeller (or anyone using a given model) needs to
@@ -140,3 +152,7 @@ of interoperability are achievable, we have >100 models on the [DDMoRe Model
 Repository](http://repository.ddmore.eu/) and we have made these languages 
 open-source so that the community can capitalise on work already done and 
 contribute to the future state of these standards. 
+
+## Acknowledgement:
+Thanks to [Vijay Ivaturi](https://github.com/vjd)
+for comments and additions to this blog post.
