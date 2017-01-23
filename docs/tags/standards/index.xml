@@ -11,10 +11,10 @@
     
     <item>
       <title>&#39;...but I only use NONMEM&#39;</title>
-      <link>http://www.mdl.community/2017/01/20/but_i_only_use_nonmem/</link>
-      <pubDate>Fri, 20 Jan 2017 14:00:00 +0000</pubDate>
+      <link>http://www.mdl.community/2017/01/23/but_i_only_use_nonmem/</link>
+      <pubDate>Mon, 23 Jan 2017 12:30:00 +0000</pubDate>
       
-      <guid>http://www.mdl.community/2017/01/20/but_i_only_use_nonmem/</guid>
+      <guid>http://www.mdl.community/2017/01/23/but_i_only_use_nonmem/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -52,7 +52,7 @@
 &lt;/div&gt;
 &lt;div id=&#34;open-source-standards-can-shape-the-discipline&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;(Open-source) Standards can shape the discipline&lt;/h2&gt;
-&lt;p&gt;The advent and growth of [SBML] (&lt;a href=&#34;http://authors.library.caltech.edu/2099/1/HUCieesb04.pdf&#34; class=&#34;uri&#34;&gt;http://authors.library.caltech.edu/2099/1/HUCieesb04.pdf&lt;/a&gt;) has had a profound effect on the systems biology modelling world - impacting model sharing and tool development.With SBML as a basis for import and export of models to and from software tools, the community now has a means to quickly and easily share models, regardless of the preferred tools for individuals, laboratories or companies. This sparked development of many open-source tools, but also forced integration of SBML into existing and novel commercial tools.&lt;/p&gt;
+&lt;p&gt;The advent and growth of [SBML] (&lt;a href=&#34;http://authors.library.caltech.edu/2099/1/HUCieesb04.pdf&#34; class=&#34;uri&#34;&gt;http://authors.library.caltech.edu/2099/1/HUCieesb04.pdf&lt;/a&gt;) has had a profound effect on the systems biology modelling world - impacting model sharing and tool development. With SBML as a basis for import and export of models to and from software tools, the community now has a means to quickly and easily share models, regardless of the preferred tools for individuals, laboratories or companies. This sparked development of many open-source tools, but also forced integration of SBML into existing and novel commercial tools.&lt;/p&gt;
 &lt;p&gt;The DDMoRe model exchange standards could be similarly revolutionary for model sharing and interoperability within the pharmacometrics discipline but also beyond into other quantitative disciplines e.g. statistics.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;unified-workflow-agnostic-to-software-tool-choice-is-a-good-aim&#34; class=&#34;section level2&#34;&gt;
