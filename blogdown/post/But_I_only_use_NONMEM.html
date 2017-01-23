@@ -3,7 +3,6 @@ title: "'...but I only use NONMEM'"
 author: "Mike K Smith"
 date: 2017-01-20T14:00:00Z
 tags: ["Standards"]
-draft: "True"
 output: html_document
 ---
 
@@ -22,13 +21,15 @@ output: html_document
 <div id="i-share-via-nmtran-other-code" class="section level3">
 <h3>I share via (NMTRAN / other) code</h3>
 <p><a href="http://discuss.go-isop.org/t/isop-global-survey-how-do-you-share/657">A recent survey by the International Society of Pharmacometrics</a> found that ~75% of respondents primarily use NONMEM as their main tool for analysis. This would support the strategy for sharing NMTRAN models <strong><em>within</em></strong> the pharmacometrics community, but what about outside of it?</p>
-<p>Within the statistics community there is a growing use of R as a tool for analytical work, sometimes calling other tools e.g. C++, Java, etc. but still, within industry, SAS is primarily used as the clinical trial reporting tool of choice.</p>
-<p>So if you’re interested in getting statisticians to use your model, then what language should you choose for sharing? Do you expect them to learn and understand the NMTRAN code? Do you both try to translate to R? What about SAS? Is it worthwhile recoding in SAS? Will you learn R or SAS sufficient to be able to share your model?</p>
-<p><code>&lt;DIGRESSION&gt;</code> <em>I have been involved in discussions in the past within the statistics community about “validation” of R and analysis done with R. The misconception was that analysis performed with R had to be replicated using SAS in order for it to be “validated” and accepted by regulatory agencies. See <a href="http://www.slideshare.net/MikeKSmith/r-eliminating-fear-uncertainty-and-doubt">here</a> for more discussion on this topic. But if we follow that argument through, why aren’t people insisting that we re-run NONMEM analyses using PROC NLMIXED?</em> <code>&lt;/end DIGRESSION&gt;</code></p>
+<p>Within the statistics community there is a growing use of R as a tool for analytical work, sometimes calling other tools e.g. C++, Java, etc. but still, within industry, SAS is primarily used as the clinical trial reporting tool of choice. So if you’re interested in getting statisticians to use your model, then what language should you choose for sharing? Do you expect them to learn and understand the NMTRAN code? Do you both try to translate to R? What about SAS? Will you learn R or SAS sufficient to be able to share your model?</p>
 </div>
 <div id="i-share-via-publications" class="section level3">
 <h3>I share via publications</h3>
 <p>Writing down the maths of a model is a great way to share the model between quantitative disciplines. It’s a universal language and brings with it rigour and a lack of ambiguity. <strong><em>BUT</em></strong> while two modellers can agree on the maths of a problem, the implementation may vary between two software tools such that it may be easy to implement in one tool, but very difficult (impossible?) in another.</p>
+</div>
+<div id="the-problem-of-reproducibility" class="section level3">
+<h3>The problem of reproducibility</h3>
+<p>Reproducibility means many things to many different people. For now, let’s focus on being able to re-run an estimation step for a given set of data and the ability to confirm that the parameter estimates match those presented by the original analyst. Even in this minimalist definition of reproducibility we can face problems reproducing the original analyst’s work if we don’t get <em>exactly</em> the code they ran, match the same software and environment settings, etc. The problem gets worse if we’re trying to convert from one software tool to another along the way or if we’re trying to implement the mathematical and statistical models presented in a publication if we don’t have access to the original code.</p>
 </div>
 </div>
 <div id="nonmem-doesnt-do-everything" class="section level2">
@@ -60,7 +61,7 @@ output: html_document
 </div>
 <div id="acknowledgement" class="section level2">
 <h2>Acknowledgement:</h2>
-<p>Thanks to <a href="https://github.com/vjd">Vijay Ivaturi</a> for comments and additions to this blog post.</p>
+<p>Thanks to <a href="https://github.com/vjd">Vijay Ivaturi</a> and <a href="https://github.com/kylebmetrum">kylebmetrum</a> for comments and additions to this blog post.</p>
 </div>
 
 

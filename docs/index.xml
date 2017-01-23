@@ -7,8 +7,81 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mike K Smith</copyright>
-    <lastBuildDate>Thu, 19 Jan 2017 13:42:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jan 2017 14:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.mdl.community/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>&#39;...but I only use NONMEM&#39;</title>
+      <link>http://www.mdl.community/2017/01/20/but_i_only_use_nonmem/</link>
+      <pubDate>Fri, 20 Jan 2017 14:00:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/2017/01/20/but_i_only_use_nonmem/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;div id=&#34;do-you-want-others-to-use-your-models&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Do you want others to use your models?&lt;/h2&gt;
+&lt;p&gt;Well, you &lt;strong&gt;&lt;em&gt;SAY&lt;/em&gt;&lt;/strong&gt; you only use NONMEM (although I don’t believe that - see below) but ultimately I’m sure that you’d like other people to use your model and/or the inferences based on it.&lt;/p&gt;
+&lt;p&gt;The use of modelling and simulation has expanded into quantitative pharmacology, pharmacology (Pop PK and PKPD), disease modelling, model-based meta-analysis (MBMA), cost-effectiveness and many more. Many different quantitative disciplines are now involved in building models, evaluating models, using models and modelling outputs to interpret data, plan studies or make decisions. For a given model to be useful (and used!) across all of these groups we need to find a way that we can express the model such that anybody else that wants to use it can do so for their own purposes, whatever those are.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-you-share-models&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;How do you share models?&lt;/h2&gt;
+&lt;div id=&#34;i-share-via-nmtran-other-code&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;I share via (NMTRAN / other) code&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://discuss.go-isop.org/t/isop-global-survey-how-do-you-share/657&#34;&gt;A recent survey by the International Society of Pharmacometrics&lt;/a&gt; found that ~75% of respondents primarily use NONMEM as their main tool for analysis. This would support the strategy for sharing NMTRAN models &lt;strong&gt;&lt;em&gt;within&lt;/em&gt;&lt;/strong&gt; the pharmacometrics community, but what about outside of it?&lt;/p&gt;
+&lt;p&gt;Within the statistics community there is a growing use of R as a tool for analytical work, sometimes calling other tools e.g. C++, Java, etc. but still, within industry, SAS is primarily used as the clinical trial reporting tool of choice. So if you’re interested in getting statisticians to use your model, then what language should you choose for sharing? Do you expect them to learn and understand the NMTRAN code? Do you both try to translate to R? What about SAS? Will you learn R or SAS sufficient to be able to share your model?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;i-share-via-publications&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;I share via publications&lt;/h3&gt;
+&lt;p&gt;Writing down the maths of a model is a great way to share the model between quantitative disciplines. It’s a universal language and brings with it rigour and a lack of ambiguity. &lt;strong&gt;&lt;em&gt;BUT&lt;/em&gt;&lt;/strong&gt; while two modellers can agree on the maths of a problem, the implementation may vary between two software tools such that it may be easy to implement in one tool, but very difficult (impossible?) in another.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-problem-of-reproducibility&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The problem of reproducibility&lt;/h3&gt;
+&lt;p&gt;Reproducibility means many things to many different people. For now, let’s focus on being able to re-run an estimation step for a given set of data and the ability to confirm that the parameter estimates match those presented by the original analyst. Even in this minimalist definition of reproducibility we can face problems reproducing the original analyst’s work if we don’t get &lt;em&gt;exactly&lt;/em&gt; the code they ran, match the same software and environment settings, etc. The problem gets worse if we’re trying to convert from one software tool to another along the way or if we’re trying to implement the mathematical and statistical models presented in a publication if we don’t have access to the original code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;nonmem-doesnt-do-everything&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;NONMEM doesn’t do &lt;strong&gt;&lt;em&gt;EVERYTHING&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;NONMEM and associated tools e.g. PsN have some limitations in available functionality, for example optimal trial design. And while NONMEM &lt;strong&gt;&lt;em&gt;can&lt;/em&gt;&lt;/strong&gt; be used for prediction and simulation of new designs, regimens and scenarios there are a growing number of freely available, open-source tools that can also do this and arguably more easily &lt;strong&gt;&lt;em&gt;given that the model is encoded in the appropriate input format for that tool&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Now, either we have to write a load of NMTRAN to &lt;tool X&gt; translators (some exist e.g. Pirana) or we have to use or develop a master language that can easily translate to NMTRAN, but also to other tools e.g. Certara / Pharsight’s PML or DDMoRe’s MDL.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;open-source-tools-are-growing-in-use&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Open-source tools are growing in use&lt;/h2&gt;
+&lt;p&gt;There is a rising number of free, open-source software for nonlinear mixed effects modelling and simulation (e.g. &lt;a href=&#34;http://www.saemix.biostat.fr/&#34;&gt;saemix&lt;/a&gt;, &lt;a href=&#34;https://github.com/nlmixrdevelopment/nlmixr&#34;&gt;nlmixr&lt;/a&gt;, &lt;a href=&#34;http://simulx.webpopix.org/&#34;&gt;mlxR / simulx&lt;/a&gt;, &lt;a href=&#34;http://metrumrg.com/opensourcetools.html&#34;&gt;mrgsolve&lt;/a&gt;, &lt;a href=&#34;https://github.com/hallowkm/RxODE&#34;&gt;RxODE&lt;/a&gt;, &lt;a href=&#34;https://github.com/ronkeizer/PKPDsim&#34;&gt;PKPDsim&lt;/a&gt;, &lt;a href=&#34;http://www.pfim.biostat.fr/&#34;&gt;PFIM&lt;/a&gt;, &lt;a href=&#34;http://poped.sourceforge.net/&#34;&gt;PopED&lt;/a&gt; ) and while use of these tools may be limited today, they provide a means for performing the majority of modelling and simulation tasks with no cost to the analyst. More integration of these tools into pharmacometrics toolset and workflow would benefit many, especially those who cannot get access to NONMEM licenses, yet still may wish to use disease and therapeutic drug models in their work or for predicting outcomes for patients.&lt;/p&gt;
+&lt;p&gt;About 10 years ago, it would have been hard to imagine the case that S-Plus would be thoroughly supplanted by R, to the point where it ceased to be a supported product by the company (Tibco) that bought it from Insightful. And yet, here we are. &lt;a href=&#34;http://blog.revolutionanalytics.com/popularity/&#34;&gt;R is rising in popularity as an analytical engine (often coupled with other technologies)&lt;/a&gt;. So to dismiss open-source solutions as “irrelevant” may be regarded as a short-sighted view.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;open-source-standards-can-shape-the-discipline&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;(Open-source) Standards can shape the discipline&lt;/h2&gt;
+&lt;p&gt;The advent and growth of [SBML] (&lt;a href=&#34;http://authors.library.caltech.edu/2099/1/HUCieesb04.pdf&#34; class=&#34;uri&#34;&gt;http://authors.library.caltech.edu/2099/1/HUCieesb04.pdf&lt;/a&gt;) has had a profound effect on the systems biology modelling world - impacting model sharing and tool development.With SBML as a basis for import and export of models to and from software tools, the community now has a means to quickly and easily share models, regardless of the preferred tools for individuals, laboratories or companies. This sparked development of many open-source tools, but also forced integration of SBML into existing and novel commercial tools.&lt;/p&gt;
+&lt;p&gt;For a moment, just compare the growth our community in pharmacometrics made in comparison to other fields such as computational biology, genetics, ecology to name a few. The experts in these fields are scientists, similar to us, and not software engineers. Yet, they made massive strides in science mainly due to their adoption of open source methods and tools. Experts working in the industry put their developed tools and materials out in the open, a culture that pharmacometrics experts in the industry have yet to embrace after all these years.&lt;/p&gt;
+&lt;p&gt;The fundamental requirement is a change in culture and thinking in our community. To facilitate getting over the initial hurdles of this culture change, tools that allow this transition are required.&lt;/p&gt;
+&lt;p&gt;The DDMoRe model exchange standards could be revolutionary for model sharing and interoperability within the pharmacometrics discipline but also beyond into other quantitative disciplines e.g. statistics.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;unified-workflow-agnostic-to-software-tool-choice-is-a-good-aim&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Unified workflow agnostic to software tool choice is a good aim&lt;/h2&gt;
+&lt;p&gt;At present, any time the modeller (or anyone using a given model) needs to transcode the model from one software tool to another, we should ensure that the transcoded model is equivalent to the original &lt;strong&gt;&lt;em&gt;before&lt;/em&gt;&lt;/strong&gt; making any new inferences from it. This adds an overhead of time and resource into the modelling and simulation process and brings with it the possibility of errors introduced while translating from one implementation to another.&lt;/p&gt;
+&lt;p&gt;The ideal workflow would be agnostic to the tool used for a given task. It would be ideal to be able to substitute one tool for another in the workflow and carry on with subsequent down-stream activities, with no intervention from the user to activities outside of the workflow. This would greatly improve reproducibility and portability of workflow from one analyst to another and also across quantitative disciplines.&lt;/p&gt;
+&lt;p&gt;MDL, along with the DDMoRe model exchange standards, &lt;a href=&#34;https://drive.google.com/file/d/0B6l15jR-cIWdMTlKUlY4LTJ2ajA/view?usp=sharing&#34;&gt;has achieved this aim using the Interoperability Framework&lt;/a&gt;. In this example we show end-to-end workflow using a variety of tools to perform exploratory analysis, estimation, model diagnostics &amp;amp; qualification, prediction, simulation and optimal design all without having to recode the model in any way.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-future-with-mdl-and-the-ddmore-model-exchange-standards&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The future with MDL and the DDMoRe model exchange standards&lt;/h2&gt;
+&lt;p&gt;There has never been a better time to get engaged with the DDMoRe model exchange standards through the DDMoRe Language Community. We have shown that the concepts of interoperability are achievable, we have &amp;gt;100 models on the &lt;a href=&#34;http://repository.ddmore.eu/&#34;&gt;DDMoRe Model Repository&lt;/a&gt; and we have made these languages open-source so that the community can capitalise on work already done and contribute to the future state of these standards.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;acknowledgement&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Acknowledgement:&lt;/h2&gt;
+&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/vjd&#34;&gt;Vijay Ivaturi&lt;/a&gt; and &lt;a href=&#34;https://github.com/kylebmetrum&#34;&gt;kylebmetrum&lt;/a&gt; for comments and additions to this blog post.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
     
     <item>
       <title>DDMoRe Language Community</title>
@@ -37,7 +110,7 @@
 &lt;p&gt;The MDL language standards and associated tools are hosted on Github at &lt;a href=&#34;https://github.com/ModelDefinitionLanguage&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage&lt;/a&gt;. We encourage the community members to join Github, fork the repositories, make changes and then submit a “pull request” for discussion of the changes. There is a &lt;a href=&#34;https://guides.github.com/activities/hello-world/&#34;&gt;good primer available on Github process&lt;/a&gt; if you’re not familiar with it.&lt;/p&gt;
 &lt;p&gt;If you want to contribute to documentation of the language standards (particularly MDL) then the &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/MDLUserGuide&#34;&gt;MDL User Guide is now on Github&lt;/a&gt;. The guide uses &lt;a href=&#34;https://github.com/rstudio/bookdown&#34;&gt;RStudio’s “bookdown”&lt;/a&gt; format - you edit R markdown pages which are then rendered into the online book and PDF version.&lt;/p&gt;
 &lt;p&gt;If you want to contribute to the MDL Community website, to contribute blog posts “How to…” or “Getting started…” guides, then please pull the “draft” branch of the website repository, add .Rmd files to the /content/post/ and create a pull request for review. Alternatively, send an R markdown file containing your post to Mike K Smith (Mike.K.Smith at Pfizer.com).&lt;/p&gt;
-&lt;p&gt;If you want to raise a bug report, ask a question, make a feature request then you can raise a [Github Issue on the website repository] (&lt;a href=&#34;https://github.com/ModelDefinitionLanguage/website/issues&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/website/issues&lt;/a&gt;). We will then reassign this to the appropriate repository and the resolution can be discussed and tracked via Github.&lt;/p&gt;
+&lt;p&gt;If you want to raise a bug report, ask a question, make a feature request then you can raise a &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/website/issues&#34;&gt;Github Issue on the website repository&lt;/a&gt;. We will then reassign this to the appropriate repository and the resolution can be discussed and tracked via Github.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;tool-development&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Tool development&lt;/h3&gt;

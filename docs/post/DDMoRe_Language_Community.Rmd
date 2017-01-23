@@ -72,8 +72,7 @@ request for review. Alternatively, send an R markdown file containing your post 
 Mike K Smith (Mike.K.Smith at Pfizer.com).
 
 If you want to raise a bug report, ask a question, make a feature request then
-you can raise a [Github Issue on the website repository]
-(https://github.com/ModelDefinitionLanguage/website/issues).
+you can raise a [Github Issue on the website repository](https://github.com/ModelDefinitionLanguage/website/issues).
 We will then reassign this to the appropriate repository and the 
 resolution can be discussed and tracked via Github.
 

@@ -3,7 +3,6 @@ title: "'...but I only use NONMEM'"
 author: "Mike K Smith"
 date: 2017-01-20T14:00:00Z
 tags: ["Standards"]
-draft: "True"
 output: html_document
 ---
 
@@ -33,23 +32,10 @@ the pharmacometrics community, but what about outside of it?
 Within the statistics community there is a growing use of R as a tool for 
 analytical work, sometimes calling other tools e.g. C++, Java, etc. but still,
 within industry, SAS is primarily used as the clinical trial reporting tool of
-choice. 
-
-So if you're interested in getting statisticians to use your model, then
+choice. So if you're interested in getting statisticians to use your model, then
 what language should you choose for sharing? Do you expect them to learn and 
 understand the NMTRAN code? Do you both try to translate to R? What about SAS?
-Is it worthwhile recoding in SAS? Will you learn R or SAS sufficient to be able 
-to share your model?
-
-`<DIGRESSION>`
-*I have been involved in discussions in the past within the statistics community
-about "validation" of R and analysis done with R. The misconception was that 
-analysis performed with R had to be replicated using SAS in order for it to be 
-"validated" and accepted by regulatory agencies. See 
-[here](http://www.slideshare.net/MikeKSmith/r-eliminating-fear-uncertainty-and-doubt)
-for more discussion on this topic. But if we follow that argument through,
-why aren't people insisting that we re-run NONMEM analyses using PROC NLMIXED?*
-`</end DIGRESSION>`
+Will you learn R or SAS sufficient to be able to share your model?
 
 ### I share via publications
 Writing down the maths of a model is a great way to share the model between
@@ -58,6 +44,18 @@ and a lack of ambiguity. ***BUT*** while two modellers can agree on the maths
 of a problem, the implementation may vary between two software tools such that
 it may be easy to implement in one tool, but very difficult (impossible?) in 
 another.
+
+### The problem of reproducibility
+Reproducibility means many things to many different people. For now, let's focus
+on being able to re-run an estimation step for a given set of data and the 
+ability to confirm that the parameter estimates match those presented by the 
+original analyst. Even in this minimalist definition of reproducibility we 
+can face problems reproducing the original analyst's work if we don't get 
+*exactly* the code they ran, match the same software and environment settings,
+etc. The problem gets worse if we're trying to convert from one software tool
+to another along the way or if we're trying to implement the mathematical and
+statistical models presented in a publication if we don't have access to 
+the original code.
 
 ## NONMEM doesn't do ***EVERYTHING***
 NONMEM and associated tools e.g. PsN have some limitations in available 
@@ -156,4 +154,5 @@ contribute to the future state of these standards.
 
 ## Acknowledgement:
 Thanks to [Vijay Ivaturi](https://github.com/vjd)
+and [kylebmetrum](https://github.com/kylebmetrum)
 for comments and additions to this blog post.
