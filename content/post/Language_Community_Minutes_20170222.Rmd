@@ -10,9 +10,9 @@ output: html_document
 Community.** 
 
 ## Summary
-  * We recapped the scope of the DDMoRe Language Community, the current status of 
-  each of the DDMoRe Language Standards, how they are used and what associated 
-  tools are available. 
+  * We recapped the scope of the DDMoRe Language Community and how it fits with 
+  the DDMoRe Foundation, the current status of each of the DDMoRe Language 
+  Standards, how they are used and what associated tools are available. 
   * We recognise that we need to distinguish between production and development 
   versions of the languages.
   * There is scope for satellite meetings at PAGE and ACOP to allow community
@@ -30,10 +30,17 @@ Community.**
 During the meeting we discussed the existing state for the languages, discussed 
 how the DDMoRe Foundation supports the standards while we hope that the wider 
 community (individuals, developers, tool vendors) will engage to develop tools 
-using these standards. We encourage anyone developing tools based on the 
-standards to make their work open, to benefit the wider community, but also to 
-keep this community informed of any development whether open source or not. 
-This will help prevent anyone re-inventing the wheel.
+using these standards. The Foundation will act as an advocate for the standards
+and aim to influence tool developers to use the standards and develop converters.
+We encourage anyone developing tools based on the standards to make their work 
+open, to benefit the wider community, but also to keep this community informed 
+of any development whether open source or not. This will help prevent anyone 
+re-inventing the wheel.
+
+Resources:
+  * MDL: [https://github.com/ModelDefinitionLanguage/]
+  * PharmML, SO, libPharmML (Java), libSO (Java): [https://github.com/pharmml]
+  * libpharmmlcpp (C++), libsoc (C++): [https://github.com/rikardn]
 
 An important outcome from the meeting was the decision that the current 
 language standards (MDL v1.0, PharmML v0.8.1 and SO v0.3) which are used and 
@@ -59,3 +66,7 @@ Finally, academic centres from the DDMoRe consortium - Uppsala University,
 University of Pavia, Leiden University, Freie Universitat Berlin, and University
 of Navarra - can offer training courses on MDL and associated tools. Anyone 
 interested in this should contact us, and we will put you in touch with trainers.
+
+## Next meeting: 27th March 2017, 5pm GMT.
+Please send suggestions for items to discuss at the next Languages Community
+meeting.
