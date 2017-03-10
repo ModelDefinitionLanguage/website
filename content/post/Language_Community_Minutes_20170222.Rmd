@@ -40,7 +40,10 @@ re-inventing the wheel.
 Resources:
   * MDL: [https://github.com/ModelDefinitionLanguage/]
   * PharmML, SO, libPharmML (Java), libSO (Java): [https://github.com/pharmml]
-  * libpharmmlcpp (C++), libsoc (C++): [https://github.com/rikardn]
+  * libpharmmlcpp (C++ A command line tool to convert PharmML into MDL), 
+  * libsoc (C library for creating, reading and writing SO) [https://github.com/rikardn/libsoc] 
+  * libsoc R package: [https://CRAN.R-project.org/package=libsoc]
+  * nmoutput2so (A command line tool to convert NONMEM and PsN output into SO): [https://uupharmacometrics.github.io/PsN]
 
 An important outcome from the meeting was the decision that the current 
 language standards (MDL v1.0, PharmML v0.8.1 and SO v0.3) which are used and 
