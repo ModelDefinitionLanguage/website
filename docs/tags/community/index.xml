@@ -10,6 +10,61 @@
     <atom:link href="http://www.mdl.community/tags/community/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>DDMoRe Language Community - Meeting minutes 22nd Feb 2017</title>
+      <link>http://www.mdl.community/2017/03/08/language_community_minutes_20170222/</link>
+      <pubDate>Wed, 08 Mar 2017 16:30:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/2017/03/08/language_community_minutes_20170222/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;&lt;strong&gt;On 22nd of February 2017 we had the inaugural meeting of the DDMoRe Language Community.&lt;/strong&gt;&lt;/p&gt;
+&lt;div id=&#34;summary&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We recapped the scope of the DDMoRe Language Community and how it fits with the DDMoRe Foundation, the current status of each of the DDMoRe Language Standards, how they are used and what associated tools are available.&lt;/li&gt;
+&lt;li&gt;We recognise that we need to distinguish between production and development versions of the languages.&lt;/li&gt;
+&lt;li&gt;There is scope for satellite meetings at PAGE and ACOP to allow community members get together to share ideas, encode models using the standards, develop tools (hackathon) etc.&lt;/li&gt;
+&lt;li&gt;Training on the standards (particularly MDL) is available.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;actions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;ACTIONS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mike K Smith&lt;/strong&gt; will convene a subgroup to discuss details of production vs development version of the language standards.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ALL&lt;/strong&gt; to discuss and decide whether there is sufficient interest to book meeting space at PAGE / ACOP and/or have a more informal meeting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;minutes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Minutes&lt;/h2&gt;
+&lt;p&gt;During the meeting we discussed the existing state for the languages, discussed how the DDMoRe Foundation supports the standards while we hope that the wider community (individuals, developers, tool vendors) will engage to develop tools using these standards. The Foundation will act as an advocate for the standards and aim to influence tool developers to use the standards and develop converters. We encourage anyone developing tools based on the standards to make their work open, to benefit the wider community, but also to keep this community informed of any development whether open source or not. This will help prevent anyone re-inventing the wheel.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resources&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MDL: &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PharmML, SO, libPharmML (Java), libSO (Java): &lt;a href=&#34;https://github.com/pharmml&#34; class=&#34;uri&#34;&gt;https://github.com/pharmml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;libpharmmlcpp (C++ A command line tool to convert PharmML into MDL): &lt;a href=&#34;https://github.com/rikardn/libpharmmlcpp&#34; class=&#34;uri&#34;&gt;https://github.com/rikardn/libpharmmlcpp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;libsoc (C library for creating, reading and writing SO): &lt;a href=&#34;https://github.com/rikardn/libsoc&#34; class=&#34;uri&#34;&gt;https://github.com/rikardn/libsoc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;libsoc R package: &lt;a href=&#34;https://CRAN.R-project.org/package=libsoc&#34; class=&#34;uri&#34;&gt;https://CRAN.R-project.org/package=libsoc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An important outcome from the meeting was the decision that the current language standards (MDL v1.0, PharmML v0.8.1 and SO v0.3) which are used and implemented in the DDMoRe Interoperability Framework and Model Repository should be considered the “Production” branch of code, and we will work on resolving issues and bringing in new features on a “Development” branch. Once features are fully developed or issues fully resolved and tested on the “Development” branch, this code can be brought forward into “Production”. Hopefully this change control will ensure stability of the code base for the future.This method of working is standard practice in software development. A sub-team will look at the current code base and identify the roadmap for new features and bug fixes. This roadmap will be communicated back to the DDMoRe Foundation and to the Languages Community.&lt;/p&gt;
+&lt;p&gt;There is the potential for meetings, discussions, hackathons centred around the DDMoRe Language Standards (and DDMoRe products more generally) around pharmacometrics meetings such as PAGE (Budapest, Hungary in June 2017) and ACOP (Fort Lauderdale, USA in October 2017). These meetings could be formal or informal, but should be community-led, rather than by DDMoRe Foundation. Please let us know if you would like to take part and contribute to such a meeting.&lt;/p&gt;
+&lt;p&gt;Finally, academic centres from the DDMoRe consortium - Uppsala University, University of Pavia, Leiden University, Freie Universitat Berlin, and University of Navarra - can offer training courses on MDL and associated tools. Anyone interested in this should contact us, and we will put you in touch with trainers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Next meeting: 27th March 2017, 4pm UK time, 5pm CET, 11am EST &lt;/strong&gt;&lt;br /&gt;
+Please send suggestions for items to discuss at the next Languages Community meeting.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
       <title>DDMoRe Language Community</title>
       <link>http://www.mdl.community/2017/01/19/ddmore_language_community/</link>
       <pubDate>Thu, 19 Jan 2017 13:42:00 +0000</pubDate>

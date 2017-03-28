@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.mdl.community/2017/03/08/language_community_minutes_20170222/</loc>
+    <lastmod>2017-03-08T16:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.mdl.community/2017/01/23/but_i_only_use_nonmem/</loc>
     <lastmod>2017-01-23T12:30:00+00:00</lastmod>
   </url>
@@ -38,13 +43,13 @@
   
   <url>
     <loc>http://www.mdl.community/tags/announce/</loc>
-    <lastmod>2017-01-19T13:42:00+00:00</lastmod>
+    <lastmod>2017-03-08T16:30:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.mdl.community/tags/community/</loc>
-    <lastmod>2017-01-19T13:42:00+00:00</lastmod>
+    <lastmod>2017-03-08T16:30:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -62,7 +67,7 @@
   
   <url>
     <loc>http://www.mdl.community/</loc>
-    <lastmod>2017-01-23T12:30:00+00:00</lastmod>
+    <lastmod>2017-03-08T16:30:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -98,7 +103,7 @@
   
   <url>
     <loc>http://www.mdl.community/post/</loc>
-    <lastmod>2017-01-23T12:30:00+00:00</lastmod>
+    <lastmod>2017-03-08T16:30:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
