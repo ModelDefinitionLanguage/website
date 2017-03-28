@@ -1,0 +1,75 @@
+---
+title: "DDMoRe Language Community - Meeting minutes 22nd Feb 2017"
+author: "Mike K Smith"
+date: 2017-03-08T16:30:00Z
+tags: ["Community", "Announce"]
+output: html_document
+---
+
+**On 22nd of February 2017 we had the inaugural meeting of the DDMoRe Language 
+Community.** 
+
+## Summary
+  * We recapped the scope of the DDMoRe Language Community and how it fits with 
+  the DDMoRe Foundation, the current status of each of the DDMoRe Language 
+  Standards, how they are used and what associated tools are available. 
+  * We recognise that we need to distinguish between production and development 
+  versions of the languages.
+  * There is scope for satellite meetings at PAGE and ACOP to allow community
+  members get together to share ideas, encode models using the standards, 
+  develop tools (hackathon) etc.
+  * Training on the standards (particularly MDL) is available.
+
+## ACTIONS
+  * **Mike K Smith** will convene a subgroup to discuss details of production vs
+  development version of the language standards.
+  * **ALL** to discuss and decide whether there is sufficient interest to book
+  meeting space at PAGE / ACOP and/or have a more informal meeting.
+
+## Minutes
+During the meeting we discussed the existing state for the languages, discussed 
+how the DDMoRe Foundation supports the standards while we hope that the wider 
+community (individuals, developers, tool vendors) will engage to develop tools 
+using these standards. The Foundation will act as an advocate for the standards
+and aim to influence tool developers to use the standards and develop converters.
+We encourage anyone developing tools based on the standards to make their work 
+open, to benefit the wider community, but also to keep this community informed 
+of any development whether open source or not. This will help prevent anyone 
+re-inventing the wheel.
+
+Resources:
+  * MDL: [https://github.com/ModelDefinitionLanguage/]
+  * PharmML, SO, libPharmML (Java), libSO (Java): [https://github.com/pharmml]
+  * libpharmmlcpp (C++ A command line tool to convert PharmML into MDL), 
+  * libsoc (C library for creating, reading and writing SO) [https://github.com/rikardn/libsoc] 
+  * libsoc R package: [https://CRAN.R-project.org/package=libsoc]
+  * nmoutput2so (A command line tool to convert NONMEM and PsN output into SO): [https://uupharmacometrics.github.io/PsN]
+
+An important outcome from the meeting was the decision that the current 
+language standards (MDL v1.0, PharmML v0.8.1 and SO v0.3) which are used and 
+implemented in the DDMoRe Interoperability Framework and Model Repository 
+should be considered the “Production” branch of code, and we will work on 
+resolving issues and bringing in new features on a “Development” branch. Once 
+features are fully developed or issues fully resolved and tested on the 
+“Development” branch, this code can be brought forward into “Production”. 
+Hopefully this change control will ensure stability of the code base for the 
+future.This method of working is standard practice in software development. 
+A sub-team will look at the current code base and identify the roadmap for new 
+features and bug fixes. This roadmap will be communicated back to the DDMoRe 
+Foundation and to the Languages Community.
+
+There is the potential for meetings, discussions, hackathons centred around the 
+DDMoRe Language Standards (and DDMoRe products more generally) around 
+pharmacometrics meetings such as PAGE (Budapest, Hungary in June 2017) and 
+ACOP (Fort Lauderdale, USA in October 2017). These meetings could be formal or 
+informal, but should be community-led, rather than by DDMoRe Foundation. Please 
+let us know if you would like to take part and contribute to such a meeting.
+
+Finally, academic centres from the DDMoRe consortium - Uppsala University, 
+University of Pavia, Leiden University, Freie Universitat Berlin, and University
+of Navarra - can offer training courses on MDL and associated tools. Anyone 
+interested in this should contact us, and we will put you in touch with trainers.
+
+## Next meeting: 27th March 2017, 5pm GMT.
+Please send suggestions for items to discuss at the next Languages Community
+meeting.
