@@ -1,0 +1,103 @@
+---
+title: "DDMoRe Language Community - Meeting minutes 29th March 2017"
+author: "Mike K Smith"
+date: 2017-03-31T13:00:00Z
+tags: ["Community", "Announce"]
+output: html_document
+---
+
+**The DDMoRe Language Community meeting was held 29th of March 2017** 
+  
+## Summary
+  
+  - We should contribute Agenda items for the meeting, report bugs, issues and
+  features requests for MDL and the website through Github.
+  - Mike K Smith gave a brief walkthrough of MDL structure and we looked at a 
+  Pop PK model for Factor IX developed by Aki Suzuki (Pfizer) as an example.
+  - We discussed a Pop PK / PKPD library of "stock" models that would be 
+  documented and encoded in MDL, NMTRAN, and open source tools such as nlmixr,
+  mrgsolve, saemix, PopED, PFIM.
+  - We discussed how to raise issues with conversion technology and how these 
+  might get addressed in future.
+  - If anyone is interested in meeting at PAGE or ACOP to discuss the DDMoRe
+  Language standards (or other DDMoRe related items) then please get in touch.
+
+## ACTIONS
+  
+  - **Mike K Smith** will convene a subgroup to discuss details of production vs
+  development version of the language standards.
+  - **ALL** to discuss and decide whether there is sufficient interest to book
+  meeting space at PAGE / ACOP and/or have a more informal meeting.
+  - **Stuart Moodie** will find documentation for the PharmML-NM-TRAN converter.
+  
+## Minutes
+  
+### Demo 
+  - Mike K Smith showed (minutes of the last meeting on the MDL Languages website)[http://mdl.community/2017/03/08/language_community_minutes_20170222/.
+  - Walkthrough of MDL (Mike K Smith)
+  -	PharmML, for a Pop PK example: 
+    - 	Aki Suzuki (Pfizer) described Factor IX model developed with NM-TRAN. 
+    This model will be available shortly on the DDMoRe model repository.
+    - 	ReferenceL: "Population pharmacokinetic modelling of factor IX activity 
+    after administration of recombinant factor IX in patients with haemophilia B."
+    A. SUZUKI, Y. TOMONO and J. M. KORTH-BRADLEY. 
+    Haemophilia (2016), 22, e359–e366. DOI: 10.1111/hae.12969
+    - 	Mike showed MDL and NM-TRAN for this model. 
+    - 	Nick Holford asked how number of occasions is known for NM-TRAN generation. 
+    Mike did not know. It was assumed NM-TRAN must read the data to find number 
+    of occasions.
+    - 	Residual error requires piecewise function for proportional error. 
+  PharmML OK but NM-TRAN conversion fails to recognize the results of the 
+  piecewise function. 
+  (Mike will has raised an issue on this)[https://github.com/ModelDefinitionLanguage/website/issues/18].
+
+### Converters
+  - There is currently no-one employed to work on the PharmML-NM-TRAN 
+    converter. Stuart Moodie indicated someone who wanted to try to fix this bug
+    would need to know Java and PharmML and NM-TRAN.
+  - Devin asked if there was a specification for the PharmML-NM-TRAN converter.
+  Documentations should exist (as an IMI DDMoRe Project deliverable) but it is 
+  not clear where these are stored and whether they are of use to a third party
+  developer to bring them up to speed quickly enough.
+  - Stuart pointed out that working on converter issues would divert work from
+    other issues due to limited DDMoRe Foundation technical resource. Devin 
+    suggested that we review issues to decide which items are critical to 
+    progress and make case to the Foundation.
+
+### Library of Pop PK, PD models
+  -	Aim to have a library of well documented structural models for commonly used 
+  Pop PK and PD models encoded in MDL, NMTRAN, nlmixr, saemix, mrgsolve, RxODE, 
+  PopED, PFIM.
+  -	Mike described the goals of having a library. The idea is to have libraries 
+  developed in MDL and for each target tool in the language of the target tool. 
+  This is because converters are not yet available for all of these tools. 
+  The aim is to develop resources for qualifiying use of MDL and PharmML with 
+  target tool libraries.
+  - 	Satya asked how this differs from the repository.  Mike said he wanted the 
+  PKPD library more or less finalized on GitHub before putting it in the 
+  repository. 
+  - NM-TRAN and Monolix have more or less similar PK libraries
+  - Other tool developers should be contacted to ask if they have plans to 
+  develop libraries
+  - Vijay spoke about crowdsourcing (the effort) and crowdfunding (the money). 
+  Funding could be free registration or travel to ACoP or having a prize 
+  (eg. $10,000). 
+  - 	Host on Github via Osmosis Foundation.
+
+### DDMoRe Languags Standards (production vs development)
+  - 	Rikard. Stuart, Mike and Vijay volunteered to be part of this subgroup.
+
+### PAGE / ACoP planning
+  - Do we want to meet (even informally)?
+  - What would we like to achieve with the meeting?
+  - What will be new by PAGE? What will be new by ACoP?
+  - Mike said those who want a PAGE or ACoP meeting for the DDMoRe Languages 
+  Community will need to organize it themselves e.g. using a github issue 
+  mechanism.
+
+## Acknowledgement
+Thanks to Nick Holford for taking minutes.
+
+**Next meeting: 26th March 2017, 4pm UK time, 5pm CET, 11am EST **  
+Please send suggestions for items to discuss at the next Languages Community
+meeting.
