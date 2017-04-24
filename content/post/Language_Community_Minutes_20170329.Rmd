@@ -98,6 +98,6 @@ output: html_document
 ## Acknowledgement
 Thanks to Nick Holford for taking minutes.
 
-**Next meeting: 26th March 2017, 4pm UK time, 5pm CET, 11am EST **  
+**Next meeting: 26th April 2017, 4pm UK time, 5pm CET, 11am EST **  
 Please send suggestions for items to discuss at the next Languages Community
 meeting.
