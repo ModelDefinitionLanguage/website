@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>DDMoRe Language Community - Meeting minutes 29th March 2017 &middot; Mike K Smith</title>
+        <meta name="description" content="The DDMoRe Language Community meeting was held 29th of March 2017
+SummaryWe should contribute Agenda items for the meeting, report bugs, issues and features requests for MDL and the website through Github.Mike K Smith gave a brief walkthrough of MDL structure and we looked at a Pop PK model for Factor IX developed by Aki Suzuki (Pfizer) as an example.We discussed a Pop PK / PKPD library of “stock” models that would be documented and encoded in MDL, NMTRAN, and open source tools such as nlmixr, mrgsolve, saemix, PopED, PFIM.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.18.1" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="DDMoRe Language Community - Meeting minutes 29th March 2017">
+<meta property="og:description" content="The DDMoRe Language Community meeting was held 29th of March 2017
+SummaryWe should contribute Agenda items for the meeting, report bugs, issues and features requests for MDL and the website through Github.Mike K Smith gave a brief walkthrough of MDL structure and we looked at a Pop PK model for Factor IX developed by Aki Suzuki (Pfizer) as an example.We discussed a Pop PK / PKPD library of “stock” models that would be documented and encoded in MDL, NMTRAN, and open source tools such as nlmixr, mrgsolve, saemix, PopED, PFIM.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.mdl.community/2017/03/31/language_community_minutes_20170329/">
+        <link rel="stylesheet" href="http://www.mdl.community/css/normalize.css">
+        <link rel="stylesheet" href="http://www.mdl.community/css/highlight.css">
+        <link rel="stylesheet" href="http://www.mdl.community/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+
+
+    </head>
+    <body>
+        
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-86793002-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="MDL Community website" href="http://www.mdl.community/">MDL Community website</a>
+                            </h1>
+                        
+                        <a class="button-square" href="http://www.mdl.community/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/DDMoRe_FDN">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/ModelDefinitionLanguage/">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Home" href="http://www.mdl.community/">Home</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Download" href="http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/">Download</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="MDL UserGuide" href="https://modeldefinitionlanguage.github.io/MDLUserGuide/">MDL UserGuide</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="MDL FAQ" href="http://www.mdl.community/page/faq/">MDL FAQ</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="http://www.mdl.community/page/about/">About</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">DDMoRe Language Community - Meeting minutes 29th March 2017</h1>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2017-03-31" itemprop="datePublished">Fri, Mar 31, 2017</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="https://www.linkedin.com/in/mike-k-smith-b200245" itemprop="url" rel="author">Mike K Smith</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+
+
+<p><strong>The DDMoRe Language Community meeting was held 29th of March 2017</strong></p>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<ul>
+<li>We should contribute Agenda items for the meeting, report bugs, issues and features requests for MDL and the website through Github.</li>
+<li>Mike K Smith gave a brief walkthrough of MDL structure and we looked at a Pop PK model for Factor IX developed by Aki Suzuki (Pfizer) as an example.</li>
+<li>We discussed a Pop PK / PKPD library of “stock” models that would be documented and encoded in MDL, NMTRAN, and open source tools such as nlmixr, mrgsolve, saemix, PopED, PFIM.</li>
+<li>We discussed how to raise issues with conversion technology and how these might get addressed in future.</li>
+<li>If anyone is interested in meeting at PAGE or ACOP to discuss the DDMoRe Language standards (or other DDMoRe related items) then please get in touch.</li>
+</ul>
+</div>
+<div id="actions" class="section level2">
+<h2>ACTIONS</h2>
+<ul>
+<li><strong>Mike K Smith</strong> will convene a subgroup to discuss details of production vs development version of the language standards.</li>
+<li><strong>ALL</strong> to discuss and decide whether there is sufficient interest to book meeting space at PAGE / ACOP and/or have a more informal meeting.</li>
+<li><strong>Stuart Moodie</strong> will find documentation for the PharmML-NM-TRAN converter.</li>
+</ul>
+</div>
+<div id="minutes" class="section level2">
+<h2>Minutes</h2>
+<div id="demo" class="section level3">
+<h3>Demo</h3>
+<ul>
+<li>Mike K Smith showed <a href="http://mdl.community/2017/03/08/language_community_minutes_20170222/">minutes of the last meeting on the MDL Languages website</a>.</li>
+<li>Walkthrough of MDL (Mike K Smith)</li>
+<li>PharmML, for a Pop PK example:
+<ul>
+<li>Aki Suzuki (Pfizer) described Factor IX model developed with NM-TRAN. This model will be available shortly on the DDMoRe model repository.</li>
+<li>ReferenceL: “Population pharmacokinetic modelling of factor IX activity after administration of recombinant factor IX in patients with haemophilia B.” A. SUZUKI, Y. TOMONO and J. M. KORTH-BRADLEY. Haemophilia (2016), 22, e359–e366. DOI: 10.1111/hae.12969</li>
+<li>Mike showed MDL and NM-TRAN for this model.</li>
+<li>Nick Holford asked how number of occasions is known for NM-TRAN generation. Mike did not know. It was assumed NM-TRAN must read the data to find number of occasions.</li>
+<li>Residual error requires piecewise function for proportional error. PharmML OK but NM-TRAN conversion fails to recognize the results of the piecewise function. <a href="https://github.com/ModelDefinitionLanguage/website/issues/18">Mike will has raised an issue on this</a>.</li>
+</ul></li>
+</ul>
+</div>
+<div id="converters" class="section level3">
+<h3>Converters</h3>
+<ul>
+<li>There is currently no-one employed to work on the PharmML-NM-TRAN converter. Stuart Moodie indicated someone who wanted to try to fix this bug would need to know Java and PharmML and NM-TRAN.</li>
+<li>Devin asked if there was a specification for the PharmML-NM-TRAN converter. Documentations should exist (as an IMI DDMoRe Project deliverable) but it is not clear where these are stored and whether they are of use to a third party developer to bring them up to speed quickly enough.</li>
+<li>Stuart pointed out that working on converter issues would divert work from other issues due to limited DDMoRe Foundation technical resource. Devin suggested that we review issues to decide which items are critical to progress and make case to the Foundation.</li>
+</ul>
+</div>
+<div id="library-of-pop-pk-pd-models" class="section level3">
+<h3>Library of Pop PK, PD models</h3>
+<ul>
+<li>Aim to have a library of well documented structural models for commonly used Pop PK and PD models encoded in MDL, NMTRAN, nlmixr, saemix, mrgsolve, RxODE, PopED, PFIM.</li>
+<li>Mike described the goals of having a library. The idea is to have libraries developed in MDL and for each target tool in the language of the target tool. This is because converters are not yet available for all of these tools. The aim is to develop resources for qualifiying use of MDL and PharmML with target tool libraries.</li>
+<li>Satya asked how this differs from the repository. Mike said he wanted the PKPD library more or less finalized on GitHub before putting it in the repository.</li>
+<li>NM-TRAN and Monolix have more or less similar PK libraries</li>
+<li>Other tool developers should be contacted to ask if they have plans to develop libraries</li>
+<li>Vijay spoke about crowdsourcing (the effort) and crowdfunding (the money). Funding could be free registration or travel to ACoP or having a prize (eg. $10,000).</li>
+<li>Host on Github via Osmosis Foundation.</li>
+</ul>
+</div>
+<div id="ddmore-languags-standards-production-vs-development" class="section level3">
+<h3>DDMoRe Languags Standards (production vs development)</h3>
+<ul>
+<li>Rikard. Stuart, Mike and Vijay volunteered to be part of this subgroup.</li>
+</ul>
+</div>
+<div id="page-acop-planning" class="section level3">
+<h3>PAGE / ACoP planning</h3>
+<ul>
+<li>Do we want to meet (even informally)?</li>
+<li>What would we like to achieve with the meeting?</li>
+<li>What will be new by PAGE? What will be new by ACoP?</li>
+<li>Mike said those who want a PAGE or ACoP meeting for the DDMoRe Languages Community will need to organize it themselves e.g. using a github issue mechanism.</li>
+</ul>
+</div>
+</div>
+<div id="acknowledgement" class="section level2">
+<h2>Acknowledgement</h2>
+<p>Thanks to Nick Holford for taking minutes.</p>
+<p>Please send suggestions for items to discuss at the next Languages Community meeting.</p>
+</div>
+
+
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+                 <a href="http://www.mdl.community/tags/community/">Community</a>
+            
+                 <a href="http://www.mdl.community/tags/announce/">Announce</a>
+            
+        </p>
+    
+
+    <div class="share">
+        <a class="icon-twitter" href="https://twitter.com/share?text=DDMoRe%20Language%20Community%20-%20Meeting%20minutes%2029th%20March%202017&url=http%3a%2f%2fwww.mdl.community%2f2017%2f03%2f31%2flanguage_community_minutes_20170329%2f"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fa fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.mdl.community%2f2017%2f03%2f31%2flanguage_community_minutes_20170329%2f"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <i class="fa fa-facebook"></i>
+            <span class="hidden">Facebook</span>
+        </a>
+
+        <a class="icon-google-plus" href="https://plus.google.com/share?url=http%3a%2f%2fwww.mdl.community%2f2017%2f03%2f31%2flanguage_community_minutes_20170329%2f"
+           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+           <i class="fa fa-google-plus"></i>
+            <span class="hidden">Google+</span>
+        </a>
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="MDL Community website" href="http://www.mdl.community/">MDL Community website</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2017 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="http://www.mdl.community/js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+        <script src="http://www.mdl.community/js/jquery.fitvids.js"></script>
+        <script src="http://www.mdl.community/js/scripts.js"></script>
+    </body>
+</html>
+

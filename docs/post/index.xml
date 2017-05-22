@@ -7,8 +7,156 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mike K Smith</copyright>
-    <lastBuildDate>Wed, 08 Mar 2017 16:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 May 2017 10:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.mdl.community/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DDMoRe Language Community at PAGE 2017</title>
+      <link>http://www.mdl.community/2017/05/22/language_community_page2017/</link>
+      <pubDate>Mon, 22 May 2017 10:00:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/2017/05/22/language_community_page2017/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;&lt;strong&gt;DDMoRe Language Community at PAGE 2017, Budapest, Hungary&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are plans for the DDMoRe Language Community to meet at the &lt;a href=&#34;https://www.page-meeting.org/default.asp?id=41&amp;amp;keuze=meeting&#34;&gt;PAGE 2017 conference held in Budapest, Hungary&lt;/a&gt; from 6-9 June.&lt;/p&gt;
+&lt;p&gt;Current plans are to meet up with Rikard Nordgren at the PsN stand in the exhibit area at 12:45pm on Thursday 8th.&lt;/p&gt;
+&lt;p&gt;Also, look out for the poster &lt;a href=&#34;https://www.page-meeting.org/default.asp?abstract=7188&#34;&gt;I-14 “Execution of complex Bayesian workflows with the DDMoRe Interoperability Framework: a case study in the diabetes area” by Christiana Larizza, Elisa Borella, Lorenzo Pasotti, Palma Tartaglione, Mike K Smith, Stuart Moodie and Paolo Magni&lt;/a&gt;. The poster will show how the DDMoRe language standards have been employed to compare non-Bayesian models fitted using NONMEM with the Bayesian estimation which incorporate uncertainty in the pharmacokinetic parameters, estimated using BUGS. The DDMoRe interoperability framework uses the language standards to facilitate unbroken workflow using a number of modelling and simulation tools.&lt;/p&gt;
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Production &amp; Development Language Standards</title>
+      <link>http://www.mdl.community/2017/05/08/standards_production_development/</link>
+      <pubDate>Mon, 08 May 2017 10:00:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/2017/05/08/standards_production_development/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;&lt;strong&gt;A subgroup of the DDMoRe Language Standards Community is discussing how to support production and development of the DDMoRe Language Standards&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;During the IMI DDMoRe project, we developed the DDMoRe Language Standards (MDL, PharmML, SO) and integrated these with the associated tools libpharmml, libso, etc. to form the basis of the DDMoRe Interoperability Framework enabling modelling and simulation workflow based on the MDL representation of a model and automated conversion through PharmML to target software and conversion of the output back to the Standard Output object and from there back to R.&lt;/p&gt;
+&lt;p&gt;With the DDMoRe Foundation, we are keen to ensure that the language standards are easily maintained and supported going forward and that these form the basis of solid standards for future development of tools and converters. We propose to split development into “Production” and “Development” versions of the standards and tools. This will ensure that the “Production” version is maintained according to good practices in software development, while new features can be examined and tested using the “Development” version.&lt;/p&gt;
+&lt;p&gt;Stuart Moodie, Maciej Swat, Rikard Nordgren, Nadia Terranova, Vijay Ivaturi and Mike K Smith are discussing the pathway to achieving this aim. We would welcome thoughts, input and discussion from the community on this topic.&lt;/p&gt;
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DDMoRe Language Community - Meeting minutes 29th March 2017</title>
+      <link>http://www.mdl.community/2017/03/31/language_community_minutes_20170329/</link>
+      <pubDate>Fri, 31 Mar 2017 13:00:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/2017/03/31/language_community_minutes_20170329/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;&lt;strong&gt;The DDMoRe Language Community meeting was held 29th of March 2017&lt;/strong&gt;&lt;/p&gt;
+&lt;div id=&#34;summary&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We should contribute Agenda items for the meeting, report bugs, issues and features requests for MDL and the website through Github.&lt;/li&gt;
+&lt;li&gt;Mike K Smith gave a brief walkthrough of MDL structure and we looked at a Pop PK model for Factor IX developed by Aki Suzuki (Pfizer) as an example.&lt;/li&gt;
+&lt;li&gt;We discussed a Pop PK / PKPD library of “stock” models that would be documented and encoded in MDL, NMTRAN, and open source tools such as nlmixr, mrgsolve, saemix, PopED, PFIM.&lt;/li&gt;
+&lt;li&gt;We discussed how to raise issues with conversion technology and how these might get addressed in future.&lt;/li&gt;
+&lt;li&gt;If anyone is interested in meeting at PAGE or ACOP to discuss the DDMoRe Language standards (or other DDMoRe related items) then please get in touch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;actions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;ACTIONS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mike K Smith&lt;/strong&gt; will convene a subgroup to discuss details of production vs development version of the language standards.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ALL&lt;/strong&gt; to discuss and decide whether there is sufficient interest to book meeting space at PAGE / ACOP and/or have a more informal meeting.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stuart Moodie&lt;/strong&gt; will find documentation for the PharmML-NM-TRAN converter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;minutes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Minutes&lt;/h2&gt;
+&lt;div id=&#34;demo&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Demo&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Mike K Smith showed &lt;a href=&#34;http://mdl.community/2017/03/08/language_community_minutes_20170222/&#34;&gt;minutes of the last meeting on the MDL Languages website&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Walkthrough of MDL (Mike K Smith)&lt;/li&gt;
+&lt;li&gt;PharmML, for a Pop PK example:
+&lt;ul&gt;
+&lt;li&gt;Aki Suzuki (Pfizer) described Factor IX model developed with NM-TRAN. This model will be available shortly on the DDMoRe model repository.&lt;/li&gt;
+&lt;li&gt;ReferenceL: “Population pharmacokinetic modelling of factor IX activity after administration of recombinant factor IX in patients with haemophilia B.” A. SUZUKI, Y. TOMONO and J. M. KORTH-BRADLEY. Haemophilia (2016), 22, e359–e366. DOI: 10.1111/hae.12969&lt;/li&gt;
+&lt;li&gt;Mike showed MDL and NM-TRAN for this model.&lt;/li&gt;
+&lt;li&gt;Nick Holford asked how number of occasions is known for NM-TRAN generation. Mike did not know. It was assumed NM-TRAN must read the data to find number of occasions.&lt;/li&gt;
+&lt;li&gt;Residual error requires piecewise function for proportional error. PharmML OK but NM-TRAN conversion fails to recognize the results of the piecewise function. &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/website/issues/18&#34;&gt;Mike will has raised an issue on this&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;converters&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Converters&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;There is currently no-one employed to work on the PharmML-NM-TRAN converter. Stuart Moodie indicated someone who wanted to try to fix this bug would need to know Java and PharmML and NM-TRAN.&lt;/li&gt;
+&lt;li&gt;Devin asked if there was a specification for the PharmML-NM-TRAN converter. Documentations should exist (as an IMI DDMoRe Project deliverable) but it is not clear where these are stored and whether they are of use to a third party developer to bring them up to speed quickly enough.&lt;/li&gt;
+&lt;li&gt;Stuart pointed out that working on converter issues would divert work from other issues due to limited DDMoRe Foundation technical resource. Devin suggested that we review issues to decide which items are critical to progress and make case to the Foundation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;library-of-pop-pk-pd-models&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Library of Pop PK, PD models&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Aim to have a library of well documented structural models for commonly used Pop PK and PD models encoded in MDL, NMTRAN, nlmixr, saemix, mrgsolve, RxODE, PopED, PFIM.&lt;/li&gt;
+&lt;li&gt;Mike described the goals of having a library. The idea is to have libraries developed in MDL and for each target tool in the language of the target tool. This is because converters are not yet available for all of these tools. The aim is to develop resources for qualifiying use of MDL and PharmML with target tool libraries.&lt;/li&gt;
+&lt;li&gt;Satya asked how this differs from the repository. Mike said he wanted the PKPD library more or less finalized on GitHub before putting it in the repository.&lt;/li&gt;
+&lt;li&gt;NM-TRAN and Monolix have more or less similar PK libraries&lt;/li&gt;
+&lt;li&gt;Other tool developers should be contacted to ask if they have plans to develop libraries&lt;/li&gt;
+&lt;li&gt;Vijay spoke about crowdsourcing (the effort) and crowdfunding (the money). Funding could be free registration or travel to ACoP or having a prize (eg. $10,000).&lt;/li&gt;
+&lt;li&gt;Host on Github via Osmosis Foundation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ddmore-languags-standards-production-vs-development&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;DDMoRe Languags Standards (production vs development)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Rikard. Stuart, Mike and Vijay volunteered to be part of this subgroup.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;page-acop-planning&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;PAGE / ACoP planning&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Do we want to meet (even informally)?&lt;/li&gt;
+&lt;li&gt;What would we like to achieve with the meeting?&lt;/li&gt;
+&lt;li&gt;What will be new by PAGE? What will be new by ACoP?&lt;/li&gt;
+&lt;li&gt;Mike said those who want a PAGE or ACoP meeting for the DDMoRe Languages Community will need to organize it themselves e.g. using a github issue mechanism.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;acknowledgement&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Acknowledgement&lt;/h2&gt;
+&lt;p&gt;Thanks to Nick Holford for taking minutes.&lt;/p&gt;
+&lt;p&gt;Please send suggestions for items to discuss at the next Languages Community meeting.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
     
     <item>
       <title>DDMoRe Language Community - Meeting minutes 22nd Feb 2017</title>

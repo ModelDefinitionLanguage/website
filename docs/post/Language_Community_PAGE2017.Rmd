@@ -1,0 +1,26 @@
+---
+title: "DDMoRe Language Community at PAGE 2017"
+author: "Mike K Smith"
+date: 2017-05-22T10:00:00Z
+tags: ["Community", "Announce"]
+output: html_document
+---
+
+**DDMoRe Language Community at PAGE 2017, Budapest, Hungary** 
+
+There are plans for the DDMoRe Language Community to meet at the [PAGE 2017
+conference held in Budapest, Hungary](https://www.page-meeting.org/default.asp?id=41&keuze=meeting)
+from 6-9 June.
+
+Current plans are to meet up with Rikard Nordgren at the PsN stand in the 
+exhibit area at 12:45pm on Thursday 8th.
+
+Also, look out for the poster [I-14 "Execution of complex Bayesian workflows with
+the DDMoRe Interoperability Framework: a case study in the diabetes area" by 
+Christiana Larizza, Elisa Borella, Lorenzo Pasotti, Palma Tartaglione, Mike K 
+Smith, Stuart Moodie and Paolo Magni](https://www.page-meeting.org/default.asp?abstract=7188).
+The poster will show how the DDMoRe language standards have been employed to 
+compare non-Bayesian models fitted using NONMEM with the Bayesian estimation
+which incorporate uncertainty in the pharmacokinetic parameters, estimated 
+using BUGS. The DDMoRe interoperability framework uses the language standards
+to facilitate unbroken workflow using a number of modelling and simulation tools.

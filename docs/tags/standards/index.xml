@@ -10,6 +10,31 @@
     <atom:link href="http://www.mdl.community/tags/standards/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Production &amp; Development Language Standards</title>
+      <link>http://www.mdl.community/2017/05/08/standards_production_development/</link>
+      <pubDate>Mon, 08 May 2017 10:00:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/2017/05/08/standards_production_development/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;&lt;strong&gt;A subgroup of the DDMoRe Language Standards Community is discussing how to support production and development of the DDMoRe Language Standards&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;During the IMI DDMoRe project, we developed the DDMoRe Language Standards (MDL, PharmML, SO) and integrated these with the associated tools libpharmml, libso, etc. to form the basis of the DDMoRe Interoperability Framework enabling modelling and simulation workflow based on the MDL representation of a model and automated conversion through PharmML to target software and conversion of the output back to the Standard Output object and from there back to R.&lt;/p&gt;
+&lt;p&gt;With the DDMoRe Foundation, we are keen to ensure that the language standards are easily maintained and supported going forward and that these form the basis of solid standards for future development of tools and converters. We propose to split development into “Production” and “Development” versions of the standards and tools. This will ensure that the “Production” version is maintained according to good practices in software development, while new features can be examined and tested using the “Development” version.&lt;/p&gt;
+&lt;p&gt;Stuart Moodie, Maciej Swat, Rikard Nordgren, Nadia Terranova, Vijay Ivaturi and Mike K Smith are discussing the pathway to achieving this aim. We would welcome thoughts, input and discussion from the community on this topic.&lt;/p&gt;
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
       <title>&#39;...but I only use NONMEM&#39;</title>
       <link>http://www.mdl.community/2017/01/23/but_i_only_use_nonmem/</link>
       <pubDate>Mon, 23 Jan 2017 12:30:00 +0000</pubDate>
