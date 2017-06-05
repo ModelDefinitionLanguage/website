@@ -13,7 +13,7 @@ conference held in Budapest, Hungary](https://www.page-meeting.org/default.asp?i
 from 6-9 June.
 
 Current plans are to meet up with Rikard Nordgren at the PsN stand in the 
-exhibit area at 12:45pm on Thursday 8th.
+exhibit area at 13:45pm on Thursday 8th.
 
 Also, look out for the poster [I-14 "Execution of complex Bayesian workflows with
 the DDMoRe Interoperability Framework: a case study in the diabetes area" by 
