@@ -7,8 +7,64 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mike K Smith</copyright>
-    <lastBuildDate>Mon, 22 May 2017 10:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Aug 2017 11:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.mdl.community/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DDMoRe Language Community at PAGE 2017 - Minutes</title>
+      <link>http://www.mdl.community/2017/08/09/language_community_minutes_page2017/</link>
+      <pubDate>Wed, 09 Aug 2017 11:00:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/2017/08/09/language_community_minutes_page2017/</guid>
+      <description>&lt;p&gt;At PAGE the language community group had a meeting on 8th June 2017.&lt;/p&gt;
+&lt;p&gt;Present were Rikard Nordgren, Maciej Swat, Stuart Moodie, Gunnar Yngman and (over the phone) Mike K Smith.&lt;/p&gt;
+&lt;div id=&#34;pharmml&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;PharmML&lt;/h2&gt;
+&lt;div id=&#34;production-and-development-tracks-for-pharmml&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Production and development tracks for PharmML&lt;/h3&gt;
+&lt;p&gt;Stuart presented the suggestion of having two tracks of PharmML versions. One “production” (“stable”) track and one “development” track. The production PharmML is intended to be the one supported by tools and libraries and the development version will when ready be (whole or in parts) merged into the development track. The meeting decided that this division should be used and concluded that the current de facto production version is 0.8.1 and the de facto development version is 0.9.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-to-reach-pharmml-1.0&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How to reach PharmML 1.0&lt;/h3&gt;
+&lt;p&gt;Three different options for reaching PharmML 1.0 were discussed:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Refactor 0.8.1 to keep as much compatibility with current APIs as possible.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Simply bump the version of 0.9 to 1.0&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Refactor 0.9 Strong arguments were made to not use 0.8.1 as 0.9 has some important bug-fixes and all new features are backwards compatible i.e. should not break APIs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We decided to use 0.9 as the basis for v1.0 but do refactoring.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;refactoring-of-0.9&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Refactoring of 0.9&lt;/h3&gt;
+&lt;p&gt;We discussed some different ideas for refactoring of PharmML 0.9:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Refactoring of schema that would not change the actual PharmML content.&lt;/li&gt;
+&lt;li&gt;Refactoring that would remove certain redundancies. For example if the schema allows both &lt;code&gt;SymbRef&lt;/code&gt; and &lt;code&gt;Assign&lt;/code&gt; the &lt;code&gt;SymbRef&lt;/code&gt; could be removed as it is already contained in the &lt;code&gt;Assign&lt;/code&gt;. This could greatly simplify the APIs&lt;/li&gt;
+&lt;li&gt;Removing features.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We decided to do both 1 and 2 but not 3 and to monitor the impact of the current code given the proposed changes. Stuart will start this task.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;semantic-versioning&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Semantic versioning&lt;/h3&gt;
+&lt;p&gt;We decided to use semantic versioning of PharmML and SO to be clear about the notion of backwards compatibility.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;namespace&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Namespace&lt;/h3&gt;
+&lt;p&gt;We decided to come up with a new namespace naming scheme that does not change with every point release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;so&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;SO&lt;/h2&gt;
+&lt;p&gt;We decided to go from 0.3.1 directly to 1.0 and only change the namespace.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;libpharmmlcpp&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;libpharmmlcpp&lt;/h2&gt;
+&lt;p&gt;New libraries need to be developed for PharmML and SO 1.0. We decided to not keep backwards compatibility to earlier versions of the standards. Now the time was up for the meeting, but we also briefly discussed the PharmML validation rules (validations that are not made by the schema) and the status of the C++ API &lt;a href=&#34;https://github.com/DDMoReFoundation/libpharmmlcpp&#34;&gt;&lt;code&gt;libpharmmlcpp&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>DDMoRe Language Community at PAGE 2017</title>
@@ -16,22 +72,10 @@
       <pubDate>Mon, 22 May 2017 10:00:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2017/05/22/language_community_page2017/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;&lt;strong&gt;DDMoRe Language Community at PAGE 2017, Budapest, Hungary&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;DDMoRe Language Community at PAGE 2017, Budapest, Hungary&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;There are plans for the DDMoRe Language Community to meet at the &lt;a href=&#34;https://www.page-meeting.org/default.asp?id=41&amp;amp;keuze=meeting&#34;&gt;PAGE 2017 conference held in Budapest, Hungary&lt;/a&gt; from 6-9 June.&lt;/p&gt;
 &lt;p&gt;Current plans are to meet up with Rikard Nordgren at the PsN stand in the exhibit area at 13:45pm on Thursday 8th.&lt;/p&gt;
 &lt;p&gt;Also, look out for the poster &lt;a href=&#34;https://www.page-meeting.org/default.asp?abstract=7188&#34;&gt;I-14 “Execution of complex Bayesian workflows with the DDMoRe Interoperability Framework: a case study in the diabetes area” by Christiana Larizza, Elisa Borella, Lorenzo Pasotti, Palma Tartaglione, Mike K Smith, Stuart Moodie and Paolo Magni&lt;/a&gt;. The poster will show how the DDMoRe language standards have been employed to compare non-Bayesian models fitted using NONMEM with the Bayesian estimation which incorporate uncertainty in the pharmacokinetic parameters, estimated using BUGS. The DDMoRe interoperability framework uses the language standards to facilitate unbroken workflow using a number of modelling and simulation tools.&lt;/p&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -41,22 +85,10 @@
       <pubDate>Mon, 08 May 2017 10:00:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2017/05/08/standards_production_development/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;&lt;strong&gt;A subgroup of the DDMoRe Language Standards Community is discussing how to support production and development of the DDMoRe Language Standards&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;A subgroup of the DDMoRe Language Standards Community is discussing how to support production and development of the DDMoRe Language Standards&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;During the IMI DDMoRe project, we developed the DDMoRe Language Standards (MDL, PharmML, SO) and integrated these with the associated tools libpharmml, libso, etc. to form the basis of the DDMoRe Interoperability Framework enabling modelling and simulation workflow based on the MDL representation of a model and automated conversion through PharmML to target software and conversion of the output back to the Standard Output object and from there back to R.&lt;/p&gt;
 &lt;p&gt;With the DDMoRe Foundation, we are keen to ensure that the language standards are easily maintained and supported going forward and that these form the basis of solid standards for future development of tools and converters. We propose to split development into “Production” and “Development” versions of the standards and tools. This will ensure that the “Production” version is maintained according to good practices in software development, while new features can be examined and tested using the “Development” version.&lt;/p&gt;
 &lt;p&gt;Stuart Moodie, Maciej Swat, Rikard Nordgren, Nadia Terranova, Vijay Ivaturi and Mike K Smith are discussing the pathway to achieving this aim. We would welcome thoughts, input and discussion from the community on this topic.&lt;/p&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -66,11 +98,7 @@
       <pubDate>Fri, 31 Mar 2017 13:00:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2017/03/31/language_community_minutes_20170329/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;&lt;strong&gt;The DDMoRe Language Community meeting was held 29th of March 2017&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;The DDMoRe Language Community meeting was held 29th of March 2017&lt;/strong&gt;&lt;/p&gt;
 &lt;div id=&#34;summary&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Summary&lt;/h2&gt;
 &lt;ul&gt;
@@ -147,14 +175,6 @@
 &lt;p&gt;Thanks to Nick Holford for taking minutes.&lt;/p&gt;
 &lt;p&gt;Please send suggestions for items to discuss at the next Languages Community meeting.&lt;/p&gt;
 &lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -164,11 +184,7 @@
       <pubDate>Wed, 08 Mar 2017 16:30:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2017/03/08/language_community_minutes_20170222/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;&lt;strong&gt;On 22nd of February 2017 we had the inaugural meeting of the DDMoRe Language Community.&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;On 22nd of February 2017 we had the inaugural meeting of the DDMoRe Language Community.&lt;/strong&gt;&lt;/p&gt;
 &lt;div id=&#34;summary&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Summary&lt;/h2&gt;
 &lt;ul&gt;
@@ -202,14 +218,6 @@
 &lt;p&gt;&lt;strong&gt;Next meeting: 27th March 2017, 4pm UK time, 5pm CET, 11am EST &lt;/strong&gt;&lt;br /&gt;
 Please send suggestions for items to discuss at the next Languages Community meeting.&lt;/p&gt;
 &lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -219,11 +227,7 @@ Please send suggestions for items to discuss at the next Languages Community mee
       <pubDate>Mon, 23 Jan 2017 12:30:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2017/01/23/but_i_only_use_nonmem/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;div id=&#34;do-you-want-others-to-use-your-models&#34; class=&#34;section level2&#34;&gt;
+      <description>&lt;div id=&#34;do-you-want-others-to-use-your-models&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Do you want others to use your models?&lt;/h2&gt;
 &lt;p&gt;Well, you &lt;strong&gt;&lt;em&gt;SAY&lt;/em&gt;&lt;/strong&gt; you only use NONMEM (although I don’t believe that - see below) but ultimately I’m sure that you’d like other people to use your model and/or the inferences based on it.&lt;/p&gt;
 &lt;p&gt;The use of modelling and simulation has expanded into quantitative pharmacology, pharmacology (Pop PK and PKPD), disease modelling, model-based meta-analysis (MBMA), cost-effectiveness and many more. Many different quantitative disciplines are now involved in building models, evaluating models, using models and modelling outputs to interpret data, plan studies or make decisions. For a given model to be useful (and used!) across all of these groups we need to find a way that we can express the model such that anybody else that wants to use it can do so for their own purposes, whatever those are.&lt;/p&gt;
@@ -273,14 +277,6 @@ Please send suggestions for items to discuss at the next Languages Community mee
 &lt;h2&gt;Acknowledgement:&lt;/h2&gt;
 &lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/vjd&#34;&gt;Vijay Ivaturi&lt;/a&gt; and &lt;a href=&#34;https://github.com/kylebmetrum&#34;&gt;kylebmetrum&lt;/a&gt; for comments and additions to this blog post.&lt;/p&gt;
 &lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -290,11 +286,7 @@ Please send suggestions for items to discuss at the next Languages Community mee
       <pubDate>Thu, 19 Jan 2017 13:42:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2017/01/19/ddmore_language_community/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;&lt;strong&gt;On 17th January 2017 we announced the start of the DDMoRe Language Community.&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;On 17th January 2017 we announced the start of the DDMoRe Language Community.&lt;/strong&gt;&lt;/p&gt;
 &lt;div id=&#34;what-is-the-ddmore-language-community-for&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;What is the DDMoRe Language Community for?&lt;/h2&gt;
 &lt;p&gt;The DDMoRe model exchange standards - the Model Description Language (MDL), Pharmacometrics Markup Language (PharmML), and Standard Output object (SO) - are open-source standards. The IMI DDMoRe project delivered a proof of concept implementation of an Interoperability Framework which incorporates these standards and shows how, having encoded the model using MDL, the modeller can then perform a complete pharmacometrics workflow (estimation, diagnostics, prediction / simulation and optimal design) without having to recode the model for different target software tools.&lt;/p&gt;
@@ -330,14 +322,6 @@ Please send suggestions for items to discuss at the next Languages Community mee
 &lt;h2&gt;Acknowledgement:&lt;/h2&gt;
 &lt;p&gt;Thanks to Chris Shilling (Chris.Shilling at florinpartnership.com) for his comments and additions to this blog post.&lt;/p&gt;
 &lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -347,22 +331,10 @@ Please send suggestions for items to discuss at the next Languages Community mee
       <pubDate>Fri, 06 Jan 2017 09:40:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2017/01/06/mdluserguide_announcement/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;The MDL User Guide and Reference Manual are now available online: &lt;a href=&#34;https://modeldefinitionlanguage.github.io/MDLUserGuide/&#34; class=&#34;uri&#34;&gt;https://modeldefinitionlanguage.github.io/MDLUserGuide/&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;The MDL User Guide and Reference Manual are now available online: &lt;a href=&#34;https://modeldefinitionlanguage.github.io/MDLUserGuide/&#34; class=&#34;uri&#34;&gt;https://modeldefinitionlanguage.github.io/MDLUserGuide/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;There is a toolbar at the top of the manual that allows you to see the section browser, search within the manual, change text attributes while reading, edit a page (via Github) and download the manual as PDF or ePub (coming soon!).&lt;/p&gt;
 &lt;p&gt;The User Guide will be maintained and updated on Github at &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/MDLUserGuide&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/MDLUserGuide&lt;/a&gt;. We encourage the community to contribute to and update the manual either by editing .Rmd files directly on Github or by making a copy of the repository, making changes and submitting a pull request, according to the &lt;a href=&#34;https://guides.github.com/introduction/flow/&#34;&gt;Github workflow&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The User Guide is compiled using &lt;a href=&#34;https://github.com/rstudio/bookdown&#34;&gt;RStudio’s bookdown package&lt;/a&gt;. &lt;a href=&#34;https://yihui.name/&#34;&gt;Yihui Xie&lt;/a&gt; has provided &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;a comprehensive guide to bookdown&lt;/a&gt;. By downloading bookdown and dependent packages, it is possible for anybody to recompile the manual using R.&lt;/p&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -522,25 +494,13 @@ guide if you need help on how to contribute to the repositories.&lt;/p&gt;
       <pubDate>Thu, 24 Nov 2016 16:40:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2016/11/24/mdleditor_announcement/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;The &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/&#34;&gt;MDL-Editor&lt;/a&gt; is now available for download. This is a cross-platform, Eclipse-based Integrated Development Environment (IDE) for writing MDL models incorporating syntax highlighting and grammar checks. It is available for Windows ( &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86.zip&#34;&gt;32bit&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86_64.zip&#34;&gt;64bit&lt;/a&gt;), &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-linux.gtk.x86_64.zip&#34;&gt;Linux&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-macosx.cocoa.x86_64.zip&#34;&gt;Mac OS&lt;/a&gt;. Simply download the zip file and unzip to an appropriate location. An update site has been configured within Eclipse so that future updates to the MDL-Editor can be retrieved from within Eclipse without having to download another zip file.&lt;/p&gt;
+      <description>&lt;p&gt;The &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/&#34;&gt;MDL-Editor&lt;/a&gt; is now available for download. This is a cross-platform, Eclipse-based Integrated Development Environment (IDE) for writing MDL models incorporating syntax highlighting and grammar checks. It is available for Windows ( &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86.zip&#34;&gt;32bit&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86_64.zip&#34;&gt;64bit&lt;/a&gt;), &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-linux.gtk.x86_64.zip&#34;&gt;Linux&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-macosx.cocoa.x86_64.zip&#34;&gt;Mac OS&lt;/a&gt;. Simply download the zip file and unzip to an appropriate location. An update site has been configured within Eclipse so that future updates to the MDL-Editor can be retrieved from within Eclipse without having to download another zip file.&lt;/p&gt;
 &lt;p&gt;The MDL Editor can be used to develop models using MDL and to export these models to PharmML, ready for upload to the DDMoRe repository: &lt;a href=&#34;http://repository.ddmore.eu&#34; class=&#34;uri&#34;&gt;http://repository.ddmore.eu&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Planned future enhancements to the MDL Editor include incorporation of Git version control and integration of R. To run models using MDL, the Interoperability Framework Standalone Execution Environment (SEE) is available from &lt;a href=&#34;https://sourceforge.net/projects/ddmore/files/install/SEE/Demonstrator-2.0.0/&#34;&gt;Sourceforge&lt;/a&gt;. This is a demonstration product which includes R, NONMEM, Monolix, BUGS, PFIM, PopED, simulx (from the &lt;code&gt;mlxR&lt;/code&gt; R package). The SEE is only available for Windows at present. Installation instructions and associated documentation is available &lt;a href=&#34;http://ddmore.eu/instructions/user-guides&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A zip file of examples (UseCases) and the MDL User Guide and Reference Manual will also be available for download at the same site. These examples should assist the user in writing models from scratch as they illustrate many of the more commonly used model features encoded with MDL.&lt;/p&gt;
 &lt;p&gt;You can submit bugs, issues, feature requests and comments on the &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdl-ide/issues&#34;&gt;MDL-IDE Github Issues&lt;/a&gt; tracker.&lt;/p&gt;
 &lt;p&gt;Source-code for the MDL Editor is available: &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdl-ide&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/mdl-ide&lt;/a&gt;&lt;br /&gt;
 and source-code for the MDL Eclipse plugin is also available separately: &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/mdleditorplugin&#34; class=&#34;uri&#34;&gt;https://github.com/ModelDefinitionLanguage/mdleditorplugin&lt;/a&gt;&lt;/p&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -644,11 +604,7 @@ direct it to the right place for action.&lt;/p&gt;
       <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2016/11/22/about_mdl_and_this_website/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;div id=&#34;welcome-to-the-ddmore-model-description-language-mdl-community-page.&#34; class=&#34;section level2&#34;&gt;
+      <description>&lt;div id=&#34;welcome-to-the-ddmore-model-description-language-mdl-community-page.&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Welcome to the DDMoRe Model Description Language (MDL) Community page.&lt;/h2&gt;
 &lt;p&gt;This website will provide a resource for anyone wishing to encode models with MDL, will help you understand MDL structure and features and provides a place for you to log bugs, issues, feature requests and suggestions.&lt;/p&gt;
 &lt;div id=&#34;what-is-mdl&#34; class=&#34;section level3&#34;&gt;
@@ -688,14 +644,6 @@ direct it to the right place for action.&lt;/p&gt;
 &lt;p&gt;The research leading to these results has received support from the Innovative Medicines Initiative Joint Undertaking under grant agreement n° 115156, resources of which are composed of financial contribution from the European Union’s Seventh Framework Programme (FP7/2007-2013) and EFPIA companies’ in kind contribution. The DDMoRe project is also financially supported by contributions from Academic and SME partners.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
