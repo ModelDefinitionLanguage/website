@@ -20,14 +20,16 @@ The [MDL User Guide and Reference Manual](http://www.ddmore.eu/sites/ddmore/file
 is available online in PDF format. 
 
 ### What tools are available for writing and editing MDL?
-An [MDL-Editor](http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/) 
+An [MDL-Editor](http://downloads.mdl.community/repository/mdl-ide/products/1.7.0/) 
 is available for download. This is a cross-platform, Eclipse-based Integrated 
 Development Environment (IDE) for writing MDL models incorporating syntax 
 highlighting and grammar checks. It is available for Windows (
-[32bit](http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86.zip) and 
-[64bit](http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86_64.zip)), 
-[Linux](http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-linux.gtk.x86_64.zip) and 
-[Mac OS](http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-macosx.cocoa.x86_64.zip). Simply download the zip file and unzip to an appropriate location. 
+[32bit](http://downloads.mdl.community/repository/mdl-ide/products/1.7.0/eu.ddmore.mdleditor.site-1.7.0-win32.win32.x86.zip) and 
+[64bit](http://downloads.mdl.community/repository/mdl-ide/products/1.7.0/eu.ddmore.mdleditor.site-1.7.0-win32.win32.x86_64.zip)), 
+Linux (
+[32bit](http://downloads.mdl.community/repository/mdl-ide/products/1.7.0/eu.ddmore.mdleditor.site-1.7.0-linux.gtk.x86.zip) and 
+[64bit](http://downloads.mdl.community/repository/mdl-ide/products/1.7.0/eu.ddmore.mdleditor.site-1.7.0-linux.gtk.x86_64.zip)) and Mac
+[Mac OS](http://downloads.mdl.community/repository/mdl-ide/products/1.7.0/eu.ddmore.mdleditor.site-1.7.0-macosx.cocoa.x86_64.zip). Simply download the zip file and unzip to an appropriate location. 
 An update site has been configured within Eclipse so that future updates to the 
 MDL-Editor can be retrieved from within Eclipse without having to download 
 another zip file. 

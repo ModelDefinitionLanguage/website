@@ -1,0 +1,13 @@
+---
+title: "MDL-Editor version 1.7.0"
+author: "Stuart Moodie"
+date: 2018-06-21T09:04:00Z
+tags: ["Community", "Announce"]
+output: html_document
+---
+
+A new release of the MDL Editor is available at the following link:
+http://downloads.mdl.community/repository/mdl-ide/products/1.7.0/ 
+
+This version fixes some issues with PharmML conversion as well as updates 
+to libraries used in the editor.
