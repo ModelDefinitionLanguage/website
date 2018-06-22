@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on MDL Community website</title>
+    <link>http://www.mdl.community/tags/</link>
+    <description>Recent content in Tags on MDL Community website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Mike K Smith</copyright>
+    <lastBuildDate>Thu, 21 Jun 2018 09:04:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.mdl.community/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Announce</title>
+      <link>http://www.mdl.community/tags/announce/</link>
+      <pubDate>Thu, 21 Jun 2018 09:04:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/tags/announce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Community</title>
+      <link>http://www.mdl.community/tags/community/</link>
+      <pubDate>Thu, 21 Jun 2018 09:04:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/tags/community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ddmore Foundation</title>
+      <link>http://www.mdl.community/tags/ddmore-foundation/</link>
+      <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/tags/ddmore-foundation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interoperability</title>
+      <link>http://www.mdl.community/tags/interoperability/</link>
+      <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/tags/interoperability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mdl Editor</title>
+      <link>http://www.mdl.community/tags/mdl-editor/</link>
+      <pubDate>Thu, 24 Nov 2016 16:40:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/tags/mdl-editor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mdl Language</title>
+      <link>http://www.mdl.community/tags/mdl-language/</link>
+      <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/tags/mdl-language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Models</title>
+      <link>http://www.mdl.community/tags/models/</link>
+      <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/tags/models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opensource</title>
+      <link>http://www.mdl.community/tags/opensource/</link>
+      <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/tags/opensource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>http://www.mdl.community/tags/software/</link>
+      <pubDate>Thu, 24 Nov 2016 16:40:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Standards</title>
+      <link>http://www.mdl.community/tags/standards/</link>
+      <pubDate>Mon, 08 May 2017 10:00:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/tags/standards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>http://www.mdl.community/tags/website/</link>
+      <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
+      
+      <guid>http://www.mdl.community/tags/website/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

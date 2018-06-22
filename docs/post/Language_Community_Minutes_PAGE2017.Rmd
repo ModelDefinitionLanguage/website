@@ -1,0 +1,65 @@
+---
+title: "DDMoRe Language Community at PAGE 2017 - Minutes"
+author: "Rikard Nordgren"
+date: 2017-08-09T11:00:00Z
+tags: ["Community", "Announce"]
+output: html_document
+---
+
+At PAGE the language community group had a meeting on 8th June 2017.
+
+Present were Rikard Nordgren, Maciej Swat, Stuart Moodie, Gunnar Yngman and
+(over the phone) Mike K Smith.
+
+## PharmML
+### Production and development tracks for PharmML
+
+Stuart presented the suggestion of having two tracks of PharmML versions.
+One "production" ("stable") track and one "development" track. The production 
+PharmML is intended to be the one supported by tools and  libraries and the 
+development version will when ready be (whole or in parts) merged into the 
+development track. The meeting decided that this division should be used and 
+concluded that the current de facto production version is 0.8.1 and the 
+de facto development version is 0.9.
+
+### How to reach PharmML 1.0
+Three different options for reaching PharmML 1.0 were discussed:  
+
+  1. Refactor 0.8.1 to keep as much
+  compatibility with current APIs as possible.  
+  2. Simply bump the version of 0.9 to 1.0  
+  3. Refactor 0.9 Strong arguments were made to not use 
+  0.8.1 as 0.9 has some important bug-fixes and all new features are backwards 
+  compatible i.e. should not break APIs.  
+
+We decided to use 0.9 as the basis for v1.0 but do refactoring.
+
+### Refactoring of 0.9
+We discussed some different ideas for refactoring of PharmML 0.9:
+
+  1. Refactoring of schema that would not change the actual PharmML content. 
+  2. Refactoring that would remove certain redundancies. For example if the 
+  schema allows both `SymbRef` and `Assign` the `SymbRef` could be removed as it is 
+  already contained in the `Assign`. This could greatly simplify the APIs 
+  3. Removing features.
+  
+We decided to do both 1 and 2 but not 3 and to monitor the impact of the 
+current code given the proposed changes. Stuart will start this task.
+
+### Semantic versioning
+We decided to use semantic versioning of PharmML and SO to be clear about the 
+notion of backwards compatibility.
+
+### Namespace
+We decided to come up with a new namespace naming scheme that does
+not change with every point release.
+
+## SO
+We decided to go from 0.3.1 directly to 1.0 and only change the namespace.
+
+## libpharmmlcpp
+New libraries need to be developed for PharmML and SO 1.0. We decided to not 
+keep backwards compatibility to earlier versions of the
+standards. Now the time was up for the meeting, but we also briefly discussed
+the PharmML validation rules (validations that are not made by the schema) and
+the status of the C++ API [`libpharmmlcpp`](https://github.com/DDMoReFoundation/libpharmmlcpp).
