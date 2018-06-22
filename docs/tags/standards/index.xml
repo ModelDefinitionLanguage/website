@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Standards on MDL Community website</title>
-    <link>http://www.mdl.community/tags/standards/index.xml</link>
+    <link>http://www.mdl.community/tags/standards/</link>
     <description>Recent content in Standards on MDL Community website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mike K Smith</copyright>
-    <atom:link href="http://www.mdl.community/tags/standards/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 May 2017 10:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.mdl.community/tags/standards/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Production &amp; Development Language Standards</title>
@@ -15,23 +18,8 @@
       <pubDate>Mon, 08 May 2017 10:00:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2017/05/08/standards_production_development/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;&lt;strong&gt;A subgroup of the DDMoRe Language Standards Community is discussing how to support production and development of the DDMoRe Language Standards&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;During the IMI DDMoRe project, we developed the DDMoRe Language Standards (MDL, PharmML, SO) and integrated these with the associated tools libpharmml, libso, etc. to form the basis of the DDMoRe Interoperability Framework enabling modelling and simulation workflow based on the MDL representation of a model and automated conversion through PharmML to target software and conversion of the output back to the Standard Output object and from there back to R.&lt;/p&gt;
-&lt;p&gt;With the DDMoRe Foundation, we are keen to ensure that the language standards are easily maintained and supported going forward and that these form the basis of solid standards for future development of tools and converters. We propose to split development into “Production” and “Development” versions of the standards and tools. This will ensure that the “Production” version is maintained according to good practices in software development, while new features can be examined and tested using the “Development” version.&lt;/p&gt;
-&lt;p&gt;Stuart Moodie, Maciej Swat, Rikard Nordgren, Nadia Terranova, Vijay Ivaturi and Mike K Smith are discussing the pathway to achieving this aim. We would welcome thoughts, input and discussion from the community on this topic.&lt;/p&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
-</description>
+      <description>A subgroup of the DDMoRe Language Standards Community is discussing how to support production and development of the DDMoRe Language Standards
+During the IMI DDMoRe project, we developed the DDMoRe Language Standards (MDL, PharmML, SO) and integrated these with the associated tools libpharmml, libso, etc. to form the basis of the DDMoRe Interoperability Framework enabling modelling and simulation workflow based on the MDL representation of a model and automated conversion through PharmML to target software and conversion of the output back to the Standard Output object and from there back to R.</description>
     </item>
     
     <item>
@@ -40,69 +28,8 @@
       <pubDate>Mon, 23 Jan 2017 12:30:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2017/01/23/but_i_only_use_nonmem/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;div id=&#34;do-you-want-others-to-use-your-models&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Do you want others to use your models?&lt;/h2&gt;
-&lt;p&gt;Well, you &lt;strong&gt;&lt;em&gt;SAY&lt;/em&gt;&lt;/strong&gt; you only use NONMEM (although I don’t believe that - see below) but ultimately I’m sure that you’d like other people to use your model and/or the inferences based on it.&lt;/p&gt;
-&lt;p&gt;The use of modelling and simulation has expanded into quantitative pharmacology, pharmacology (Pop PK and PKPD), disease modelling, model-based meta-analysis (MBMA), cost-effectiveness and many more. Many different quantitative disciplines are now involved in building models, evaluating models, using models and modelling outputs to interpret data, plan studies or make decisions. For a given model to be useful (and used!) across all of these groups we need to find a way that we can express the model such that anybody else that wants to use it can do so for their own purposes, whatever those are.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;how-do-you-share-models&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;How do you share models?&lt;/h2&gt;
-&lt;div id=&#34;i-share-via-nmtran-other-code&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;I share via (NMTRAN / other) code&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;http://discuss.go-isop.org/t/isop-global-survey-how-do-you-share/657&#34;&gt;A recent survey by the International Society of Pharmacometrics&lt;/a&gt; found that ~75% of respondents primarily use NONMEM as their main tool for analysis. This would support the strategy for sharing NMTRAN models &lt;strong&gt;&lt;em&gt;within&lt;/em&gt;&lt;/strong&gt; the pharmacometrics community, but what about outside of it?&lt;/p&gt;
-&lt;p&gt;Within the statistics community there is a growing use of R as a tool for analytical work, sometimes calling other tools e.g. C++, Java, etc. but still, within industry, SAS is primarily used as the clinical trial reporting tool of choice. So if you’re interested in getting statisticians to use your model, then what language should you choose for sharing? Do you expect them to learn and understand the NMTRAN code? Do you both try to translate to R? What about SAS? Will you learn R or SAS sufficient to be able to share your model?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;i-share-via-publications&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;I share via publications&lt;/h3&gt;
-&lt;p&gt;Writing down the maths of a model is a great way to share the model between quantitative disciplines. It’s a universal language and brings with it rigour and a lack of ambiguity. &lt;strong&gt;&lt;em&gt;BUT&lt;/em&gt;&lt;/strong&gt; while two modellers can agree on the maths of a problem, the implementation may vary between two software tools such that it may be easy to implement in one tool, but very difficult (impossible?) in another.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;the-problem-of-reproducibility&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;The problem of reproducibility&lt;/h3&gt;
-&lt;p&gt;Reproducibility means many things to many different people. For now, let’s focus on being able to re-run an estimation step for a given set of data and the ability to confirm that the parameter estimates match those presented by the original analyst. Even in this minimalist definition of reproducibility we can face problems reproducing the original analyst’s work if we don’t get &lt;em&gt;exactly&lt;/em&gt; the code they ran, match the same software and environment settings, etc. The problem gets worse if we’re trying to convert from one software tool to another along the way or if we’re trying to implement the mathematical and statistical models presented in a publication if we don’t have access to the original code.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;nonmem-doesnt-do-everything&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;NONMEM doesn’t do &lt;strong&gt;&lt;em&gt;EVERYTHING&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;NONMEM and associated tools e.g. PsN have some limitations in available functionality, for example optimal trial design. And while NONMEM &lt;strong&gt;&lt;em&gt;can&lt;/em&gt;&lt;/strong&gt; be used for prediction and simulation of new designs, regimens and scenarios there are a growing number of freely available, open-source tools that can also do this and arguably more easily &lt;strong&gt;&lt;em&gt;given that the model is encoded in the appropriate input format for that tool&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Now, either we have to write a load of NMTRAN to &lt;tool X&gt; translators (some exist e.g. Pirana) or we have to use or develop a master language that can easily translate to NMTRAN, but also to other tools e.g. Certara / Pharsight’s PML or DDMoRe’s MDL.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;open-source-tools-are-growing-in-use&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Open-source tools are growing in use&lt;/h2&gt;
-&lt;p&gt;There is a rising number of free, open-source software for nonlinear mixed effects modelling and simulation (e.g. &lt;a href=&#34;http://www.saemix.biostat.fr/&#34;&gt;saemix&lt;/a&gt;, &lt;a href=&#34;https://github.com/nlmixrdevelopment/nlmixr&#34;&gt;nlmixr&lt;/a&gt;, &lt;a href=&#34;http://simulx.webpopix.org/&#34;&gt;mlxR / simulx&lt;/a&gt;, &lt;a href=&#34;http://metrumrg.com/opensourcetools.html&#34;&gt;mrgsolve&lt;/a&gt;, &lt;a href=&#34;https://github.com/hallowkm/RxODE&#34;&gt;RxODE&lt;/a&gt;, &lt;a href=&#34;https://github.com/ronkeizer/PKPDsim&#34;&gt;PKPDsim&lt;/a&gt;, &lt;a href=&#34;http://www.pfim.biostat.fr/&#34;&gt;PFIM&lt;/a&gt;, &lt;a href=&#34;http://poped.sourceforge.net/&#34;&gt;PopED&lt;/a&gt; ) and while use of these tools may be limited today, they provide a means for performing the majority of modelling and simulation tasks with no cost to the analyst. More integration of these tools into pharmacometrics toolset and workflow would benefit many, especially those who cannot get access to NONMEM licenses, yet still may wish to use disease and therapeutic drug models in their work or for predicting outcomes for patients.&lt;/p&gt;
-&lt;p&gt;About 10 years ago, it would have been hard to imagine the case that S-Plus would be thoroughly supplanted by R, to the point where it ceased to be a supported product by the company (Tibco) that bought it from Insightful. And yet, here we are. &lt;a href=&#34;http://blog.revolutionanalytics.com/popularity/&#34;&gt;R is rising in popularity as an analytical engine (often coupled with other technologies)&lt;/a&gt;. So to dismiss open-source solutions as “irrelevant” may be regarded as a short-sighted view.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;open-source-standards-can-shape-the-discipline&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;(Open-source) Standards can shape the discipline&lt;/h2&gt;
-&lt;p&gt;The advent and growth of [SBML] (&lt;a href=&#34;http://authors.library.caltech.edu/2099/1/HUCieesb04.pdf&#34; class=&#34;uri&#34;&gt;http://authors.library.caltech.edu/2099/1/HUCieesb04.pdf&lt;/a&gt;) has had a profound effect on the systems biology modelling world - impacting model sharing and tool development. With SBML as a basis for import and export of models to and from software tools, the community now has a means to quickly and easily share models, regardless of the preferred tools for individuals, laboratories or companies. This sparked development of many open-source tools, but also forced integration of SBML into existing and novel commercial tools.&lt;/p&gt;
-&lt;p&gt;The DDMoRe model exchange standards could be similarly revolutionary for model sharing and interoperability within the pharmacometrics discipline but also beyond into other quantitative disciplines e.g. statistics.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;unified-workflow-agnostic-to-software-tool-choice-is-a-good-aim&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Unified workflow agnostic to software tool choice is a good aim&lt;/h2&gt;
-&lt;p&gt;At present, any time the modeller (or anyone using a given model) needs to transcode the model from one software tool to another, we should ensure that the transcoded model is equivalent to the original &lt;strong&gt;&lt;em&gt;before&lt;/em&gt;&lt;/strong&gt; making any new inferences from it. This adds an overhead of time and resource into the modelling and simulation process and brings with it the possibility of errors introduced while translating from one implementation to another.&lt;/p&gt;
-&lt;p&gt;The ideal workflow would be agnostic to the tool used for a given task. It would be ideal to be able to substitute one tool for another in the workflow and carry on with subsequent down-stream activities, with no intervention from the user to activities outside of the workflow. This would greatly improve reproducibility and portability of workflow from one analyst to another and also across quantitative disciplines.&lt;/p&gt;
-&lt;p&gt;MDL, along with the DDMoRe model exchange standards, &lt;a href=&#34;https://drive.google.com/file/d/0B6l15jR-cIWdMTlKUlY4LTJ2ajA/view?usp=sharing&#34;&gt;has achieved this aim using the Interoperability Framework&lt;/a&gt;. In this example we show end-to-end workflow using a variety of tools to perform exploratory analysis, estimation, model diagnostics &amp;amp; qualification, prediction, simulation and optimal design all without having to recode the model in any way.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;the-future-with-mdl-and-the-ddmore-model-exchange-standards&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;The future with MDL and the DDMoRe model exchange standards&lt;/h2&gt;
-&lt;p&gt;There has never been a better time to get engaged with the DDMoRe model exchange standards through the DDMoRe Language Community. We have shown that the concepts of interoperability are achievable, we have &amp;gt;100 models on the &lt;a href=&#34;http://repository.ddmore.eu/&#34;&gt;DDMoRe Model Repository&lt;/a&gt; and we have made these languages open-source so that the community can capitalise on work already done and contribute to the future state of these standards.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;acknowledgement&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Acknowledgement:&lt;/h2&gt;
-&lt;p&gt;Thanks to &lt;a href=&#34;https://github.com/vjd&#34;&gt;Vijay Ivaturi&lt;/a&gt; and &lt;a href=&#34;https://github.com/kylebmetrum&#34;&gt;kylebmetrum&lt;/a&gt; for comments and additions to this blog post.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
-</description>
+      <description>Do you want others to use your models?Well, you SAY you only use NONMEM (although I don’t believe that - see below) but ultimately I’m sure that you’d like other people to use your model and/or the inferences based on it.
+The use of modelling and simulation has expanded into quantitative pharmacology, pharmacology (Pop PK and PKPD), disease modelling, model-based meta-analysis (MBMA), cost-effectiveness and many more. Many different quantitative disciplines are now involved in building models, evaluating models, using models and modelling outputs to interpret data, plan studies or make decisions.</description>
     </item>
     
     <item>
@@ -111,59 +38,8 @@
       <pubDate>Tue, 22 Nov 2016 10:21:00 +0000</pubDate>
       
       <guid>http://www.mdl.community/2016/11/22/about_mdl_and_this_website/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;div id=&#34;welcome-to-the-ddmore-model-description-language-mdl-community-page.&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Welcome to the DDMoRe Model Description Language (MDL) Community page.&lt;/h2&gt;
-&lt;p&gt;This website will provide a resource for anyone wishing to encode models with MDL, will help you understand MDL structure and features and provides a place for you to log bugs, issues, feature requests and suggestions.&lt;/p&gt;
-&lt;div id=&#34;what-is-mdl&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;What is MDL?&lt;/h3&gt;
-&lt;p&gt;MDL is a human writeable and human readable language designed to describe pharmacometric models. It is intended to be largely agnostic about the choice of target tool. MDL should facilitate clear and unambiguous definition of models, with information conveyed in a consistent manner to the PharmML representation and onwards to the target software specific code.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;where-can-i-find-out-more-about-mdl&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Where can I find out more about MDL?&lt;/h3&gt;
-&lt;p&gt;The &lt;a href=&#34;http://www.ddmore.eu/sites/ddmore/files/instructions/pdf/MDLUserGuide_1.1_PublicRelease_August2016_0.pdf&#34;&gt;MDL User Guide and Reference Manual&lt;/a&gt; is available online in PDF format.&lt;/p&gt;
-&lt;p&gt;At the &lt;a href=&#34;http://ddmore.eu/instructions/user-guides&#34;&gt;ddmore.eu&lt;/a&gt; website you’ll also find instructions for downloading and installing the DDMoRe Interoperability Framework Standalone Execution Environment (SEE) demonstrator.&lt;/p&gt;
-&lt;p&gt;An &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/&#34;&gt;MDL-Editor&lt;/a&gt; is available for download. This is a cross-platform, Eclipse-based Integrated Development Environment (IDE) for writing MDL models incorporating syntax highlighting and grammar checks. It is available for Windows ( &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86.zip&#34;&gt;32bit&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-win32.win32.x86_64.zip&#34;&gt;64bit&lt;/a&gt;), &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-linux.gtk.x86_64.zip&#34;&gt;Linux&lt;/a&gt; and &lt;a href=&#34;http://downloads.mdl.community/repository/mdl-ide/products/1.6.0/eu.ddmore.mdleditor.site-1.6.0-SNAPSHOT-macosx.cocoa.x86_64.zip&#34;&gt;Mac OS&lt;/a&gt;. Simply download the zip file and unzip to an appropriate location. An update site has been configured within Eclipse so that future updates to the MDL-Editor can be retrieved from within Eclipse without having to download another zip file.&lt;/p&gt;
-&lt;p&gt;The MDL Editor can be used to develop models using MDL and to export these models to PharmML, ready for upload to the DDMoRe repository: &lt;a href=&#34;http://repository.ddmore.eu&#34; class=&#34;uri&#34;&gt;http://repository.ddmore.eu&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;A &lt;a href=&#34;https://www.youtube.com/playlist?list=PL_GGUkhbiP3t0Q7wTqkQdMAw7yuC8xWa-&#34;&gt;YouTube playlist&lt;/a&gt; is available for videos detailing how to get started with the software.&lt;/p&gt;
-&lt;p&gt;A set of Use Case examples is provided with the SEE, which are also available on &lt;a href=&#34;https://sourceforge.net/p/ddmore/use.cases/ci/master/tree/MDL/Product5.1/&#34;&gt;SourceForge&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;what-is-coming-on-this-website&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;What is coming on this website?&lt;/h3&gt;
-&lt;p&gt;In the near future we hope to provide:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;An online wiki format of the MDL User Guide and Reference Manual&lt;/li&gt;
-&lt;li&gt;Answers to Frequently Asked Questions (FAQ)&lt;/li&gt;
-&lt;li&gt;An issues log for capturing bugs, feature requests and suggestions for MDL&lt;/li&gt;
-&lt;li&gt;A walkthrough of the MDL Use Case examples explaining and annotating the code.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;authors-and-contributors&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Authors and Contributors&lt;/h3&gt;
-&lt;p&gt;Mike K Smith &lt;span class=&#34;citation&#34;&gt;[@MikeKSmith]&lt;/span&gt;(&lt;a href=&#34;https://github.com/MikeKSmith&#34; class=&#34;uri&#34;&gt;https://github.com/MikeKSmith&lt;/a&gt;) is the lead user for MDL. Stuart Moodie &lt;span class=&#34;citation&#34;&gt;[@stumoodie]&lt;/span&gt;(&lt;a href=&#34;https://github.com/stumoodie&#34; class=&#34;uri&#34;&gt;https://github.com/stumoodie&lt;/a&gt;) is the technical lead for MDL.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;support-or-contact&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Support or Contact&lt;/h3&gt;
-&lt;p&gt;Issues, bugs, feature requests, suggestions can be logged via the &lt;a href=&#34;https://github.com/ModelDefinitionLanguage/website/issues&#34;&gt;Github Issues page&lt;/a&gt;. Please label your item with “Website”, “MDL Language”, or “MDL-Editor” and the type of issue (“bug”,“enhancement”,“help wanted”,“invalid”,“question”) so that we can direct it to the right place for action.&lt;/p&gt;
-&lt;p&gt;Email contact information will be added very soon.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;acknowledgements&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Acknowledgements&lt;/h3&gt;
-&lt;p&gt;The research leading to these results has received support from the Innovative Medicines Initiative Joint Undertaking under grant agreement n° 115156, resources of which are composed of financial contribution from the European Union’s Seventh Framework Programme (FP7/2007-2013) and EFPIA companies’ in kind contribution. The DDMoRe project is also financially supported by contributions from Academic and SME partners.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
-</description>
+      <description>Welcome to the DDMoRe Model Description Language (MDL) Community page.This website will provide a resource for anyone wishing to encode models with MDL, will help you understand MDL structure and features and provides a place for you to log bugs, issues, feature requests and suggestions.
+What is MDL?MDL is a human writeable and human readable language designed to describe pharmacometric models. It is intended to be largely agnostic about the choice of target tool.</description>
     </item>
     
   </channel>

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://www.mdl.community/2018/06/21/mdleditor_update_1.7.0/</loc>
+    <lastmod>2018-06-21T09:04:00+00:00</lastmod>
+  </url>
   
   <url>
     <loc>http://www.mdl.community/2017/08/09/language_community_minutes_page2017/</loc>
@@ -63,13 +69,13 @@
   
   <url>
     <loc>http://www.mdl.community/tags/announce/</loc>
-    <lastmod>2017-08-09T11:00:00+00:00</lastmod>
+    <lastmod>2018-06-21T09:04:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.mdl.community/tags/community/</loc>
-    <lastmod>2017-08-09T11:00:00+00:00</lastmod>
+    <lastmod>2018-06-21T09:04:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -87,7 +93,7 @@
   
   <url>
     <loc>http://www.mdl.community/</loc>
-    <lastmod>2017-08-09T11:00:00+00:00</lastmod>
+    <lastmod>2018-06-21T09:04:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -123,7 +129,7 @@
   
   <url>
     <loc>http://www.mdl.community/post/</loc>
-    <lastmod>2017-08-09T11:00:00+00:00</lastmod>
+    <lastmod>2018-06-21T09:04:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -141,6 +147,7 @@
   
   <url>
     <loc>http://www.mdl.community/tags/</loc>
+    <lastmod>2018-06-21T09:04:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
