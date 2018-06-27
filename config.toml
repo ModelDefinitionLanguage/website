@@ -32,7 +32,7 @@ canonifyURLs = true
 
 [[menu.main]]
     name = "Download"
-    url = "http://downloads.mdl.community/repository/mdl-ide/products/1.7.0/"
+    url = "http://downloads.mdl.community/repository/mdl-ide/products/current/"
     weight = 2
 
 [[menu.main]]

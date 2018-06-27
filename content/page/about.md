@@ -23,13 +23,9 @@ is available online in PDF format.
 An [MDL-Editor](http://downloads.mdl.community/repository/mdl-ide/products/current/) 
 is available for download. This is a cross-platform, Eclipse-based Integrated 
 Development Environment (IDE) for writing MDL models incorporating syntax 
-highlighting and grammar checks. It is available for Windows (
-[32bit](http://downloads.mdl.community/repository/mdl-ide/products/current/eu.ddmore.mdleditor.1.7.1-win32.win32.x86.zip) and 
-[64bit](http://downloads.mdl.community/repository/mdl-ide/products/current/eu.ddmore.mdleditor.1.7.1-win32.win32.x86_64.zip)), 
-Linux (
-[32bit](http://downloads.mdl.community/repository/mdl-ide/products/current/eu.ddmore.mdleditor.1.7.1-linux.gtk.x86.tar.gz) and 
-[64bit](http://downloads.mdl.community/repository/mdl-ide/products/current/eu.ddmore.mdleditor.1.7.1-linux.gtk.x86_64.tar.gz)) and Mac
-[Mac OS](http://downloads.mdl.community/repository/mdl-ide/products/current/eu.ddmore.mdleditor.1.7.1-macosx.cocoa.x86_64.tar.gz). Simply download the zip file and unzip to an appropriate location. 
+highlighting and grammar checks. It is available for Windows (32 and 64bit), 
+Linux (32 and 64bit) and Mac OS.
+Simply download the zip file and unzip to an appropriate location. 
 An update site has been configured within Eclipse so that future updates to the 
 MDL-Editor can be retrieved from within Eclipse without having to download 
 another zip file. 
