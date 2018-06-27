@@ -7,18 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mike K Smith</copyright>
-    <lastBuildDate>Thu, 21 Jun 2018 09:04:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Jun 2018 09:04:00 +0000</lastBuildDate>
     
 	<atom:link href="http://www.mdl.community/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>MDL-Editor version 1.7.0</title>
-      <link>http://www.mdl.community/2018/06/21/mdleditor_update_1.7.0/</link>
-      <pubDate>Thu, 21 Jun 2018 09:04:00 +0000</pubDate>
+      <title>MDL-Editor version 1.7.1</title>
+      <link>http://www.mdl.community/2018/06/27/mdleditor_update_1.7.1/</link>
+      <pubDate>Wed, 27 Jun 2018 09:04:00 +0000</pubDate>
       
-      <guid>http://www.mdl.community/2018/06/21/mdleditor_update_1.7.0/</guid>
-      <description>A new release of the MDL Editor is available at the following link: http://downloads.mdl.community/repository/mdl-ide/products/1.7.0/
+      <guid>http://www.mdl.community/2018/06/27/mdleditor_update_1.7.1/</guid>
+      <description>A new release of the MDL Editor is available at the following link: http://downloads.mdl.community/repository/mdl-ide/products/current/
 This version fixes some issues with PharmML conversion as well as updates to libraries used in the editor.</description>
     </item>
     
